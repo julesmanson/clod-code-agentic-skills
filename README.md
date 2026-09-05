@@ -57,9 +57,9 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 
 ## Skills
 
-| Skill | Description |
-| --- | --- |
-| [`commit`](./commit) | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [scope] [name] commit` to create a repo and make the first commit in one step. |
+| Skill | Version | Description |
+| --- | --- | --- |
+| [`commit`](./commit) | `0.5.0-beta` | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [scope] [name] [license] commit` to create a repo and make the first commit in one step. |
 
 More skills will land here as they're written — this list grows with the repo.
 

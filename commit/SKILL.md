@@ -1,5 +1,6 @@
 ---
 name: commit
+version: 0.5.0-beta
 description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [scope] [name] [license] commit. This creates a new repo with the given name, scope (public/private, default public), and license (default MIT), then commits. Any invalid value is confirmed with the user before creating the repo or committing.
 user-invocable: true
 allowed-tools:
@@ -7,7 +8,7 @@ allowed-tools:
   - Read
 ---
 
-# /commit — Commit and Push
+# /commit — Commit and Push (v0.5.0-beta)
 
 **Standing rule, every repo:** when the user says "commit," that means commit
 *and* push to the remote. Don't ask separately whether to push — only skip
