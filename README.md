@@ -65,29 +65,28 @@ More skills will land here as they're written — this list grows with the repo.
 
 ## Using `commit`
 
-**Commit and push** — just say "commit." It will:
+Every way this skill can be invoked, and what happens for each:
 
-- run `git status`/`git diff`/`git log` to see what changed and match the repo's existing message style
-- stop rather than create an empty commit if nothing's staged or changed
-- stage only the relevant files by name (never `-A` or `.`)
-- check staged content for anything that looks like a secret
-- draft a concise commit message and commit
-- push, falling back to `git push -u origin [branch]` if there's no upstream yet
-- refuse to `--amend`, `--no-verify`, or force-push without explicit approval
+| You type | What happens |
+| --- | --- |
+| `commit` — repo exists | Runs straight through: status/diff/log → stage relevant files by name → check for secrets → draft a message → commit → push (falling back to `-u origin [branch]` if there's no upstream yet). No confirmation prompt, unless there's nothing to commit (it stops and says so) or the push is rejected (it stops rather than force-pushing). |
+| `commit` — no repo here | Won't silently `git init`. Stops and asks whether to create a repo in this folder, and if so, what name and visibility to use. Once you answer, it follows the same flow as `new repo [scope] [name] commit` below, using your answers. |
+| `new repo` (alone) | `[name]` is required and never guessed. Stops and asks for a name. |
+| `new repo commit` | Same as above — `commit` is present but `[name]` is still missing, so it stops and asks for one rather than assuming. |
+| `new repo [name] commit` | `[scope]` is optional and defaults to `public` when omitted. Runs `git init` (if needed) → `gh repo create [name] --public --source=. --remote=origin` → then the normal commit flow, pushing with `-u` since the remote has no commits yet. |
+| `new repo [scope] [name] commit` | Same as above, but `--[scope]` is passed explicitly (`public` or `private`) instead of defaulting. Everything else (description, license, team, etc.) stays at `gh`'s defaults. |
 
-**Create a new repo and commit:**
+Examples:
 
 ```
 new repo my-project commit
 ```
-
-Creates a public GitHub repo named `my-project` from the current directory, then commits and pushes.
+Public repo named `my-project`, created from the current directory, then committed and pushed.
 
 ```
 new repo private my-project commit
 ```
-
-Same, but private. `[scope]` accepts `public` or `private`; everything else stays at GitHub's defaults.
+Same, but private.
 
 ## Using `commit` with other git hosts
 

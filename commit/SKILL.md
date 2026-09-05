@@ -1,6 +1,6 @@
 ---
 name: commit
-description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [scope] [name] commit. This creates new repo with given name and sets scope with public or private (public is default and applies all other defaults) and then commits.
+description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [scope] [name] [license] commit. This creates a new repo with the given name, scope (public/private, default public), and license (default MIT), then commits. Any invalid value is confirmed with the user before creating the repo or committing.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -24,20 +24,52 @@ current directory isn't a git repository:
 - Once confirmed, follow the **`new repo` command** flow below, then
   continue with the normal Steps.
 
-## `new repo [scope] [name]` command
+This is different from a repo that exists locally but has **no remote at
+all** — check `git remote -v` before step 6 if it's ever empty. In that
+case, don't just let the push fail silently: ask whether to create a new
+GitHub repo (the `new repo` flow) or attach an existing remote URL, then
+proceed.
 
-Explicit shorthand: `new repo [scope] [name] commit`. `[scope]` is optional
-— `public` or `private`, default `public` if omitted. `[name]` is the new
-repo's name. Everything else (license, description, team, etc.) stays at
-`gh`'s defaults.
+## `new repo [scope] [name] [license] commit` command
 
-1. `git init` if the directory isn't already a repository.
-2. `gh repo create [name] --[scope] --source=. --remote=origin` (requires
-   the `gh` CLI already authenticated).
-3. Continue with the Steps below — staging, drafting the message,
-   committing, and pushing. Since this remote has no commits yet, the push
-   in step 6 will hit the "no upstream" case and use
-   `git push -u origin [current-branch]`.
+Full form: `new repo [scope] [name] [license] commit`. Minimum form:
+`new repo [name]` — `[name]` is the only required piece.
+
+- `[scope]` — `public` or `private`. Default `public` if omitted.
+- `[name]` — the new repo's name. **Required, never guessed.**
+- `[license]` — a license keyword (`mit`, `apache-2.0`, `gpl-3.0`,
+  `unlicense`, etc.). Default `mit` if omitted.
+- `commit` — trigger word. If present, run the Steps below after creating
+  the repo. If omitted, just create the repo and stop.
+
+Everything else (description, team, etc.) stays at `gh`'s defaults.
+
+**Parsing:** tokens between `repo` and `commit` (or the end of the phrase,
+if `commit` is omitted) aren't strictly positional — recognize `public`/
+`private` as `[scope]` and a known license keyword as `[license]` wherever
+they appear, and treat whatever single token is left over as `[name]`.
+
+**Catch-all validation rule:** any value that doesn't cleanly resolve —
+zero or more than one leftover token for `[name]`, a `[scope]` that isn't
+`public`/`private`, or a `[license]` that isn't a recognized keyword — is
+never guessed or silently defaulted. Stop and ask the user to confirm
+before creating the repo or making a commit. The only values assumed
+without asking are the two stated defaults: `public` for an omitted
+`[scope]`, and `mit` for an omitted `[license]`.
+
+If the current directory already has a `LICENSE` file and `[license]`
+would produce a different one, don't overwrite it silently — ask first.
+
+1. If the directory is already a git repository, check `git remote -v`
+   first. If a remote named `origin` already exists, don't silently
+   overwrite it — tell the user and ask before replacing or renaming it.
+   Otherwise, `git init`.
+2. `gh repo create [name] --[scope] --license [license] --source=.
+   --remote=origin` (requires the `gh` CLI already authenticated).
+3. If the command included `commit`, continue with the Steps below —
+   staging, drafting the message, committing, and pushing. Since this
+   remote has no commits yet, the push in step 6 will hit the "no
+   upstream" case and use `git push -u origin [current-branch]`.
 
 ## Steps
 
