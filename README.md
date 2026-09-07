@@ -9,8 +9,6 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 - [Repository structure](#repository-structure)
 - [Installing a skill](#installing-a-skill)
 - [Skills](#skills)
-- [Using `commit`](#using-commit)
-- [Using `commit` with other git hosts](#using-commit-with-other-git-hosts)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -37,11 +35,12 @@ The frontmatter fields (`user-invocable`, `allowed-tools`) are Claude Code-speci
 
 ## Repository structure
 
-Each skill lives in its own folder, named after the skill, containing a single `SKILL.md`:
+Each skill lives in its own folder, named after the skill, containing a `SKILL.md` (the operative instructions) and a `README.md` (a human-readable guide to the same behavior, with a link back here):
 
 ```
 skill-name/
   SKILL.md
+  README.md
 ```
 
 ## Installing a skill
@@ -53,7 +52,13 @@ Copy the skill's folder into your personal skills directory:
 cp -r commit ~/.claude/skills/commit
 ```
 
-On Windows, that's `%USERPROFILE%\.claude\skills\commit\`. Claude Code picks it up automatically from there — invoke it explicitly (e.g. `/commit`) or just describe the task; Claude will use it when the description matches.
+That `cp` command needs a Unix-style shell (Git Bash, WSL, macOS/Linux Terminal). In native Windows PowerShell, use:
+
+```powershell
+Copy-Item -Recurse commit "$env:USERPROFILE\.claude\skills\commit"
+```
+
+Either way, the destination is `%USERPROFILE%\.claude\skills\commit\` on Windows. Claude Code picks it up automatically from there — invoke it explicitly (e.g. `/commit`) or just describe the task; Claude will use it when the description matches.
 
 **Claude Code — project-level (shared via a repo, including cloud sessions)**
 Copy the folder into that project's own `.claude/skills/` directory and commit it. Anyone working in that repo — including cloud/Cowork sessions — gets the skill automatically, with no local setup required.
@@ -65,70 +70,10 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 
 | Skill | Version | Description |
 | --- | --- | --- |
-| [`commit`](./commit) | `0.5.0-beta` | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [visibility] [name] [license] commit` to create a repo and make the first commit in one step. |
+| [`commit`](./commit) | `0.6.0-beta` | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [name] [visibility] [license] commit` to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: [`commit/README.md`](./commit/README.md). |
+| [`autonomon`](./autonomon) | `0.1.0` | Personal, always-on workflow fixes for this repo's author, not intended for general reuse. Currently: `generate file` (save generated output to a `GENERATED` folder instead of leaving it sandboxed) and `terse` (keep responses short by default). Details: [`autonomon/README.md`](./autonomon/README.md). |
 
 More skills will land here as they're written — this list grows with the repo.
-
-## Using `commit`
-
-Every way this skill can be invoked, and what happens for each:
-
-| You type | What happens |
-| --- | --- |
-| `commit` — repo exists | Runs straight through: status/diff/log → stage relevant files by name → check for secrets → draft a message → commit → push (falling back to `-u origin [branch]` if there's no upstream yet). No confirmation prompt, unless there's nothing to commit (it stops and says so) or the push is rejected (it stops rather than force-pushing). |
-| `commit` — repo exists, no remote | Won't let the push fail silently. Stops and asks whether to create a new GitHub repo or attach an existing remote URL. |
-| `commit` — no repo here | Won't silently `git init`. Stops and asks whether to create a repo in this folder, and if so, what name and visibility to use. Once you answer, it follows the same flow as `new repo` below. |
-| `new repo` (alone) | `[name]` is required and never guessed. Stops and asks for a name. |
-| `new repo commit` | Same as above — `commit` is present but `[name]` is still missing, so it stops and asks for one rather than assuming. |
-| `new repo [name]` (no `commit`) | Creates the repo — `git init` (if needed) → `gh repo create` — then stops. No commit made; you didn't ask for one. |
-| `new repo [name] commit` | Same creation, then runs the normal commit flow on top, pushing with `-u` since the remote has no commits yet. `[visibility]` defaults to `public`, `[license]` defaults to `mit`. |
-| `new repo [visibility] [name] commit` | Same, with `[visibility]` given explicitly instead of defaulted. `[license]` still defaults to `mit`. |
-| `new repo [visibility] [name] [license] commit` | Full form — nothing defaulted. Any token that isn't a recognized `public`/`private` or license keyword is treated as `[name]`; order doesn't matter. |
-| Any value that doesn't resolve cleanly | Stops and asks — an unrecognized `[visibility]`/`[license]`, an existing `origin` remote, more than one leftover token for `[name]` — nothing here is guessed. |
-
-It's the keywords that drive execution, not word position — `new repo mit my-project public commit` works exactly like the canonical order. Writing it in order (`[visibility] [name] [license] commit`) is a readability convention, not a parser requirement.
-
-Examples:
-
-```
-new repo my-project commit
-```
-Public, MIT-licensed repo named `my-project`, created from the current directory, then committed and pushed.
-
-```
-new repo private my-project apache-2.0 commit
-```
-Same, but private and Apache-2.0 licensed.
-
-### Defaults
-
-The **only** values this skill assumes without asking — everything else ambiguous or missing gets a clarifying question instead, per the blanket rule in the skill file:
-
-| Value | Assumed if not given |
-| --- | --- |
-| `[visibility]` | `public` |
-| `[license]` | `mit` |
-| Remote name | `origin` |
-| Branch to push | whichever branch is currently checked out (never switched on your behalf) |
-
-Worth being clear about where these defaults come from: `gh repo create` doesn't default visibility or license itself — run it without an explicit flag and it either prompts or errors. These are choices this skill makes for you when your phrasing leaves them out, the same choices GitHub's own website makes you pick explicitly when creating a repo by hand.
-
-> **Tip:** if you create the GitHub repo yourself via the website first, uncheck "Add a README file" and "Choose a license" unless you actually want GitHub's placeholders — otherwise they'll need reconciling with this skill's own README/LICENSE afterward.
-
-## Using `commit` with other git hosts
-
-Plain "commit" is host-agnostic — it's just `git push`, which works against any remote regardless of provider. The **only** GitHub-specific part is the `new repo` command's repo-creation step, which shells out to the GitHub CLI (`gh repo create`).
-
-| Situation | What to do |
-| --- | --- |
-| GitLab | Swap `gh repo create` for `glab repo create [name] --[visibility] --source=. --remote=origin` in the skill body — GitLab's CLI (`glab`) mirrors `gh`'s flags closely. |
-| Bitbucket, or another host without a solid CLI | Create the empty repo manually via the provider's web UI, then run `git remote add origin [url]` yourself. Plain "commit" works normally after that. |
-| `gh` not installed or not authenticated | Same fallback: create the repo manually on github.com, `git remote add origin [url]`, then "commit." |
-| Self-hosted / bare git server | Same fallback — there's no CLI to assume, so create the remote out-of-band and point `origin` at it. |
-| Existing repo with a non-`origin` remote name | The skill assumes `origin`. Run `git remote -v` first and say which remote to push to if it's named something else. |
-| SSH vs. HTTPS remote URL | Doesn't matter — `git push` behaves the same either way once `origin` is set correctly. |
-
-Once a remote named `origin` exists, on any host, "commit" behaves identically. Repo *creation* is the only part tied to GitHub.
 
 ## Contributing
 
