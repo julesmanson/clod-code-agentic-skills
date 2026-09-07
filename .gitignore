@@ -7,3 +7,7 @@ desktop.ini
 .vscode/
 *.swp
 *~
+*.code-workspace
+
+# Scratch
+skills-builder.md

@@ -105,7 +105,10 @@ would produce a different one, don't overwrite it silently — ask first.
 2. Stage only the files relevant to the request, by name — never `git add -A`
    or `git add .` — unless the user has clearly asked for everything.
 3. Check staged content for anything that looks like a secret (`.env`,
-   credentials, keys) even if the filename looks innocuous.
+   credentials, keys) even if the filename looks innocuous, and for
+   anything else that doesn't belong — scratch notes, stray editor or
+   workspace files, build artifacts, etc. If anything turns up, stop and
+   ask before continuing rather than committing it or silently dropping it.
 4. Draft a concise commit message (1-2 sentences, focused on *why* not
    *what*). First line: a general summary with just enough detail on the
    most important change to be easily told apart from other commits made
