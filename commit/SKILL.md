@@ -1,6 +1,6 @@
 ---
 name: commit
-version: 0.6.0-beta
+version: 0.5.0-beta
 description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [name] [visibility] [license] commit. This creates a new repo with the given name, visibility (public/private, default public), and license (default none, same as `gh repo create` itself), then commits. Any invalid value is confirmed with the user before creating the repo or committing.
 user-invocable: true
 allowed-tools:
@@ -8,7 +8,7 @@ allowed-tools:
   - Read
 ---
 
-# /commit — Commit and Push (v0.6.0-beta)
+# /commit — Commit and Push (v0.5.0-beta)
 
 **Never unprompted:** this skill only runs on an explicit call — the user
 says "commit," or a recognized trigger like `new repo ... commit`. Noticing

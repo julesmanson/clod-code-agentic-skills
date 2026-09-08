@@ -1,6 +1,6 @@
 # `commit`
 
-**Commit and Push** (`v0.6.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**Commit and Push** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 Commits and pushes to the appropriate GitHub repo, adaptable to other git services with minimal edits. Prompts before creating a new repo if one doesn't exist. See [`SKILL.md`](./SKILL.md) for the actual operative instructions this skill runs on — this file is a human-readable guide to the same behavior.
 

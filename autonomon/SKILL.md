@@ -1,6 +1,6 @@
 ---
 name: autonomon
-version: 0.1.0
+version: 0.5.0-beta
 description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed) and "terse" (keep responses short by default). More mini-skills land here over time.
 user-invocable: true
 allowed-tools:

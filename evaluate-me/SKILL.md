@@ -1,6 +1,6 @@
 ---
 name: evaluate-me
-version: 0.5.0
+version: 0.5.0-beta
 description: Gives the user a dead-on honest performance and competence assessment — covering project-specific technical judgment, work ethic, intelligence markers, and personality — grounded strictly in specific evidence actually observed in the conversation/session. Never flattery, never generic encouragement. Triggered by "evaluate me" / "evaluate-me" or a clear equivalent ask.
 user-invocable: true
 allowed-tools:
