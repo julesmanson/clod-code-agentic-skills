@@ -2,7 +2,7 @@
 
 **2 autonomous skills** (`v0.1.0`) — [← back to Clod Code Agentic Skills](../README.md)
 
-Personal, always-on workflow fixes for this repo's author, not intended for general reuse. None of these need a keyword to fire; every rule is autonomous. Keywords exist only for identification, and as a reminder if the behavior is ever missed. See [`SKILL.md`](./SKILL.md) for the actual operative instructions.
+Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. None of these need a keyword to fire; every rule is autonomous. Keywords exist only for identification, and as a reminder if the behavior is ever missed. See [`SKILL.md`](./SKILL.md) for the actual operative instructions.
 
 ## 1. `generate file`
 

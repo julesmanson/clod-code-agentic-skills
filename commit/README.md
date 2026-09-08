@@ -10,7 +10,7 @@ Every way this skill can be invoked, and what happens for each:
 
 | You type | What happens |
 | --- | --- |
-| `commit` — repo exists | Runs straight through: status/diff/log → stage relevant files by name → check for secrets → draft a message → commit → push (falling back to `-u origin [branch]` if there's no upstream yet). No confirmation prompt, unless there's nothing to commit (it stops and says so) or the push is rejected (it stops rather than force-pushing). |
+| `commit` — repo exists | Runs straight through: status/diff/log → stage relevant files by name → check for secrets and errant files → draft a message → commit → push (falling back to `-u origin [branch]` if there's no upstream yet). No confirmation prompt, unless there's nothing to commit (it stops and says so) or the push is rejected (it stops rather than force-pushing). |
 | `commit` — repo exists, no remote | Won't let the push fail silently. Stops and asks whether to create a new GitHub repo or attach an existing remote URL. |
 | `commit` — no repo here | Won't silently `git init`. Stops and asks whether to create a repo in this folder, and if so, what name and visibility to use. Once you answer, it follows the same flow as `new repo` below. |
 | `new repo` (alone) | `[name]` is required and never guessed. Stops and asks for a name. |
