@@ -28,6 +28,10 @@ allowed-tools:
 
 The frontmatter fields (`user-invocable`, `allowed-tools`) are Claude Code-specific — they control how the skill is triggered and what it's permitted to run. The Markdown body underneath is plain prose describing the steps to follow, which is why these skills are portable: any assistant can read and follow the instructions even if it has no concept of the frontmatter.
 
+The `evaluate-me` skill is model-agnostic. Its Markdown instructions can be
+used with any AI model or coding assistant, with only minimal edits needed
+to satisfy that assistant's skill format and tool requirements.
+
 ## Further reading
 
 - [Use Skills in Claude Code](https://code.claude.com/docs/en/skills) — official docs: discovery, invocation, `~/.claude/skills/` vs `.claude/skills/`
@@ -71,7 +75,9 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 | Skill | Version | Description |
 | --- | --- | --- |
 | [`commit`](./commit) | `0.6.0-beta` | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [name] [visibility] [license] commit` to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: [`commit/README.md`](./commit/README.md). |
-| [`autonomon`](./autonomon) | `0.1.0` | Personal, always-on workflow fixes for this repo's author, not intended for general reuse. Currently: `generate file` (save generated output to a `GENERATED` folder instead of leaving it sandboxed) and `terse` (keep responses short by default). Details: [`autonomon/README.md`](./autonomon/README.md). |
+| [`autonomon`](./autonomon) | `0.1.0` | Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. Currently: `generate file` (save generated output to a `GENERATED` folder instead of leaving it sandboxed) and `terse` (keep responses short by default). Details: [`autonomon/README.md`](./autonomon/README.md). |
+| [`thought-experiment`](./thought-experiment) | `0.1.0` | Runs a rigorous, evidence-based audit of any target — script, doc, config, whole system — by constructing concrete failure-scenario "thought experiments" and verifying every claim about a dependency's real behavior against a live source rather than memory. Triggered by the phrase "thought experiment." Details: [`thought-experiment/README.md`](./thought-experiment/README.md). |
+| [`evaluate-me`](./evaluate-me) | `0.5.0-beta` | Gives an evidence-based assessment across AI-assistant use, technical judgment, competence, work ethic, reasoning, personality, consistency, and improvement areas. Model-agnostic with minimal adaptation. |
 
 More skills will land here as they're written — this list grows with the repo.
 
