@@ -18,8 +18,6 @@ and extension, and you are given the path where it was written.
 This applies to any file type and does not require a separate confirmation.
 The `GENERATED` folder is a holding cell, so generated work stays separate
 from the rest of the project while remaining accessible in the workspace.
-The original rationale and personal-use threat model are documented in
-[`SKILL.md`](./SKILL.md).
 
 ## 2. `terse`
 
