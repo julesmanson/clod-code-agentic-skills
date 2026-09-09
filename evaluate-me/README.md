@@ -119,6 +119,10 @@ metadata such as `user-invocable` and `allowed-tools` may need to be changed.
   generated files and concise responses.
 - [`commit`](../commit) handles repository commits and pushes.
 
+## Disclaimer
+
+Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
 ---
 
 [Back to Clod Code Agentic Skills](../README.md) | [Read the operating definition](./SKILL.md)

@@ -85,6 +85,10 @@ More skills will land here as they're written — this list grows with the repo.
 
 This is a personal, evolving collection, but it's public because it might be useful to someone else. Issues and pull requests are welcome — whether that's a fix to an existing skill, a suggestion, or a new one that fits the same format.
 
+## Disclaimer
+
+Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
 ## License
 
 [MIT](./LICENSE)

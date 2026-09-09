@@ -118,5 +118,9 @@ Swap `gh repo create` for `glab repo create [name] --[visibility] --remoteName=o
 - The remote-name flag is `--remoteName`, not `--remote`.
 - Visibility flags (`--public`/`--private`) match `gh`'s naming, but `glab repo create` has no `--license` flag at all — the license step has no GitLab equivalent. Add a `LICENSE` file yourself if you need one.
 
+## Disclaimer
+
+Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
 ---
 [← back to Clod Code Agentic Skills](../README.md)
