@@ -2,26 +2,29 @@
 
 **Commit and Push** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
-Commits and pushes to the appropriate GitHub repo, adaptable to other git services with minimal edits. Prompts before creating a new repo if one doesn't exist. See [`SKILL.md`](./SKILL.md) for the actual operative instructions this skill runs on — this file is a human-readable guide to the same behavior.
+When you explicitly ask for a commit, this skill commits and pushes the
+appropriate changes to the configured remote. It can be adapted to other Git
+services with minimal edits. If you ask to create a repository that does not
+exist, you are prompted for the missing decisions first. See
+[`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
-## Using `commit`
+## What to expect
 
 Every way this skill can be invoked, and what happens for each:
 
 | You type | What happens |
 | --- | --- |
-| `commit` — repo exists | Runs straight through: status/diff/log → stage relevant files by name → check for secrets and errant files → draft a message → commit → push (falling back to `-u origin [branch]` if there's no upstream yet). No confirmation prompt, unless there's nothing to commit (it stops and says so) or the push is rejected (it stops rather than force-pushing). |
-| `commit` — repo exists, no remote | Won't let the push fail silently. Stops and asks whether to create a new GitHub repo or attach an existing remote URL. |
-| `commit` — no repo here | Won't silently `git init`. Stops and asks whether to create a repo in this folder, and if so, what name and visibility to use. Once you answer, it follows the same flow as `new repo` below. |
-| `new repo` (alone) | `[name]` is required and never guessed. Stops and asks for a name. |
-| `new repo commit` | Same as above — `commit` is present but `[name]` is still missing, so it stops and asks for one rather than assuming. |
-| `new repo [name]` (no `commit`) | Creates the repo — `git init` (if needed) → `gh repo create` — then stops. No commit made; you didn't ask for one. |
-| `new repo [name] commit` | Same creation, then runs the normal commit flow on top, pushing with `-u` since the remote has no commits yet. `[visibility]` defaults to `public`, `[license]` defaults to `none`. |
-| `new repo [name] [visibility] commit` | Same, with `[visibility]` given explicitly instead of defaulted. `[license]` still defaults to `none`. |
-| `new repo [name] [visibility] [license] commit` | Full form — nothing defaulted. `[visibility]` and `[license]` are recognized by keyword wherever they appear; whatever's left is `[name]`. |
-| Any value that doesn't resolve cleanly | Stops and asks — an unrecognized `[visibility]`/`[license]`, an existing `origin` remote, more than one leftover token for `[name]` — nothing here is guessed. |
+| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it. If there is no upstream, the branch is set up with `-u`. An empty repository state or rejected push is reported instead of being forced through. |
+| `commit` — repo exists, no remote | You are asked whether to create a new GitHub repository or attach an existing remote. |
+| `commit` — no repo here | You are asked whether to initialize this folder, and for the repository name and visibility. |
+| `new repo` or `new repo commit` | You are asked for the required repository name rather than having one guessed. |
+| `new repo [name]` | The repository is created, but no commit is made because you did not include `commit`. |
+| `new repo [name] commit` | The repository is created and the normal commit-and-push process follows. |
+| `new repo [name] [visibility] [license] commit` | The repository is created with the specified options, then committed and pushed. |
+| An ambiguous or unrecognized value | You are asked to clarify it rather than having the choice guessed. |
 
-Never runs unprompted, either — see the **Never unprompted** rule at the top of [`SKILL.md`](./SKILL.md). Claude may ask "want me to commit this?" but won't stage, commit, or push without an explicit "commit" call landing first.
+Nothing is staged, committed, or pushed merely because a good moment is
+noticed. You must explicitly say `commit` before those actions occur.
 
 Examples:
 
@@ -37,7 +40,8 @@ Same, but private and Apache-2.0 licensed.
 
 ### Defaults
 
-The **only** values this skill assumes without asking — everything else ambiguous or missing gets a clarifying question instead, per the blanket rule in the skill file:
+The following are the only values supplied automatically when you leave them
+out. Ambiguous or missing values outside this list prompt a question:
 
 | Value | Assumed if not given |
 | --- | --- |
@@ -46,22 +50,26 @@ The **only** values this skill assumes without asking — everything else ambigu
 | Remote name | `origin` |
 | Branch to push | whichever branch is currently checked out (never switched on your behalf) |
 
-`gh repo create` doesn't set a visibility itself — run it without an explicit flag and it prompts in an interactive terminal, or errors outright when run non-interactively (which is how this skill runs it) — either way, it never silently assumes one. `[visibility]` defaulting to `public` is this skill's own choice when your phrasing leaves it out, the same choice GitHub's own website makes you pick explicitly when creating a repo by hand. `[license]` defaulting to `none` isn't this skill choosing anything — it's just `gh`'s own default carried straight through.
+When creating a repository, visibility defaults to `public` and license to
+`none`. The remote defaults to `origin`, and the currently checked-out branch
+is used without switching branches for you.
 
 > **Tip:** if you create the GitHub repo yourself via the website first, uncheck "Add a README file" and "Choose a license" unless you actually want GitHub's placeholders — otherwise they'll need reconciling with this skill's own README/LICENSE afterward.
 
 ## Using `commit` with other git hosts
 
-Plain "commit" is host-agnostic — it's just `git push`, which works against any remote regardless of provider. The **only** GitHub-specific part is the `new repo` command's repo-creation step, which shells out to the GitHub CLI (`gh repo create`).
+The ordinary `commit` workflow works with any Git remote. Only repository
+creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
 
 | Situation | What to do |
 | --- | --- |
-| GitLab | See **Adapting to GitLab** below — `glab`'s flags don't map 1:1 onto `gh`'s. |
-| No CLI available (Bitbucket, self-hosted/bare server, or `gh` not installed/authenticated) | Create the empty repo manually — via the host's web UI, or out-of-band for a bare server — then run `git remote add origin [url]` yourself. Plain "commit" works normally after that. |
-| Existing repo with a non-`origin` remote name | The skill assumes `origin`. Run `git remote -v` first and say which remote to push to if it's named something else. |
-| SSH vs. HTTPS remote URL | Doesn't matter — `git push` behaves the same either way once `origin` is set correctly. |
+| GitLab | Use the GitLab adaptation below; its CLI flags are not identical to GitHub's. |
+| No CLI available | Create the empty repository through the host's web interface or other supported method, then add its remote URL. The ordinary commit workflow still works. |
+| A remote is not named `origin` | Tell the skill which remote to use. |
+| SSH versus HTTPS | Either works once the remote is configured correctly. |
 
-Once a remote named `origin` exists, on any host, "commit" behaves identically. Repo *creation* is the only part tied to GitHub.
+Once the remote is configured, `commit` behaves the same across hosts.
+Repository creation is the only GitHub-specific part.
 
 ### Adapting to GitLab
 

@@ -39,7 +39,7 @@ to satisfy that assistant's skill format and tool requirements.
 
 ## Repository structure
 
-Each skill lives in its own folder, named after the skill, containing a `SKILL.md` (the operative instructions) and a `README.md` (a human-readable guide to the same behavior, with a link back here):
+Each skill lives in its own folder, named after the skill, containing a `SKILL.md` (the complete behavior definition) and a `README.md` (a human-readable guide to the same behavior, with a link back here):
 
 ```
 skill-name/

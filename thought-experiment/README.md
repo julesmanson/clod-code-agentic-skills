@@ -2,11 +2,19 @@
 
 **Rigorous Failure-Scenario Audits** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
-Runs a rigorous, evidence-based audit of a target — a script, a doc, a config, a whole repo, an enterprise-grade cloud setup, anything — by constructing concrete failure-scenario "thought experiments" and verifying every claim the target makes about a dependency's behavior against a live/authoritative source rather than memory. See [`SKILL.md`](./SKILL.md) for the actual operative instructions this skill runs on — this file is a human-readable guide to the same behavior.
+Use this skill for a rigorous, evidence-based audit of a script, document,
+configuration, repository, cloud setup, or other target. It constructs
+concrete failure scenarios and checks claims about dependencies against live
+or authoritative sources instead of relying on memory. See
+[`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
 ## Where this came from
 
-This started as an ad-hoc audit process run against this repo's own `commit` skill: reading the docs fresh, inventing concrete "how could this actually break" scenarios, and — critically — checking claims about `gh`'s and `glab`'s real CLI behavior and GitHub's real license-template list against live sources instead of trusting memory. That last part caught two genuine, previously-undetected bugs (a fabricated `isc` license key, wrong `glab` flag names) that a normal read-through review had missed. This skill generalizes that process to any target.
+This grew from an audit of this repository's `commit` skill. That audit
+checked concrete break scenarios and verified `gh`, `glab`, and GitHub license
+claims against live sources. It caught two genuine bugs that an ordinary
+read-through missed: a fabricated `isc` license key and incorrect `glab` flag
+names. This skill generalizes that process to any target.
 
 ## How it's different from a normal review
 
@@ -19,7 +27,11 @@ Two things set it apart:
 
 Say "thought experiment," or something equivalent ("find failure scenarios," "stress-test this," "leave no stone unturned"), naming the target. It never runs without both an explicit ask and a clear target.
 
-There's no fixed number of scenarios or passes — the process runs: read the target fresh → list its dependencies → construct failure scenarios → verify dependency claims live → fix confirmed issues → re-run the whole thing against the fixed state, until a pass turns up nothing new. Reports stay short (pass/fail) unless something failed or detail is asked for.
+There is no fixed number of scenarios or passes. Expect a fresh reading of
+the target, a dependency inventory, concrete failure scenarios, live checks of
+outside claims, fixes for confirmed issues, and a repeat audit until a pass
+turns up nothing new. Reports stay short and use pass/fail findings unless a
+failure or additional detail needs explanation.
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

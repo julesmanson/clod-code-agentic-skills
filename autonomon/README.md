@@ -2,17 +2,31 @@
 
 **2 autonomous skills** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
-Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. None of these need a keyword to fire; every rule is autonomous. Keywords exist only for identification, and as a reminder if the behavior is ever missed. See [`SKILL.md`](./SKILL.md) for the actual operative instructions.
+Personal, always-on workflow fixes for this repo's author, originally
+intended for personal use and now open to anyone who finds them useful. You
+do not need to type a keyword to activate either behavior; the rules operate
+automatically. The keywords are names for the behaviors and reminders in
+case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
 ## 1. `generate file`
 
-When generating any file that would otherwise only exist in a sandboxed preview (e.g. an artifact) and never land on disk, also write it to disk: create a `GENERATED` folder at the project root if it doesn't exist, save the file there under its real name and extension, and report the path.
+When you ask for a file that might otherwise appear only in a sandboxed
+preview, expect it to be written to a `GENERATED` folder at the project root.
+If the folder does not exist, it is created. The file keeps its real name
+and extension, and you are given the path where it was written.
 
-This runs without asking first, for any file type — not just client-side web files. The reasoning (full version in `SKILL.md`): `GENERATED` is itself a holding cell, so routing every file type through it adds no real risk; the author's actual work is client-side web dev with no compile step; worst case is losing about an hour of work given roughly-hourly git commits; and the author already grants full permissions across their whole Claude ecosystem, so a file-extension filter would be a smaller, redundant safeguard sitting inside a much bigger trust grant.
+This applies to any file type and does not require a separate confirmation.
+The `GENERATED` folder is a holding cell, so generated work stays separate
+from the rest of the project while remaining accessible in the workspace.
+The original rationale and personal-use threat model are documented in
+[`SKILL.md`](./SKILL.md).
 
 ## 2. `terse`
 
-Keep answers short by default — no preamble, no restating the request, no trailing summary. Expand only when the missing detail would be a real point of failure (genuine ambiguity, an irreversible action, a nuance needed to decide something correctly), or when explicitly asked for a detailed answer.
+Expect short answers by default: no unnecessary preamble, repetition, or
+trailing summary. More detail is appropriate when leaving it out could cause
+a real failure, when a decision is irreversible, or when you ask for a full
+explanation.
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)
