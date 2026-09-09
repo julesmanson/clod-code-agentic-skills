@@ -26,6 +26,45 @@ Every way this skill can be invoked, and what happens for each:
 Nothing is staged, committed, or pushed merely because a good moment is
 noticed. You must explicitly say `commit` before those actions occur.
 
+## Asymmetric folder structures
+
+The formal `commit` command does not have built-in `from`/`to` path-mapping
+syntax. However, an AI assistant can still be expected to interpret a clear
+user command with a trailing `from` source and `to` destination instruction.
+If a skill lives outside the repository, such as
+`skills-workspace/new-skill/`, and you want it published at the repository
+root as `new-skill/`, give an explicit instruction such as:
+
+```text
+Commit from skills-workspace/new-skill to the repository root as new-skill.
+```
+
+With that additional instruction, the skill can copy the source into the
+requested repository destination, verify the destination, and then run the
+normal commit-and-push workflow. The source remains outside the repository;
+the copied destination is what gets staged. An existing destination should
+be identified before it is overwritten.
+
+### The pass before action
+
+For an asymmetric publish, you can request a **pass** before anything is
+copied or staged. A pass is a deliberate validation pause that confirms the
+source, destination, overwrite risk, and files that would be staged. It is a
+checkpoint for reviewing the plan before the commit-and-push work begins.
+
+For example, a request might be phrased like this:
+
+```text
+Pass first: interpret this as copying from
+skills-workspace/new-skill to the repository root as new-skill.
+Show me the source, destination, overwrite risk, and proposed staged files.
+Do not copy, stage, commit, or push until I approve the pass.
+```
+
+This is an example of a user instruction, not a hardcoded `commit` command
+or a new syntax built into the skill. The exact wording can vary as long as
+the requested validation pause and its boundaries are clear.
+
 Examples:
 
 ```
