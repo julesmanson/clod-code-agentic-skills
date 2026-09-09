@@ -21,7 +21,7 @@ names. This skill generalizes that process to any target.
 Two things set it apart:
 
 1. **Concrete scenarios, not vague suggestions.** Every finding takes the shape "given this input or state, here's exactly what breaks and why" — not "this could be cleaner."
-2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. This skill specifically also enumerates what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, whatever ground truth it assumes about the outside world — and verifies those claims against a live source. That's where the highest-value findings tend to be, because they're the easiest to get subtly wrong from memory and the hardest to catch just by reading the target itself.
+2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone.
 
 ## Using it
 

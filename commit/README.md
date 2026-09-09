@@ -39,11 +39,11 @@ root as `new-skill/`, give an explicit instruction such as:
 Commit from skills-workspace/new-skill to the repository root as new-skill.
 ```
 
-With that additional instruction, the skill can copy the source into the
-requested repository destination, verify the destination, and then run the
-normal commit-and-push workflow. The source remains outside the repository;
-the copied destination is what gets staged. An existing destination should
-be identified before it is overwritten.
+With that additional instruction, the source is copied into the requested
+repository destination, verified, and then handled through the normal
+commit-and-push workflow. The source remains outside the repository; the
+copied destination is what gets staged. You are asked to identify an
+existing destination before it is overwritten.
 
 ### The pass before action
 
@@ -104,7 +104,7 @@ creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
 | --- | --- |
 | GitLab | Use the GitLab adaptation below; its CLI flags are not identical to GitHub's. |
 | No CLI available | Create the empty repository through the host's web interface or other supported method, then add its remote URL. The ordinary commit workflow still works. |
-| A remote is not named `origin` | Tell the skill which remote to use. |
+| A remote is not named `origin` | Specify which remote to use. |
 | SSH versus HTTPS | Either works once the remote is configured correctly. |
 
 Once the remote is configured, `commit` behaves the same across hosts.
@@ -112,7 +112,10 @@ Repository creation is the only GitHub-specific part.
 
 ### Adapting to GitLab
 
-Swap `gh repo create` for `glab repo create [name] --[visibility] --remoteName=origin` in the skill body, run from inside the already-`git init`'d directory. Three real differences from `gh`, not just a naming swap:
+If you are adapting this skill for GitLab, replace `gh repo create` with
+`glab repo create [name] --[visibility] --remoteName=origin` and run it from
+inside the already-`git init`'d directory. Three real differences from
+`gh`, not just a naming swap:
 
 - No `--source` flag — running from the current directory (or omitting `[name]` to use the folder name) is `glab`'s equivalent of `gh`'s `--source=.`.
 - The remote-name flag is `--remoteName`, not `--remote`.

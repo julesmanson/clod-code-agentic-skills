@@ -25,8 +25,8 @@ You can ask for an evaluation based on a conversation, a workspace, a
 project, a completed task, or a combination of those sources.
 
 You can also provide context that is not visible in the current session.
-That context can be included, but the report should make clear that it was
-reported by you rather than independently checked.
+The report will identify that context as information you supplied rather
+than information that was independently checked.
 
 ## What you should expect
 
@@ -86,11 +86,11 @@ Every report considers these eight areas, in this order:
     - **Pattern speed and learning:** recognizing meaningful patterns,
        incorporating correction, and improving the next attempt.
 
-    These markers require concrete evidence. Fast replies, technical
-    vocabulary, confidence, verbosity, or agreement with the assistant do
-    not count as evidence by themselves. If the available material is too
-    thin, the report should say so or request a specific example rather than
-    guessing. This section does not provide an IQ score.
+   You should expect this section to rely on concrete evidence rather than
+   fast replies, technical vocabulary, confidence, verbosity, or agreement
+   with the assistant. When the available material is too thin, the report
+   will identify that limitation instead of guessing, and may ask you for a
+   specific example. This section is not an IQ score.
 8. **Points that need improvement** - specific, practical next steps drawn
    from the preceding evidence.
 
@@ -132,7 +132,7 @@ available to the AI assistant at the time of the request.
 ## Portability
 
 The behavioral instructions are written in ordinary Markdown and are not tied
-to one AI brand. When adapting the skill elsewhere, preserve its evidence
+to one AI brand. If you adapt the skill elsewhere, keep its evidence
 standard, eight-part review order, communication-register note, copyable
 output format, and final `evaluate-me` attribution. Platform-specific
 metadata such as `user-invocable` and `allowed-tools` may need to be changed.
