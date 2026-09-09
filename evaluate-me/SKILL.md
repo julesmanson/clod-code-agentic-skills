@@ -77,19 +77,50 @@ uncomfortable (rule 3 above).
    and whether stated standards (e.g. "always verify," "commit often")
    actually get followed under pressure or fatigue, not just when
    convenient.
-5. **Markers of higher intelligence.** Fluid reasoning, cross-domain
-   synthesis, metacognition, and the ability to model or predict another
-   party's (including the assistant's) reasoning in advance. *On IQ: no
-   standardized test happened here, so no score is coming. What session
-   evidence can loosely support, when it's actually there, is a read on
-   fluid reasoning, pattern speed, and cross-domain synthesis — real
-   signal, just not a number.*
-6. **Personality.** Communication style, humor, self-awareness, and how
-   they respond to being corrected versus being praised.
-7. **Consistency between stated principles and actual behavior.**
+5. **Consistency between stated principles and actual behavior.**
    *(Added per the skill's own ground rules — this is the check that
    keeps the other six honest: do the values the user says they hold
    actually show up in what they did, or only in what they said?)*
+6. **Personality.** Communication style, humor, self-awareness, and how
+   they respond to being corrected versus being praised.
+7. **Markers of higher intelligence.** Look for evidence of reasoning
+    quality rather than status, vocabulary, or confidence. Consider:
+
+    - **Novel problem solving:** forming a useful approach when no
+       memorized procedure is available.
+    - **Abstraction:** identifying the underlying structure of a problem
+       instead of reacting only to its surface details.
+    - **Transfer:** applying a principle learned in one context to a new
+       context without forcing a superficial analogy.
+    - **Fluid reasoning:** comparing possibilities, updating beliefs, and
+       drawing valid conclusions from incomplete information.
+    - **Counterfactual reasoning:** anticipating what would change if an
+       assumption, constraint, or input changed.
+    - **Prediction and mental modeling:** anticipating another party's,
+       including the assistant's, likely reasoning, errors, or next move.
+    - **Metacognition:** recognizing the limits of one's knowledge,
+       noticing one's own reasoning errors, and choosing an appropriate
+       way to verify them.
+    - **Cross-domain synthesis:** combining ideas from different fields
+       to produce a more accurate or useful model of the problem.
+    - **Compression and explanation:** reducing a complex issue to a
+       clear model without dropping the details that control the outcome.
+    - **Pattern speed and learning:** recognizing a meaningful pattern,
+       incorporating correction, and improving the next attempt.
+
+    Weigh these only when the session provides concrete evidence, such as
+    an original analogy that predicts behavior, a correction to a faulty
+    assumption, a successful transfer of a method, or a well-calibrated
+    explanation of uncertainty. Do not treat fast replies, technical
+    vocabulary, confidence, verbosity, or agreement with the assistant as
+    evidence by themselves. If this lens cannot be assessed fairly from
+    the available material, say so. When useful evidence may exist outside
+    the visible session, ask for a specific example rather than guessing.
+
+    *On IQ: no standardized test happened here, so no score is coming.
+    What session evidence can loosely support, when it is actually there,
+    is a read on reasoning quality, pattern recognition, learning, and
+    cross-domain synthesis — real signal, just not a number.*
 8. **Points that need improvement.** Distinct from points of contention
    (rule 3, which is about naming what already went wrong) — this is
    forward-looking: specific, actionable things worth actually working on
@@ -127,14 +158,13 @@ vary invocation to invocation:
 
 1. **A heading at the top** naming what this is (e.g. `# Evaluation`), so
    it's identifiable at a glance.
-2. **The whole evaluation delivered as a single copyable block** — one
-   fenced code block containing the full output, so it can be copied and
-   shared in one action rather than piecemeal. Hard-wrap every paragraph
-   and list item at roughly 72 characters; never put a whole paragraph on
-   one physical line. This is required because fenced blocks commonly
-   preserve horizontal overflow instead of wrapping. (Trade-off worth
-   naming: this sacrifices rich Markdown rendering — bold, headers —
-   inside the block itself, in exchange for the one-click copy affordance.)
+2. **The whole evaluation delivered as one complete response** inside a
+   single fenced code block so the interface provides a copy control. Keep
+   each numbered review point and all of its supporting text together as one
+   intact section. Hard-wrap every paragraph and list item at no more than
+   72 characters. Never place a whole paragraph on one physical line. The
+   copyable block must remain readable even when the interface does not
+   wrap preformatted text.
 3. **Order inside that block:** heading, then points of review 1–8,
    then the communication register closing note, then the attribution
    line — in that order, always.

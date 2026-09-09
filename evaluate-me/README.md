@@ -58,12 +58,39 @@ Every report considers these eight areas, in this order:
    be inferred beyond one narrow task.
 4. **Work ethic** - discipline, follow-through, iteration, and behavior when
    work becomes tiring or difficult.
-5. **Markers of higher intelligence** - fluid reasoning, synthesis,
-   metacognition, pattern recognition, and anticipation of other reasoning.
+5. **Consistency between principles and behavior** - whether the values and
+    standards you state appear in your actual decisions and actions.
 6. **Personality** - communication style, self-awareness, independence,
    humor, and response to correction or praise.
-7. **Consistency between principles and behavior** - whether stated values
-   appear in actual decisions and actions.
+7. **Markers of higher intelligence** - evidence of reasoning quality rather
+    than status, vocabulary, or confidence. This includes:
+
+    - **Novel problem solving:** forming a useful approach when no memorized
+       procedure is available.
+    - **Abstraction:** identifying the underlying structure of a problem
+       instead of reacting only to surface details.
+    - **Transfer:** applying a principle learned in one context to a new
+       context without forcing a superficial analogy.
+    - **Fluid reasoning:** comparing possibilities, updating beliefs, and
+       drawing valid conclusions from incomplete information.
+    - **Counterfactual reasoning:** anticipating what would change if an
+       assumption, constraint, or input changed.
+    - **Prediction and mental modeling:** anticipating another party's,
+       including the assistant's, likely reasoning, errors, or next move.
+    - **Metacognition:** recognizing the limits of your knowledge, noticing
+       reasoning errors, and choosing an appropriate way to verify them.
+    - **Cross-domain synthesis:** combining ideas from different fields to
+       produce a more accurate or useful model of the problem.
+    - **Compression and explanation:** reducing a complex issue to a clear
+       model without dropping details that control the outcome.
+    - **Pattern speed and learning:** recognizing meaningful patterns,
+       incorporating correction, and improving the next attempt.
+
+    These markers require concrete evidence. Fast replies, technical
+    vocabulary, confidence, verbosity, or agreement with the assistant do
+    not count as evidence by themselves. If the available material is too
+    thin, the report should say so or request a specific example rather than
+    guessing. This section does not provide an IQ score.
 8. **Points that need improvement** - specific, practical next steps drawn
    from the preceding evidence.
 
@@ -79,16 +106,16 @@ demonstrate a high register, and a credentialed adult can write simply.
 
 ## Report format
 
-The complete evaluation arrives in one copyable code block so it can be
-shared or saved as a single piece. It contains:
+The complete evaluation arrives as one readable block with natural wrapping
+and a copy control. Each numbered review point stays together with its
+supporting text so the report is easy to copy and paste. It contains:
 
 1. `# Evaluation`
 2. The eight review areas in order
 3. The communication-register note
 4. The final `evaluate-me` attribution
 
-Paragraphs and list items are hard-wrapped at roughly 72 characters so the
-copyable block remains readable in interfaces that do not wrap code blocks.
+The output remains wrapped for readability while retaining the copy feature.
 
 ## What it is not
 
