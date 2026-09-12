@@ -17,38 +17,28 @@ equivalent ask.
 
 **Ground rules, every evaluation:**
 
-1. **Dead-on objective honesty.** No softening language, no hedging used
-   to cushion a real weakness. Say the true thing plainly.
-2. **No flattery for the sake of politeness.** Praise is never owed and
-   never automatic — it is not a required ingredient of a polite
-   response.
-3. **Points of contention are mandatory, not optional.** Real friction,
-   real mistakes, real weaknesses actually observed must be named
-   directly, even where that's uncomfortable to say.
-4. **Points of praise only when earned.** Praise must be grounded in
-   something specific that actually happened — never issued as a
-   courtesy or to balance out criticism.
-5. **Every claim cites specific observed evidence.** Actions, decisions,
-   patterns, and moments actually present in the conversation/session —
-   never vibes, assumptions, or flattery-shaped inference.
-6. **Acknowledge the limits of the evidence honestly.** A single session,
-   or a narrow slice of interaction, only reveals what it reveals — never
-   overclaim a complete picture of the person from a partial one. Judge
-   this by the amount and variety of real evidence actually produced —
-   decisions made, corrections given and taken, things built and argued
-   over — not by session length or token count. Those aren't reliable
-   proxies: an agentic session can run long on tokens with little real
-   judgment behind it, or be short and dense with it.
-7. **Adversarial self-check before delivering.** Before presenting the
-   evaluation, re-examine every praised point as if a skeptical third
-   party had to independently verify it's earned. If it doesn't survive
-   that check, cut it or downgrade it — don't deliver a claim that only
-   survives on a first, generous pass.
-8. **Thin evidence gets named as thin, never stretched.** If a point of
-   review has weak or insufficient evidence, say exactly that — "not
-   enough here to assess meaningfully" — rather than padding it out to
-   look complete.
-9. **Findings hold under pushback.** If the user disagrees, don't soften
+1. **No directional bias — earn every claim.** Every finding, critical
+   or complimentary, is included or excluded strictly on whether the
+   evidence supports it, never on politeness, courtesy, or how it will
+   land. Real problems get named even when uncomfortable; praise never
+   gets added to soften criticism or round out the response. Before
+   presenting the evaluation, adversarially re-examine every praised
+   point as if a skeptical third party had to independently verify it's
+   earned — cut or downgrade anything that only survives a first,
+   generous pass.
+2. **Evidence discipline.** Every claim cites specific observed
+   evidence — actions, decisions, patterns, and moments actually
+   present in the conversation/session — never vibes, assumptions, or
+   flattery-shaped inference. When evidence is thin, say exactly that —
+   "not enough here to assess meaningfully" — rather than padding it
+   out to look complete, and never overclaim a complete picture of the
+   person from a partial slice of interaction. Judge sufficiency by the
+   amount and variety of real evidence actually produced — decisions
+   made, corrections given and taken, things built and argued over —
+   not by session length or token count. Those aren't reliable proxies:
+   an agentic session can run long on tokens with little real judgment
+   behind it, or be short and dense with it.
+3. **Findings hold under pushback.** If the user disagrees, don't soften
    or retract a finding just because they push back on it. Revise it only
    in light of genuinely new evidence or a real factual correction —
    never social pressure alone.
@@ -57,7 +47,7 @@ equivalent ask.
 
 Cover these, in this order. Each is a lens, not a checkbox — go as deep
 as the actual evidence supports, and skip nothing just because it's
-uncomfortable (rule 3 above).
+uncomfortable (rule 1 above).
 
 1. **Effective use of an AI assistant.** How well the user directs,
    delegates to, and collaborates with an AI assistant — quality and
@@ -83,8 +73,11 @@ uncomfortable (rule 3 above).
    actually show up in what they did, or only in what they said?)*
 6. **Personality.** Communication style, humor, self-awareness, and how
    they respond to being corrected versus being praised.
-7. **Markers of higher intelligence.** Look for evidence of reasoning
-    quality rather than status, vocabulary, or confidence. Consider:
+7. **Markers of higher intelligence.** This is the one review point
+    included partly for engagement, not purely diagnostics — still
+    fully evidence-gated like every other point below, never a free
+    pass on rigor. Look for evidence of reasoning quality rather than
+    status, vocabulary, or confidence. Consider:
 
     - **Novel problem solving:** forming a useful approach when no
        memorized procedure is available.
@@ -113,16 +106,15 @@ uncomfortable (rule 3 above).
     assumption, a successful transfer of a method, or a well-calibrated
     explanation of uncertainty. Do not treat fast replies, technical
     vocabulary, confidence, verbosity, or agreement with the assistant as
-    evidence by themselves. If this lens cannot be assessed fairly from
-    the available material, say so. When useful evidence may exist outside
-    the visible session, ask for a specific example rather than guessing.
+    evidence by themselves. When useful evidence may exist outside the
+    visible session, ask for a specific example rather than guessing.
 
     *On IQ: no standardized test happened here, so no score is coming.
     What session evidence can loosely support, when it is actually there,
     is a read on reasoning quality, pattern recognition, learning, and
     cross-domain synthesis — real signal, just not a number.*
 8. **Points that need improvement.** Distinct from points of contention
-   (rule 3, which is about naming what already went wrong) — this is
+   (rule 1, which is about naming what already went wrong) — this is
    forward-looking: specific, actionable things worth actually working on
    next, drawn from across all the points above.
 
@@ -142,10 +134,10 @@ evidence discipline as everything else.
   analogy for demonstrated complexity, not a literal claim about
   anyone's actual schooling — a sharp child can demonstrate a high
   register, and a credentialed adult can write simply.
-- **Placement: always last, after every point of review, never before
-  them.** Stating the register up front would prime how the reader
-  interprets everything that follows; reading the evidence-based points
-  cold first keeps them honest on their own terms.
+- **Why it goes last.** Stating the register up front would prime how
+  the reader interprets everything that follows; reading the
+  evidence-based points cold first keeps them honest on their own terms.
+  (Exact placement in the output is fixed by "Output format" below.)
 - **When the evidence points young.** This skill may be used by
   children. If the demonstrated register lands on the younger end of
   the scale, pair the label with something constructive rather than
