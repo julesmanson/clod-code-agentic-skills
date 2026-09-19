@@ -1,7 +1,7 @@
 ---
 name: thought-experiment
 version: 0.5.0-beta
-description: Runs a rigorous, evidence-based audit of a target — a script, a doc, a config, a whole repo, an enterprise cloud setup, anything — by constructing concrete failure-scenario "thought experiments" and verifying every claim the target makes about a dependency's behavior against a live/authoritative source rather than memory. Applies fixes for confirmed findings, then re-runs the same audit against the fixed state to catch regressions. Triggered by the phrase "thought experiment." Iteration count is open-ended.
+description: Runs a rigorous, evidence-based audit of a target — a script, a doc, a config, a whole project, an enterprise cloud setup, anything — by constructing concrete failure-scenario "thought experiments" and verifying every claim the target makes about a dependency's behavior against a live/authoritative source rather than memory. Applies fixes for confirmed findings, then re-runs the same audit against the fixed state to catch regressions. Triggered by the phrase "thought experiment." Iteration count is open-ended.
 user-invocable: true
 allowed-tools:
   - Read
@@ -21,7 +21,7 @@ allowed-tools:
 unturned"). Never runs without an explicit ask and a clear target — this
 is deliberate, not autonomous.
 
-**Scope:** target-agnostic. A single file, a whole repo, a config, an API
+**Scope:** target-agnostic. A single file, a whole project, a config, an API
 contract, an infrastructure setup — anything that makes claims (about its
 own behavior, its structure, or about something it depends on) that could
 be wrong.
@@ -46,7 +46,11 @@ caught by reading the target's own logic.
    DNS, certs, third-party APIs, network paths; for a document — every
    factual claim it makes about how something else behaves. Build this
    list deliberately — step 4 verifies it, and a skipped dependency is a
-   skipped chance to catch a real bug.
+   skipped chance to catch a real bug. When the target is headed to
+   deployment specifically, also check: rollback safety, dev/prod config
+   parity, secrets handling, the stated compatibility baseline, and
+   first-load/real-condition performance versus dev-only testing — these
+   don't always surface from a purely generic dependency scan.
 3. **Construct concrete failure-scenario thought experiments.** Specific
    inputs or states that lead to a specific wrong output, crash, or
    security hole — not general impressions. Don't fix a scenario count in
@@ -64,4 +68,7 @@ caught by reading the target's own logic.
    nothing new.
 7. **Report.** State each scenario's pass/fail plainly. Give full detail
    only for confirmed failures, or when detail is explicitly asked for —
-   a clean pass doesn't need an essay written about it.
+   a clean pass doesn't need an essay written about it. Tag each failure
+   as blocking (must fix before deploy/ship) or non-blocking (safe to
+   ship, fix after) so the report doubles as a go/no-go input, not just
+   a findings list.

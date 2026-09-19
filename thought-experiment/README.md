@@ -3,7 +3,7 @@
 **Rigorous Failure-Scenario Audits** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 Use this skill for a rigorous, evidence-based audit of a script, document,
-configuration, repository, cloud setup, or other target. It constructs
+configuration, project, cloud setup, or other target. It constructs
 concrete failure scenarios and checks claims about dependencies against live
 or authoritative sources instead of relying on memory. See
 [`SKILL.md`](./SKILL.md) for the complete behavior definition.
@@ -21,7 +21,7 @@ names. This skill generalizes that process to any target.
 Two things set it apart:
 
 1. **Concrete scenarios, not vague suggestions.** Every finding takes the shape "given this input or state, here's exactly what breaks and why" — not "this could be cleaner."
-2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone.
+2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone. When the target is headed to deployment, the dependency pass also covers rollback safety, dev/prod config parity, secrets handling, the stated compatibility baseline, and real-condition performance versus dev-only testing.
 
 ## Using it
 
@@ -31,7 +31,8 @@ There is no fixed number of scenarios or passes. Expect a fresh reading of
 the target, a dependency inventory, concrete failure scenarios, live checks of
 outside claims, fixes for confirmed issues, and a repeat audit until a pass
 turns up nothing new. Reports stay short and use pass/fail findings unless a
-failure or additional detail needs explanation.
+failure or additional detail needs explanation, and each failure is tagged
+blocking or non-blocking so the report can double as a go/no-go input.
 
 ## Disclaimer
 
