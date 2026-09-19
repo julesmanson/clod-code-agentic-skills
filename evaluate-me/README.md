@@ -41,10 +41,10 @@ The report distinguishes among:
 - **Reported:** information you supplied that was not independently visible.
 - **Unknown:** an area for which the available evidence is too thin.
 
-This prevents a short session from being inflated into a complete judgment
-and prevents missing evidence from being mistaken for evidence of failure.
-A dense session with real decisions and corrections can be more informative
-than a long session with little meaningful work.
+A short, evidence-light session is judged as exactly that, not stretched
+into more than it shows. A dense session with real decisions and
+corrections can be more informative than a long session with little
+meaningful work.
 
 ## What the report covers
 
@@ -60,8 +60,8 @@ Every report considers these eight areas, in this order:
    work becomes tiring or difficult.
 5. **Consistency between principles and behavior** - whether the values and
     standards you state appear in your actual decisions and actions.
-6. **Personality** - communication style, self-awareness, independence,
-   humor, and response to correction or praise.
+6. **Personality** - communication style, humor, temper, warmth, patience,
+   self-awareness, independence, and response to correction or praise.
 7. **Markers of higher intelligence** - evidence of reasoning quality rather
     than status, vocabulary, or confidence. This includes:
 
@@ -91,8 +91,8 @@ Every report considers these eight areas, in this order:
    with the assistant. When the available material is too thin, the report
    will identify that limitation instead of guessing, and may ask you for a
    specific example. This section is not an IQ score.
-8. **Points that need improvement** - specific, practical next steps drawn
-   from the preceding evidence.
+8. **Points that need improvement** - person-scoped, forward-looking
+   behavioral or judgment patterns synthesized from points 1-7.
 
 ## The communication register
 
@@ -106,8 +106,9 @@ demonstrate a high register, and a credentialed adult can write simply.
 
 ## Report format
 
-The complete evaluation arrives as one readable block with natural wrapping
-and a copy control. Each numbered review point stays together with its
+The complete evaluation arrives as one readable block, hard-wrapped at 72
+characters per line so it stays readable even in interfaces that don't
+wrap code blocks, with a copy control. Each numbered review point stays together with its
 supporting text so the report is easy to copy and paste. It contains:
 
 1. `# Evaluation`

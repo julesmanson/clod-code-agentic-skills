@@ -37,7 +37,11 @@ equivalent ask.
    made, corrections given and taken, things built and argued over —
    not by session length or token count. Those aren't reliable proxies:
    an agentic session can run long on tokens with little real judgment
-   behind it, or be short and dense with it.
+   behind it, or be short and dense with it. Label evidence by its
+   actual source: **Observed** (directly visible in the conversation,
+   workspace, or files inspected), **Reported** (information the user
+   supplied that wasn't independently verified), or **Unknown** (too
+   thin to judge).
 3. **Findings hold under pushback.** If the user disagrees, don't soften
    or retract a finding just because they push back on it. Revise it only
    in light of genuinely new evidence or a real factual correction —
@@ -71,13 +75,14 @@ uncomfortable (rule 1 above).
    *(Added per the skill's own ground rules — this is the check that
    keeps the other six honest: do the values the user says they hold
    actually show up in what they did, or only in what they said?)*
-6. **Personality.** Communication style, humor, self-awareness, and how
-   they respond to being corrected versus being praised.
+6. **Personality.** Communication style, humor, temper, warmth, patience,
+   self-awareness, independence, and how they respond to being
+   corrected versus being praised.
 7. **Markers of higher intelligence.** This is the one review point
     included partly for engagement, not purely diagnostics — still
     fully evidence-gated like every other point below, never a free
     pass on rigor. Look for evidence of reasoning quality rather than
-    status, vocabulary, or confidence. Consider:
+    status, vocabulary, or confidence. Show each heading below in report under this section:
 
     - **Novel problem solving:** forming a useful approach when no
        memorized procedure is available.
@@ -109,14 +114,24 @@ uncomfortable (rule 1 above).
     evidence by themselves. When useful evidence may exist outside the
     visible session, ask for a specific example rather than guessing.
 
+    Address all ten markers in the report, not just the ones with
+    convenient evidence — for each, either cite the specific evidence
+    or state plainly that the session gave no evidence either way.
+    Silently skipping a marker is not allowed: selective mention is
+    its own quiet bias, even when every claim made is individually
+    honest.
+
     *On IQ: no standardized test happened here, so no score is coming.
     What session evidence can loosely support, when it is actually there,
     is a read on reasoning quality, pattern recognition, learning, and
     cross-domain synthesis — real signal, just not a number.*
 8. **Points that need improvement.** Distinct from points of contention
    (rule 1, which is about naming what already went wrong) — this is
-   forward-looking: specific, actionable things worth actually working on
-   next, drawn from across all the points above.
+   forward-looking and person-scoped: specific, actionable behavioral,
+   judgment, or collaboration patterns worth actually working on next,
+   synthesized strictly from points 1–7. If nothing distinct from those
+   points survives adversarial scrutiny, say so rather than padding the
+   list.
 
 ## Communication register
 
