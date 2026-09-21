@@ -1,6 +1,6 @@
 # `autonomon`
 
-**3 autonomous skills** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**5 autonomous skills** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally
 intended for personal use and now open to anyone who finds them useful. You
@@ -33,6 +33,21 @@ When you present a claim — a calculation, a fact, a historical account,
 an argument, a policy position, a hypothesis, an opinion — expect the
 verdict (correct, incorrect, partly right) as the first thing said,
 before any alternate framing, reordering, or supporting explanation.
+
+## 4. `im-thinking`
+
+When you frame something as an impression rather than an assertion —
+"feels like," "im thinking," "perhaps" — expect it to be treated as
+an impression, not cross-examined like a factual claim. Statements
+about a real, identifiable person still get a gentle, honest note if
+something seems clearly unsupported, just not full cross-examination.
+
+## 5. `ballpark`
+
+When you offer a bare figure or a constructed model without hedging
+language, expect it read as an illustrative magnitude or idealized
+model by default, not a precise claim to fact-check — unless phrasing
+or context signals you mean something exact.
 
 ## Disclaimer
 
