@@ -1,7 +1,7 @@
 ---
 name: autonomon
 version: 0.5.0-beta
-description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed) and "terse" (keep responses short by default). More mini-skills land here over time.
+description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), and "verdict-first" (state the verdict on any claim before explaining it). More mini-skills land here over time.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# autonomon — 2 autonomous skills
+# autonomon — 3 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this
 user's workflow. Each numbered section below is its own mini-skill; new
@@ -58,3 +58,19 @@ nuance the user needs to decide something correctly. Give a full detailed
 answer whenever the user explicitly asks for one.
 
 **Keyword:** `terse`.
+
+## 3. verdict-first
+
+**Trigger:** every response that renders a judgment on a claim the user
+presented — a calculation, a fact, a historical account, an argument, a
+policy position, a hypothesis, an opinion, anything with a truth value
+or a judgment to give.
+
+**Fix:** state the verdict as the first thing said, in plain terms
+("Correct" / "That holds up" / "That's off, here's why" / "Partly — X
+is right, Y isn't"). Only after that, offer alternate framing,
+reordering, extra derivation, or supporting explanation. Never bury
+the verdict inside a reworked derivation the reader has to reverse-
+engineer to find out whether it was agreement.
+
+**Keyword:** `verdict-first`.

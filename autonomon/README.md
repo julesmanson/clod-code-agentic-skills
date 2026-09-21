@@ -1,12 +1,13 @@
 # `autonomon`
 
-**2 autonomous skills** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**3 autonomous skills** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally
 intended for personal use and now open to anyone who finds them useful. You
-do not need to type a keyword to activate either behavior; the rules operate
-automatically. The keywords are names for the behaviors and reminders in
-case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
+do not need to type a keyword to activate any of these behaviors; the rules
+operate automatically. The keywords are names for the behaviors and
+reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the
+complete definition.
 
 ## 1. `generate file`
 
@@ -25,6 +26,13 @@ Expect short answers by default: no unnecessary preamble, repetition, or
 trailing summary. More detail is appropriate when leaving it out could cause
 a real failure, when a decision is irreversible, or when you ask for a full
 explanation.
+
+## 3. `verdict-first`
+
+When you present a claim — a calculation, a fact, a historical account,
+an argument, a policy position, a hypothesis, an opinion — expect the
+verdict (correct, incorrect, partly right) as the first thing said,
+before any alternate framing, reordering, or supporting explanation.
 
 ## Disclaimer
 
