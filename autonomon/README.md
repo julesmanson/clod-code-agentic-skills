@@ -36,10 +36,11 @@ explanation.
 
 ## 3. `verdict-first`
 
-When you present a claim — a calculation, a fact, a historical account,
-an argument, a policy position, a hypothesis, an opinion — expect the
-verdict (correct, incorrect, partly right) as the first thing said,
-before any alternate framing, reordering, or supporting explanation.
+When a response judges a claim you've presented — a calculation, a
+fact, a historical account, an argument, a policy position, a
+hypothesis, an opinion — Claude leads with the verdict (correct,
+incorrect, partly right), stated plainly, before any alternate
+framing, reordering, or supporting explanation.
 
 ## 4. `im-thinking`
 
