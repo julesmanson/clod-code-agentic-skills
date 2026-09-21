@@ -9,7 +9,7 @@ operate automatically. The keywords are names for the behaviors and
 reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the
 complete definition.
 
-## 1. `generate file`
+## 1. `generate-file`
 
 When you ask for a file that might otherwise appear only in a sandboxed
 preview, expect it to be written to a `GENERATED` folder at the project root.
@@ -19,6 +19,13 @@ and extension, and you are given the path where it was written.
 This applies to any file type and does not require a separate confirmation.
 The `GENERATED` folder is a holding cell, so generated work stays separate
 from the rest of the project while remaining accessible in the workspace.
+
+This exists because sandboxed files often get stored under long,
+hash-based names with no extension — nothing you could easily find or
+reuse directly. Generating the real, named file still lets the
+sandboxing happen underneath; it just also produces the finished,
+usable version in one step instead of leaving you to extract it
+yourself.
 
 ## 2. `terse`
 
