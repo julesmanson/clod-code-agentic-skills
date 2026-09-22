@@ -13,12 +13,8 @@ assistants with minimal changes. The complete operating definition is in
 
 ## How to use it
 
-Ask explicitly with a phrase such as:
-
-- `evaluate me`
-- `evaluate-me`
-- "Give me an honest assessment based on this session."
-- "Evaluate my work on this project so far."
+Ask explicitly with the phrase `evaluate-me`. That exact phrase is the
+trigger — no inferred equivalents.
 
 The more real work available to inspect, the more useful the result will be.
 You can ask for an evaluation based on a conversation, a workspace, a
@@ -62,6 +58,9 @@ Every report considers these eight areas, in this order:
     standards you state appear in your actual decisions and actions.
 6. **Personality** - communication style, humor, temper, warmth, patience,
    self-awareness, independence, and response to correction or praise.
+   Includes highlighting humor and other social skills that help
+   collaboration, and noting any defensiveness, dismissiveness, or other
+   friction points.
 7. **Markers of higher intelligence** - evidence of reasoning quality rather
     than status, vocabulary, or confidence. This includes:
 
@@ -106,17 +105,15 @@ demonstrate a high register, and a credentialed adult can write simply.
 
 ## Report format
 
-The complete evaluation arrives as one readable block, hard-wrapped at 72
-characters per line so it stays readable even in interfaces that don't
-wrap code blocks, with a copy control. Each numbered review point stays together with its
-supporting text so the report is easy to copy and paste. It contains:
+The complete evaluation arrives as one visually distinct block — a
+Markdown blockquote — so headings, bold text, and bullets render normally
+instead of showing as raw markup. Each numbered review point stays
+together with its supporting text. It contains:
 
 1. `# Evaluation`
 2. The eight review areas in order
 3. The communication-register note
 4. The final `evaluate-me` attribution
-
-The output remains wrapped for readability while retaining the copy feature.
 
 ## What it is not
 
@@ -134,7 +131,7 @@ available to the AI assistant at the time of the request.
 
 The behavioral instructions are written in ordinary Markdown and are not tied
 to one AI brand. If you adapt the skill elsewhere, keep its evidence
-standard, eight-part review order, communication-register note, copyable
+standard, eight-part review order, communication-register note, blockquote
 output format, and final `evaluate-me` attribution. Platform-specific
 metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 

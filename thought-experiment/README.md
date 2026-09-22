@@ -25,7 +25,7 @@ Two things set it apart:
 
 ## Using it
 
-Say "thought experiment," or something equivalent ("find failure scenarios," "stress-test this," "leave no stone unturned"), naming the target. It never runs without both an explicit ask and a clear target.
+Say "thought experiment" — that exact phrase, with no inferred equivalents — naming the target. It never runs without both an explicit ask and a clear target.
 
 There is no fixed number of scenarios or passes. Expect a fresh reading of
 the target, a dependency inventory, concrete failure scenarios, live checks of
