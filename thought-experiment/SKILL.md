@@ -16,7 +16,7 @@ allowed-tools:
 
 # thought-experiment — Rigorous Failure-Scenario Audits
 
-**Trigger:** the phrase "thought experiment," or a clear equivalent ask ("find failure scenarios," "stress-test this," "leave no stone unturned"). Never runs without an explicit ask and a clear target — this is deliberate, not autonomous.
+**Trigger:** the phrase "thought experiment," and only that phrase — no inferred equivalents. Never runs without an explicit ask and a clear target — this is deliberate, not autonomous.
 
 **Scope:** target-agnostic. A single file, a whole project, a config, an API contract, an infrastructure setup — anything that makes claims (about its own behavior, its structure, or about something it depends on) that could be wrong.
 

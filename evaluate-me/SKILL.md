@@ -12,7 +12,7 @@ allowed-tools:
 
 # evaluate-me — Objective Self-Assessment
 
-**Trigger:** the phrase "evaluate me" / "evaluate-me," or a clear equivalent ask.
+**Trigger:** the phrase "evaluate-me."
 
 **Ground rules, every evaluation:**
 
