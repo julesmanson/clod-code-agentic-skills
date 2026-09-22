@@ -1,5 +1,7 @@
 # `commit`
 
+<img src="./assets/clod-straitjacket.svg" width="105" height="85" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
+
 **Commit and Push** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 When you explicitly ask for a commit, this skill commits and pushes the
