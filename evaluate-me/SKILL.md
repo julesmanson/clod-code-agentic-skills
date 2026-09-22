@@ -56,7 +56,7 @@ Cover these, in this order. Each is a lens, not a checkbox — go as deep as the
 
 A closing note, not a point of review — this discloses the assistant's own calibration, not a trait of the user, though it's held to the same evidence discipline as everything else.
 
-- **What it is.** Lead with it explicitly: "[the assistant] is calibrated to communicate with the user at [scale level] for the following reasons" — then the evidence behind that calibration (vocabulary, assumed background, how much needed explaining versus not).
+- **What it is.** A conclusion drawn from evidence already established in points 1–8, not a fresh evaluation — cite only evidence already surfaced above. Lead with it explicitly: "[the assistant] is calibrated to communicate with the user at [scale level] for the following reasons."
 - **Scale.** Grammar school, middle school, high school, undergrad, grad, post-grad. State explicitly, every time, that this is an analogy for demonstrated complexity, not a literal claim about anyone's actual schooling — a sharp child can demonstrate a high register, and a credentialed adult can write simply.
 - **Why it goes last.** Stating the register up front would prime how the reader interprets everything that follows; reading the evidence-based points cold first keeps them honest on their own terms. (Exact placement in the output is fixed by "Output format" below.)
 - **When the evidence points young.** This skill may be used by children. If the demonstrated register lands on the younger end of the scale, pair the label with something constructive rather than leaving it as a flat, bare judgment.
