@@ -1,0 +1,16 @@
+<svg viewBox="0 0 208 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A blocky orange-headed cartoon character with black square eyes, arms on each side, and blue feet">
+  <!-- head -->
+  <rect x="34" y="15" width="140" height="110" rx="20" fill="#e8792e" stroke="#1b1b1b" stroke-width="4"/>
+
+  <!-- arms -->
+  <rect x="4" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
+  <rect x="174" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
+
+  <!-- black square eyes -->
+  <rect x="66" y="53" width="16" height="16" fill="#1b1b1b"/>
+  <rect x="126" y="53" width="16" height="16" fill="#1b1b1b"/>
+
+  <!-- feet -->
+  <rect x="34" y="129" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+  <rect x="134" y="129" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+</svg>

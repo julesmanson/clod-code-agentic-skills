@@ -32,8 +32,8 @@
   <circle cx="210" cy="256" r="10" fill="#9a9a9a" stroke="#1b1b1b" stroke-width="2"/>
 
   <!-- feet -->
-  <rect x="140" y="288" width="40" height="22" rx="10" fill="#2f8f8f" stroke="#1b1b1b" stroke-width="3"/>
-  <rect x="240" y="288" width="40" height="22" rx="10" fill="#2f8f8f" stroke="#1b1b1b" stroke-width="3"/>
+  <rect x="140" y="288" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+  <rect x="240" y="288" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
 
   <!-- tagline, comic-outlined so it reads on light or dark backgrounds -->
   <text x="210" y="330" text-anchor="middle" font-family="monospace" font-weight="bold"
