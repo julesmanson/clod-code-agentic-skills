@@ -1,5 +1,7 @@
 # Clod Code Agentic Skills
 
+![A blocky orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you](./assets/clod-straitjacket.svg)
+
 A series of agentic developer skills for Claude Code, adaptable to other AI coding assistants with minimal edits.
 
 ## Contents
