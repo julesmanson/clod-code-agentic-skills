@@ -95,9 +95,11 @@ Every report considers these eight areas, in this order:
 
 ## The communication register
 
-The report ends with a communication-register note. This places the
-complexity of the language and reasoning demonstrated in the session on a
-scale from grammar school through post-grad.
+The report ends with a communication-register note, drawn from evidence
+already established in the eight points above rather than a fresh
+evaluation of its own. This places the complexity of the language and
+reasoning demonstrated in the session on a scale from grammar school
+through post-grad.
 
 This is only an analogy for demonstrated complexity. It is not a claim about
 your actual schooling, credentials, or intelligence. A sharp child can
