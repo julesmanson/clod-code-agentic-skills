@@ -66,6 +66,6 @@ A closing note, not a point of review — this discloses the assistant's own cal
 Every evaluation is structured and shareable the same way, not left to vary invocation to invocation:
 
 1. **A heading at the top** naming what this is (e.g. `# Evaluation`), so it's identifiable at a glance.
-2. **The whole evaluation delivered as one complete response** inside a single fenced code block so the interface provides a copy control. Keep each numbered review point and all of its supporting text together as one intact section. Hard-wrap every paragraph and list item at no more than 72 characters. Never place a whole paragraph on one physical line. The copyable block must remain readable even when the interface does not wrap preformatted text.
-3. **Order inside that block:** heading, then points of review 1–8, then the communication register closing note, then the attribution line — in that order, always.
-4. **The skill's own name as the very last line inside that block** — a plain `evaluate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
+2. **Deliver the whole evaluation as one complete response** inside a single blockquote (`>`), so it reads as one visually distinct block while all Markdown formatting still renders normally. Keep each numbered point and its supporting text together as one section, including blank lines within the quote.
+3. **Order inside the blockquote:** heading, then points of review 1–8, then the communication register closing note, then the attribution line — in that order, always.
+4. **The skill's own name as the very last line inside the blockquote** — a plain `evaluate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
