@@ -1,6 +1,6 @@
 # `commit`
 
-<img src="./assets/clod-straitjacket.svg" width="105" height="85" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
+<img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
 **Commit and Push** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
