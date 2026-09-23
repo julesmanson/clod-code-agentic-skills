@@ -51,6 +51,8 @@ Cover these, in this order. Each is a lens, not a checkbox — go as deep as the
 
     *On IQ: no test occurred, so no score follows — just real signal on reasoning quality, not a number.*
 
+    In the delivered blockquote specifically, follow this line with `> &nbsp;` (not a bare `>`) before point 8 — a bare empty blockquote line has been observed collapsing in rendering, dropping the gap; `&nbsp;` reliably survives.
+
 8. **Points that need improvement.** Distinct from points of contention (rule 1, which is about naming what already went wrong) — this is forward-looking and person-scoped: specific, actionable behavioral, judgment, or collaboration patterns worth actually working on next, synthesized strictly from points 1–7. If nothing distinct from those points survives adversarial scrutiny, say so rather than padding the list.
 
 ## Communication register
