@@ -107,7 +107,21 @@ Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
 </tr>
 <tr>
 <td align="center"><a href="./evaluate-me"><code>evaluate-me</code></a></td>
-<td>Gives an evidence-based assessment across AI-assistant use, technical judgment, competence, work ethic, reasoning, personality, consistency, and improvement areas. Model-agnostic with minimal adaptation.</td>
+<td>
+Runs a strict, evidence-gated self-assessment of the user across eight points, then closes with a calibration note. Model-agnostic with minimal adaptation.
+<ul>
+<li><strong>Effective use of an AI assistant</strong> — how well the user directs, delegates to, and collaborates with an AI assistant</li>
+<li><strong>Project-specific technical judgment</strong> — architecture, design patterns, testing/verification discipline, and how errors get resolved</li>
+<li><strong>General competence</strong> — technical skill and judgment beyond any one project</li>
+<li><strong>Work ethic</strong> — discipline, follow-through, and whether stated standards hold up under pressure or fatigue</li>
+<li><strong>Consistency between stated principles and actual behavior</strong> — whether the user's stated values show up in what they actually did</li>
+<li><strong>Personality</strong> — communication style, humor, self-awareness, and response to correction versus praise</li>
+<li><strong>Markers of higher intelligence</strong> — ten evidence-gated reasoning-quality signals (novel problem solving, abstraction, transfer, fluid reasoning, counterfactual reasoning, prediction/mental modeling, metacognition, cross-domain synthesis, compression, pattern learning)</li>
+<li><strong>Points that need improvement</strong> — specific, actionable patterns worth working on next, synthesized strictly from the seven points above</li>
+<li><strong>Communication register</strong> — a closing calibration note on what complexity level (grammar school through post-grad, as an analogy) the evaluation was written at, drawn from evidence already surfaced above</li>
+</ul>
+Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a>.
+</td>
 </tr>
 </tbody>
 </table>
