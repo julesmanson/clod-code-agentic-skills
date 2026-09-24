@@ -112,10 +112,6 @@ analogy for demonstrated complexity - not a claim about your actual
 schooling, credentials, or intelligence. A sharp child can demonstrate a
 high register, and a credentialed adult can write simply.
 
-It comes last by design. Stating the register up front would prime how
-you read everything before it, so the evidence-based points get judged
-cold, on their own terms, before this note colors them.
-
 Because this skill may be used by children, a register landing on the
 younger end of the scale is paired with something constructive rather
 than left as a flat, bare judgment.
