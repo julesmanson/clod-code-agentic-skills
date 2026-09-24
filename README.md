@@ -77,25 +77,36 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 <table>
 <thead>
 <tr>
-<th width="22.5%">Skill</th>
-<th width="77.5%">Description</th>
+<th width="20%" align="center">Skill</th>
+<th width="80%">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="./commit"><code>commit</code></a></td>
+<td align="center"><a href="./commit"><code>commit</code></a></td>
 <td>Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports <code>new repo [name] [visibility] [license] commit</code> to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
 </tr>
 <tr>
-<td><a href="./autonomon"><code>autonomon</code></a></td>
-<td>Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. Currently: <code>generate-file</code> (save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed), <code>terse</code> (keep responses short by default), <code>verdict-first</code> (state the verdict before the explanation), <code>im-thinking</code> (treat a stated impression as an impression, not a claim to cross-examine), <code>ballpark</code> (treat a bare figure as illustrative magnitude, not a precision claim), and <code>load-bearing</code> (in multi-point critique, lead with corrections that actually change the conclusion). Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.</td>
+<td align="center"><a href="./autonomon"><code>autonomon</code></a></td>
+<td>
+Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience.
+<ul>
+<li><code>generate-file</code> — save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed</li>
+<li><code>terse</code> — keep responses short by default</li>
+<li><code>verdict-first</code> — state the verdict before the explanation</li>
+<li><code>im-thinking</code> — treat a stated impression as an impression, not a claim to cross-examine</li>
+<li><code>ballpark</code> — treat a bare figure as illustrative magnitude, not a precision claim</li>
+<li><code>load-bearing</code> — in multi-point critique, lead with corrections that actually change the conclusion</li>
+</ul>
+Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
+</td>
 </tr>
 <tr>
-<td><a href="./thought-experiment"><code>thought-experiment</code></a></td>
+<td align="center"><a href="./thought-experiment"><code>thought-experiment</code></a></td>
 <td>Runs a rigorous, evidence-based audit of any target — script, doc, config, whole system — by constructing concrete failure-scenario "thought experiments" and verifying every claim about a dependency's real behavior against a live source rather than memory. Triggered by the phrase "thought experiment." Details: <a href="./thought-experiment/README.md"><code>thought-experiment/README.md</code></a>.</td>
 </tr>
 <tr>
-<td><a href="./evaluate-me"><code>evaluate-me</code></a></td>
+<td align="center"><a href="./evaluate-me"><code>evaluate-me</code></a></td>
 <td>Gives an evidence-based assessment across AI-assistant use, technical judgment, competence, work ethic, reasoning, personality, consistency, and improvement areas. Model-agnostic with minimal adaptation.</td>
 </tr>
 </tbody>
