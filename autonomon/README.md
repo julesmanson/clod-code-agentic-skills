@@ -67,6 +67,10 @@ out rather than given equal billing. This doesn't apply when a task
 explicitly calls for exhaustive coverage regardless of weight (an
 `evaluate-me` report, for instance).
 
+## Related skills
+
+- [`evaluate-me`](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across eight points.
+
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
