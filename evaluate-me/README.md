@@ -1,6 +1,6 @@
 # `evaluate-me`
 
-**Objective Self-Assessment** (`v0.5.0-beta`) - [back to Clod Code Agentic Skills](../README.md)
+**Objective Self-Assessment** (`v0.6.0-beta`) - [back to Clod Code Agentic Skills](../README.md)
 
 `evaluate-me` gives you a candid, evidence-based assessment of how you are
 working with an AI assistant and how you are handling a project. It is meant
@@ -44,7 +44,7 @@ meaningful work.
 
 ## What the report covers
 
-Every report considers these eight areas, in this order:
+Every report considers these nine areas, in this order:
 
 1. **Effective use of an AI assistant** - how clearly you communicate,
    delegate, review, correct, and push back.
@@ -92,6 +92,11 @@ Every report considers these eight areas, in this order:
    specific example. This section is not an IQ score.
 8. **Points that need improvement** - person-scoped, forward-looking
    behavioral or judgment patterns synthesized from points 1-7.
+9. **Overall tier** - a holistic synthesis across all eight points above,
+   not a computed average or a formula-driven score. You get one label
+   from a small qualitative scale - Developing, Competent, Strong, or
+   Exceptional - plus a sentence naming which point or two most drove
+   the call.
 
 ## The communication register
 
@@ -113,7 +118,7 @@ instead of showing as raw markup. Each numbered review point stays
 together with its supporting text. It contains:
 
 1. `# Evaluation`
-2. The eight review areas in order
+2. The nine review areas in order
 3. The communication-register note
 4. The final `evaluate-me` attribution
 
@@ -133,7 +138,7 @@ available to the AI assistant at the time of the request.
 
 The behavioral instructions are written in ordinary Markdown and are not tied
 to one AI brand. If you adapt the skill elsewhere, keep its evidence
-standard, eight-part review order, communication-register note, blockquote
+standard, nine-part review order, communication-register note, blockquote
 output format, and final `evaluate-me` attribution. Platform-specific
 metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 

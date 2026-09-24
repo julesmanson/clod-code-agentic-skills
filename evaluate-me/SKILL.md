@@ -1,7 +1,7 @@
 ---
 name: evaluate-me
-version: 0.5.0-beta
-description: Gives the user a dead-on honest performance and competence assessment — covering project-specific technical judgment, work ethic, intelligence markers, and personality — grounded strictly in specific evidence actually observed in the conversation/session. Never flattery, never generic encouragement. Triggered by "evaluate me" / "evaluate-me" or a clear equivalent ask.
+version: 0.6.0-beta
+description: Gives the user a dead-on honest performance and competence assessment — covering project-specific technical judgment, work ethic, intelligence markers, personality, and an overall tier — grounded strictly in specific evidence actually observed in the conversation/session. Never flattery, never generic encouragement. Triggered by "evaluate me" / "evaluate-me" or a clear equivalent ask.
 user-invocable: true
 allowed-tools:
   - Read
@@ -49,11 +49,12 @@ Cover these, in this order. Each is a lens, not a checkbox — go as deep as the
 
     Always close this section with this exact line:
 
-    *On IQ: no test occurred, so no score follows — just real signal on reasoning quality, not a number.*
+    *On IQ specifically: no standardized test occurred, so no psychometric score follows — this point gives signal on reasoning quality, not a measurement.*
 
     In the delivered blockquote specifically, follow this line with `> &nbsp;` (not a bare `>`) before point 8 — a bare empty blockquote line has been observed collapsing in rendering, dropping the gap; `&nbsp;` reliably survives.
 
 8. **Points that need improvement.** Distinct from points of contention (rule 1, which is about naming what already went wrong) — this is forward-looking and person-scoped: specific, actionable behavioral, judgment, or collaboration patterns worth actually working on next, synthesized strictly from points 1–7. If nothing distinct from those points survives adversarial scrutiny, say so rather than padding the list.
+9. **Overall tier.** A holistic synthesis across points 1–8 — not a computed average or a measurement; there is no formula that weighs personality against technical judgment, so don't imply one exists. Assign exactly one label from this scale: Developing / Competent / Strong / Exceptional. Immediately after the label, name which one or two of points 1–8 most drove the call, pointing back to evidence already established there rather than introducing anything new.
 
 ## Communication register
 
@@ -70,5 +71,5 @@ Every evaluation is structured and shareable the same way, not left to vary invo
 
 1. **A heading at the top** naming what this is (e.g. `# Evaluation`), so it's identifiable at a glance.
 2. **Deliver the whole evaluation as one complete response** inside a single blockquote (`>`), so it reads as one visually distinct block while all Markdown formatting still renders normally. Keep each numbered point and its supporting text together as one section, including blank lines within the quote.
-3. **Order inside the blockquote:** heading, then points of review 1–8, then the communication register closing note, then the attribution line — in that order, always.
+3. **Order inside the blockquote:** heading, then points of review 1–9, then the communication register closing note, then the attribution line — in that order, always.
 4. **The skill's own name as the very last line inside the blockquote** — a plain `evaluate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.

@@ -108,7 +108,7 @@ Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
 <tr>
 <td align="center"><a href="./evaluate-me"><code>evaluate-me</code></a></td>
 <td>
-Runs a strict, evidence-gated self-assessment of the user across eight points, then closes with a calibration note. Model-agnostic with minimal adaptation.
+Runs a strict, evidence-gated self-assessment of the user across nine points, then closes with a calibration note. Model-agnostic with minimal adaptation.
 <ul>
 <li><strong>Effective use of an AI assistant</strong> — how well the user directs, delegates to, and collaborates with an AI assistant</li>
 <li><strong>Project-specific technical judgment</strong> — architecture, design patterns, testing/verification discipline, and how errors get resolved</li>
@@ -118,6 +118,7 @@ Runs a strict, evidence-gated self-assessment of the user across eight points, t
 <li><strong>Personality</strong> — communication style, humor, self-awareness, and response to correction versus praise</li>
 <li><strong>Markers of higher intelligence</strong> — ten evidence-gated reasoning-quality signals (novel problem solving, abstraction, transfer, fluid reasoning, counterfactual reasoning, prediction/mental modeling, metacognition, cross-domain synthesis, compression, pattern learning)</li>
 <li><strong>Points that need improvement</strong> — specific, actionable patterns worth working on next, synthesized strictly from the seven points above</li>
+<li><strong>Overall tier</strong> — a holistic synthesis across all eight points above (Developing / Competent / Strong / Exceptional, not a letter grade or computed average), paired with a sentence naming which point or two drove the call</li>
 <li><strong>Communication register</strong> — a closing calibration note on what complexity level (grammar school through post-grad, as an analogy) the evaluation was written at, drawn from evidence already surfaced above</li>
 </ul>
 Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a>.
