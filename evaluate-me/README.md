@@ -139,8 +139,9 @@ metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 
 ## Related skills
 
-- [`autonomon`](../autonomon) contains small personal workflow fixes for
-  generated files and concise responses.
+- [`autonomon`](../autonomon) contains several personal workflow fixes,
+  including how generated files are handled and how concise responses
+  stay.
 
 ## Disclaimer
 
