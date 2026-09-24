@@ -74,12 +74,12 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 
 ## Skills
 
-| Skill | Version | Description |
-| --- | --- | --- |
-| [`commit`](./commit) | `0.5.0-beta` | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [name] [visibility] [license] commit` to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: [`commit/README.md`](./commit/README.md). |
-| [`autonomon`](./autonomon) | `0.5.0-beta` | Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. Currently: `generate file` (save generated output to a `GENERATED` folder instead of leaving it sandboxed) and `terse` (keep responses short by default). Details: [`autonomon/README.md`](./autonomon/README.md). |
-| [`thought-experiment`](./thought-experiment) | `0.5.0-beta` | Runs a rigorous, evidence-based audit of any target — script, doc, config, whole system — by constructing concrete failure-scenario "thought experiments" and verifying every claim about a dependency's real behavior against a live source rather than memory. Triggered by the phrase "thought experiment." Details: [`thought-experiment/README.md`](./thought-experiment/README.md). |
-| [`evaluate-me`](./evaluate-me) | `0.5.0-beta` | Gives an evidence-based assessment across AI-assistant use, technical judgment, competence, work ethic, reasoning, personality, consistency, and improvement areas. Model-agnostic with minimal adaptation. |
+| Skill | Description |
+| --- | --- |
+| [`commit`](./commit) | Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports `new repo [name] [visibility] [license] commit` to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: [`commit/README.md`](./commit/README.md). |
+| [`autonomon`](./autonomon) | Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience. Currently: `generate-file` (save generated output to a `GENERATED` folder instead of leaving it sandboxed), `terse` (keep responses short by default), `verdict-first` (state the verdict before the explanation), `im-thinking` (treat a stated impression as an impression, not a claim to cross-examine), `ballpark` (treat a bare figure as illustrative magnitude, not a precision claim), and `load-bearing` (in multi-point critique, lead with corrections that actually change the conclusion). Details: [`autonomon/README.md`](./autonomon/README.md). |
+| [`thought-experiment`](./thought-experiment) | Runs a rigorous, evidence-based audit of any target — script, doc, config, whole system — by constructing concrete failure-scenario "thought experiments" and verifying every claim about a dependency's real behavior against a live source rather than memory. Triggered by the phrase "thought experiment." Details: [`thought-experiment/README.md`](./thought-experiment/README.md). |
+| [`evaluate-me`](./evaluate-me) | Gives an evidence-based assessment across AI-assistant use, technical judgment, competence, work ethic, reasoning, personality, consistency, and improvement areas. Model-agnostic with minimal adaptation. |
 
 More skills will land here as they're written — this list grows with the repo.
 
