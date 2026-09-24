@@ -100,15 +100,25 @@ Every report considers these nine areas, in this order:
 
 ## The communication register
 
-The report ends with a communication-register note, drawn from evidence
-already established in the eight points above rather than a fresh
-evaluation of its own. This places the complexity of the language and
-reasoning demonstrated in the session on a scale from grammar school
-through post-grad.
+The report closes with a communication-register note: not a fresh test,
+but a direct read of the complexity you and the assistant were actually
+operating at across the session, using only evidence already established
+in the nine points above. It states which register the assistant is
+calibrated to write to you at, and names the specific evidence behind
+that call.
 
-This is only an analogy for demonstrated complexity. It is not a claim about
-your actual schooling, credentials, or intelligence. A sharp child can
-demonstrate a high register, and a credentialed adult can write simply.
+The scale runs from grammar school through post-grad. This is only an
+analogy for demonstrated complexity - not a claim about your actual
+schooling, credentials, or intelligence. A sharp child can demonstrate a
+high register, and a credentialed adult can write simply.
+
+It comes last by design. Stating the register up front would prime how
+you read everything before it, so the evidence-based points get judged
+cold, on their own terms, before this note colors them.
+
+Because this skill may be used by children, a register landing on the
+younger end of the scale is paired with something constructive rather
+than left as a flat, bare judgment.
 
 ## Report format
 
