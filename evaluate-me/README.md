@@ -139,12 +139,8 @@ metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 
 ## Related skills
 
-- [`thought-experiment`](../thought-experiment) stress-tests a target by
-  constructing concrete failure scenarios and checking outside claims
-  against authoritative sources.
 - [`autonomon`](../autonomon) contains small personal workflow fixes for
   generated files and concise responses.
-- [`commit`](../commit) handles repository commits and pushes.
 
 ## Disclaimer
 
