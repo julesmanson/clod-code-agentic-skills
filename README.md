@@ -83,11 +83,11 @@ Copy the Markdown body (below the frontmatter) into your assistant's system prom
 </thead>
 <tbody>
 <tr>
-<td align="center"><a href="./commit"><code>commit</code></a></td>
+<td align="center"><a href="./commit">Commit</a></td>
 <td>Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports <code>new repo [name] [visibility] [license] commit</code> to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
 </tr>
 <tr>
-<td align="center"><a href="./autonomon"><code>autonomon</code></a></td>
+<td align="center"><a href="./autonomon">Autonomon</a></td>
 <td>
 Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience.
 <ul>
@@ -102,11 +102,11 @@ Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
 </td>
 </tr>
 <tr>
-<td align="center"><a href="./thought-experiment"><code>thought-experiment</code></a></td>
+<td align="center"><a href="./thought-experiment">Thought Experiment</a></td>
 <td>Runs a rigorous, evidence-based audit of any target — script, doc, config, whole system — by constructing concrete failure-scenario "thought experiments" and verifying every claim about a dependency's real behavior against a live source rather than memory. Triggered by the phrase "thought experiment." Details: <a href="./thought-experiment/README.md"><code>thought-experiment/README.md</code></a>.</td>
 </tr>
 <tr>
-<td align="center"><a href="./evaluate-me"><code>evaluate-me</code></a></td>
+<td align="center"><a href="./evaluate-me">Evaluate Me</a></td>
 <td>
 Runs a strict, evidence-gated self-assessment of the user across nine points, then closes with a calibration note. Model-agnostic with minimal adaptation.
 <ul>
@@ -125,7 +125,7 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 </td>
 </tr>
 <tr>
-<td align="center"><a href="./your-mothers-not-here"><code>your-mothers-not-here</code></a></td>
+<td align="center"><a href="./your-mothers-not-here">Your Mother's Not Here</a></td>
 <td>
 ⚠️ Read carefully before use — every action is a deletion. Two keyworded operations: <code>backroom</code> (deletes old session transcripts and scratch artifacts, asking which chat logs to keep — default: last two) and <code>amnesia</code> (cleans the memory system — removes stale/redundant content automatically, then reports the resulting file count/average length and asks whether to merge into fewer files). Details: <a href="./your-mothers-not-here/README.md"><code>your-mothers-not-here/README.md</code></a>.
 </td>
