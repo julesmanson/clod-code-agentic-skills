@@ -1,4 +1,4 @@
-# `thought-experiment`
+# Thought Experiment
 
 **Rigorous Failure-Scenario Audits** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
@@ -10,7 +10,7 @@ or authoritative sources instead of relying on memory. See
 
 ## Where this came from
 
-This grew from an audit of this repository's `commit` skill. That audit
+This grew from an audit of this repository's Commit skill. That audit
 checked concrete break scenarios and verified `gh`, `glab`, and GitHub license
 claims against live sources. It caught two genuine bugs that an ordinary
 read-through missed: a fabricated `isc` license key and incorrect `glab` flag

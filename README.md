@@ -30,7 +30,7 @@ allowed-tools:
 
 The frontmatter fields (`user-invocable`, `allowed-tools`) are Claude Code-specific — they control how the skill is triggered and what it's permitted to run. The Markdown body underneath is plain prose describing the steps to follow, which is why these skills are portable: any assistant can read and follow the instructions even if it has no concept of the frontmatter.
 
-The `evaluate-me` skill is model-agnostic. Its Markdown instructions can be
+The **Evaluate Me** skill is model-agnostic. Its Markdown instructions can be
 used with any AI model or coding assistant, with only minimal edits needed
 to satisfy that assistant's skill format and tool requirements.
 

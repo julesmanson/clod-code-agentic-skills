@@ -14,7 +14,7 @@ allowed-tools:
   - Write
 ---
 
-# thought-experiment — Rigorous Failure-Scenario Audits
+# Thought Experiment — Rigorous Failure-Scenario Audits
 
 **Trigger:** the phrase "thought experiment," and only that phrase — no inferred equivalents. Never runs without an explicit ask and a clear target — this is deliberate, not autonomous.
 

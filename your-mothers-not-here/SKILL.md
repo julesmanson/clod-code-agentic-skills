@@ -12,7 +12,7 @@ allowed-tools:
   - Edit
 ---
 
-# your-mothers-not-here — Claude-Generated Backroom File Cleanup (v1.0.2-beta)
+# Your Mother's Not Here — Claude-Generated Backroom File Cleanup (v1.0.2-beta)
 
 **⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The defaults below (keep the last two chat logs, what counts as "stale," when merging is worth it) reflect one person's workflow, not a universal standard. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 

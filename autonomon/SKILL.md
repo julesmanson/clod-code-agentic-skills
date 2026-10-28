@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# autonomon — 6 autonomous skills
+# Autonomon — 6 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this
 user's workflow. Each numbered section below is its own mini-skill; new
@@ -95,7 +95,7 @@ that overrides the default.
 **Trigger:** multi-point critique (debate, review, audit) where minor
 true corrections risk burying the ones that matter. Doesn't apply where
 exhaustive coverage is explicitly required regardless of weight (e.g.
-evaluate-me).
+Evaluate Me).
 
 **Fix:** true ≠ worth stating. Ask if a correction changes the
 argument's strength or conclusion. If yes, lead with it. If no,

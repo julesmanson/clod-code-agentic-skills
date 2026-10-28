@@ -1,4 +1,4 @@
-# `autonomon`
+# Autonomon
 
 **6 autonomous skills** (`v0.6.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
@@ -69,7 +69,7 @@ explicitly calls for exhaustive coverage regardless of weight (an
 
 ## Related skills
 
-- [`evaluate-me`](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across eight points.
+- [Evaluate Me](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across eight points.
 
 ## Disclaimer
 

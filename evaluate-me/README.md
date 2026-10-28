@@ -1,8 +1,8 @@
-# `evaluate-me`
+# Evaluate Me
 
 **Objective Self-Assessment** (`v0.6.0-beta`) - [back to Clod Code Agentic Skills](../README.md)
 
-`evaluate-me` gives you a candid, evidence-based assessment of how you are
+**Evaluate Me** gives you a candid, evidence-based assessment of how you are
 working with an AI assistant and how you are handling a project. It is meant
 for useful self-review, not for reassurance, diagnosis, or a pretend
 psychological test.
@@ -150,7 +150,7 @@ metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 
 ## Related skills
 
-- [`autonomon`](../autonomon) contains several personal workflow fixes,
+- [Autonomon](../autonomon) contains several personal workflow fixes,
   including how generated files are handled and how concise responses
   stay.
 

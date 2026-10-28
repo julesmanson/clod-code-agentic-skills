@@ -1,4 +1,4 @@
-# `commit`
+# Commit
 
 <img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
@@ -58,7 +58,7 @@ is used without switching branches for you.
 
 > **Tip:** if you create the GitHub repo yourself via the website first, uncheck "Add a README file" and "Choose a license" unless you actually want GitHub's placeholders — otherwise they'll need reconciling with this skill's own README/LICENSE afterward.
 
-## Using `commit` with other git hosts
+## Using Commit with other git hosts
 
 The ordinary `commit` workflow works with any Git remote. Only repository
 creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
@@ -70,7 +70,7 @@ creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
 | A remote is not named `origin` | Specify which remote to use. |
 | SSH versus HTTPS | Either works once the remote is configured correctly. |
 
-Once the remote is configured, `commit` behaves the same across hosts.
+Once the remote is configured, Commit behaves the same across hosts.
 Repository creation is the only GitHub-specific part.
 
 ### Adapting to GitLab

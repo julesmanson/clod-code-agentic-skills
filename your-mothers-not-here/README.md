@@ -1,6 +1,6 @@
 # ⚠️ Read carefully before use — every action is a deletion
 
-# `your-mothers-not-here`
+# Your Mother's Not Here
 
 **Claude-Generated Backroom File Cleanup** (`v1.0.2-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
