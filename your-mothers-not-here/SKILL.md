@@ -1,6 +1,6 @@
 ---
 name: your-mothers-not-here
-version: 1.0.1-beta
+version: 1.0.2-beta
 description: Cleans up Claude-Code-generated backroom files. Two keyworded operations — "backroom" (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and "amnesia" (stale/redundant memory file cleanup + consolidation). Backroom asks which chat logs to keep (default: last two) before deleting any; amnesia removes stale/redundant memory content automatically, then reports the resulting file count/average length and asks whether to merge.
 user-invocable: true
 allowed-tools:
@@ -12,7 +12,7 @@ allowed-tools:
   - Edit
 ---
 
-# your-mothers-not-here — Claude-Generated Backroom File Cleanup (v1.0.1-beta)
+# your-mothers-not-here — Claude-Generated Backroom File Cleanup (v1.0.2-beta)
 
 **⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The defaults below (keep the last two chat logs, what counts as "stale," when merging is worth it) reflect one person's workflow, not a universal standard. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 
@@ -28,8 +28,9 @@ Cleans old session transcripts and project-level AI scratch output.
 
 **Covers:**
 - **Session transcripts** (`.claude/projects/<project>/*.jsonl`) — which logs survive is set by the user's answer, defaulting to the last two if unspecified, every time.
-- **Sandbox-style scratch folders** (a project's own `GENERATED/`, `tmp/`, `scratch/`, or similar holding area) — keep real work product; delete superseded drafts (literally named `temp`/`old`/`draft` and replaced by a current file) only after reading the file's own content to confirm it's actually dead, never by filename alone.
+- **Sandbox-style scratch folders** (`tmp/`, `scratch/`, or similar holding areas) — keep real work product; delete superseded drafts (literally named `temp`/`old`/`draft` and replaced by a current file) only after reading the file's own content to confirm it's actually dead, never by filename alone.
 - **Standard backroom artifacts** — `.playwright-mcp/`, ad hoc screenshots, shell snapshots, caches, orphaned session folders, dead locks. Delete on sight, no confirmation needed.
+- **A folder literally named `GENERATED/` is never touched, under any circumstance** — real project work product lives there, and deletion rights belong to the user alone, not delegated even with a yes.
 - **The `memory/` folder itself is never touched by backroom** — only `amnesia` touches memory content.
 
 **Offering amnesia:** if the user invokes backroom without naming amnesia, it's fine to ask once ("amnesia too?") — but never run it without an explicit yes. If they decline or don't answer, proceed with backroom alone.
