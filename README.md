@@ -124,6 +124,12 @@ Runs a strict, evidence-gated self-assessment of the user across nine points, th
 Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a>.
 </td>
 </tr>
+<tr>
+<td align="center"><a href="./your-mothers-not-here"><code>your-mothers-not-here</code></a></td>
+<td>
+⚠️ Read carefully before use — every action is a deletion. Two keyworded operations: <code>backroom</code> (deletes old session transcripts and scratch artifacts, asking which chat logs to keep — default: last two) and <code>amnesia</code> (cleans the memory system — removes stale/redundant content automatically, then reports the resulting file count/average length and asks whether to merge into fewer files). Details: <a href="./your-mothers-not-here/README.md"><code>your-mothers-not-here/README.md</code></a>.
+</td>
+</tr>
 </tbody>
 </table>
 
