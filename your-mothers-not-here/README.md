@@ -2,6 +2,8 @@
 
 # Your Mother's Not Here
 
+<img src="./assets/clod-scolded.svg" width="400" height="440" alt="A 1950s-catalog-style mother stands with hands on hips, looking sternly down at Clod, the blocky orange-headed cartoon character, who sits on the floor playing amid scattered toy blocks and a ball.">
+
 **Claude-Generated Backroom File Cleanup** (`v1.0.5-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
 Two keyworded operations: **backroom** (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and **amnesia** (stale/redundant memory cleanup + consolidation). The specifics below reflect one person's workflow, not a universal standard. Backroom defaults to keeping the last two chat logs. Amnesia's own calls — what counts as "stale" memory content, whether merging those memory files is worth it — are left as judgment, not given a default. Read [`SKILL.md`](./SKILL.md) in full and edit it to match your own situation before trusting it with anything you can't afford to lose.
