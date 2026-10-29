@@ -1,6 +1,6 @@
 ---
 name: your-mothers-not-here
-version: 1.0.3-beta
+version: 1.0.4-beta
 description: 'Cleans up Claude-Code-generated backroom files. Two keyworded operations: "backroom" (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and "amnesia" (stale/redundant memory file cleanup and consolidation). Each operation gates its own riskiest action with a question before touching anything — see the backroom and amnesia sections below for specifics.'
 user-invocable: true
 allowed-tools:
@@ -14,7 +14,7 @@ allowed-tools:
 
 # Your Mother's Not Here — Claude-Generated Backroom File Cleanup
 
-**⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The defaults below (keep the last two chat logs, what counts as "stale," when merging is worth it) reflect one person's workflow, not a universal standard. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
+**⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The specifics below reflect one person's workflow, not a universal standard — backroom defaults to keeping the last two chat logs; amnesia's own calls (what counts as "stale," whether merging is worth it) are deliberately left as judgment, not given a default. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 
 **Trigger:** explicit only. Invoking the skill by name (or describing backroom-file cleanup) runs **backroom**. Naming **amnesia** explicitly — alone or alongside backroom, e.g. "your mothers not here do amnesia too" — also runs the memory cleanup. Never runs autonomously just because something looks like clutter; every action here is a deletion.
 

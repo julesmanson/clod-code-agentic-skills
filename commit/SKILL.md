@@ -8,7 +8,7 @@ allowed-tools:
   - Read
 ---
 
-# Commit — Commit and Push (v0.5.0-beta)
+# Commit — Commit and Push
 
 **Never unprompted:** this skill only runs on an explicit call — the user says "commit," or a recognized trigger like `new repo ... commit`. Noticing a good moment to commit and asking "want me to commit this?" is fine, even welcome — but never run any step of this skill, or stage/commit/push anything, without that explicit call actually landing first.
 

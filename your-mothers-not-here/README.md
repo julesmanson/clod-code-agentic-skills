@@ -2,9 +2,9 @@
 
 # Your Mother's Not Here
 
-**Claude-Generated Backroom File Cleanup** (`v1.0.2-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**Claude-Generated Backroom File Cleanup** (`v1.0.4-beta`) — [← back to Clod Code Agentic Skills](../README.md)
 
-Two keyworded operations: **backroom** (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and **amnesia** (stale/redundant memory cleanup + consolidation). The defaults below (keep the last two chat logs, when merging is worth it) reflect one person's workflow — read [`SKILL.md`](./SKILL.md) in full and edit it to match your own situation before trusting it with anything you can't afford to lose.
+Two keyworded operations: **backroom** (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and **amnesia** (stale/redundant memory cleanup + consolidation). The specifics below reflect one person's workflow, not a universal standard — backroom defaults to keeping the last two chat logs; amnesia's calls (what counts as "stale," whether merging is worth it) are left as judgment, not given a default. Read [`SKILL.md`](./SKILL.md) in full and edit it to match your own situation before trusting it with anything you can't afford to lose.
 
 ## Where this came from
 
