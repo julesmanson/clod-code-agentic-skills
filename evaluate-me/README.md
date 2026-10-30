@@ -1,6 +1,6 @@
-# Evaluate Me
+# Evaluate Me (v 1.0)
 
-**Objective Self-Assessment** (`v0.6.0-beta`) - [back to Clod Code Agentic Skills](../README.md)
+**Objective Self-Assessment** - [back to Clod Code Agentic Skills](../README.md)
 
 **Evaluate Me** gives you a candid, evidence-based assessment of how you are
 working with an AI assistant and how you are handling a project. It is meant
@@ -127,6 +127,23 @@ together with its supporting text. It contains:
 2. The nine review areas in order
 3. The communication-register note
 4. The final `evaluate-me` attribution
+
+## Known limitations
+
+- Attribution of who raised a given point can blur across a long
+  conversation, in either direction - a point you raised may get recast as
+  a shortcoming rather than credited as your contribution, or a point the
+  AI supplied may get credited to you as something you originated. Caught
+  and corrected multiple times across roughly two months of personal use.
+- A general, exploratory idea offered in a casual register (a loose
+  analogy, a first-pass guess) can get judged against the rigor bar of a
+  formal technical claim, penalizing it for imprecision it was never
+  claiming in the first place.
+
+Worth spot-checking any attribution or rigor judgment against the actual
+transcript rather than trusting it by default. This section reflects one
+person's roughly two months of observation, not a formal audit - treat it
+as a starting calibration, not an exhaustive list.
 
 ## What it is not
 
