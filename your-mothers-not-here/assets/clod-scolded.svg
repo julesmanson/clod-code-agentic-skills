@@ -1,56 +1,82 @@
-<svg viewBox="0 0 400 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 1950s-catalog-style mother stands with hands on hips, looking sternly down at Clod, the blocky orange-headed cartoon character, who sits on the floor playing amid scattered toy blocks and a ball.">
+<svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 1950s-catalog-style mother stands a few steps back and to the right, looking sternly down at Clod, the blocky orange-headed cartoon character, who sits in the foreground playing amid scattered toy blocks, a ball, and a small spilled McDonald's drink. A table and chairs sit in the background to the left.">
 
-  <!-- mother: hair, behind the head -->
-  <ellipse cx="200" cy="72" rx="58" ry="62" fill="#4a3322" stroke="#1b1b1b" stroke-width="4"/>
-  <path d="M148 100 Q138 118 152 128 Q150 108 160 98 Z" fill="#4a3322" stroke="#1b1b1b" stroke-width="3"/>
-  <path d="M252 100 Q262 118 248 128 Q250 108 240 98 Z" fill="#4a3322" stroke="#1b1b1b" stroke-width="3"/>
+  <!-- background: table and 2 side-view chairs, behind Clod and a few steps further back -->
+  <g transform="translate(27, 1) scale(1.5)" stroke="#1b1b1b" stroke-width="1.5">
+    <!-- left chair, facing the table, moved in half a leg-width -->
+    <rect x="7.5" y="159" width="5" height="35" fill="#6b4a2b"/>
+    <rect x="7.5" y="189" width="24" height="5" fill="#6b4a2b"/>
+    <rect x="7.5" y="194" width="5" height="19" fill="#add8e6"/>
+    <rect x="26.5" y="194" width="5" height="19" fill="#add8e6"/>
 
-  <!-- mother: face -->
-  <ellipse cx="200" cy="75" rx="46" ry="50" fill="#f0c49c" stroke="#1b1b1b" stroke-width="3"/>
+    <!-- table, legs symmetric about its center -->
+    <rect x="38" y="165" width="88" height="11" rx="2" fill="#ffffff"/>
+    <rect x="43" y="176" width="5" height="38" fill="#add8e6"/>
+    <rect x="116" y="176" width="5" height="38" fill="#add8e6"/>
 
-  <!-- mother: stern eyebrows, angled down toward nose -->
-  <path d="M172 60 Q181 55 191 62" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
-  <path d="M228 60 Q219 55 209 62" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <!-- right chair, facing the table, moved in half a leg-width -->
+    <rect x="151.5" y="159" width="5" height="35" fill="#6b4a2b"/>
+    <rect x="132.5" y="189" width="24" height="5" fill="#6b4a2b"/>
+    <rect x="151.5" y="194" width="5" height="19" fill="#add8e6"/>
+    <rect x="132.5" y="194" width="5" height="19" fill="#add8e6"/>
+  </g>
 
-  <!-- mother: eyes, looking down toward the mess -->
-  <ellipse cx="182" cy="76" rx="8" ry="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
-  <circle cx="179" cy="77" r="3" fill="#1b1b1b"/>
-  <ellipse cx="218" cy="76" rx="8" ry="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
-  <circle cx="215" cy="77" r="3" fill="#1b1b1b"/>
+  <!-- mother: shifted right and back of Clod, raised and scaled down for perspective — every shape below is unchanged from the original, just wrapped in one group transform -->
+  <g transform="translate(210, 47) scale(0.8)">
+    <ellipse cx="200" cy="72" rx="58" ry="62" fill="#4a3322" stroke="#1b1b1b" stroke-width="4"/>
+    <path d="M148 100 Q138 118 152 128 Q150 108 160 98 Z" fill="#4a3322" stroke="#1b1b1b" stroke-width="3"/>
+    <path d="M252 100 Q262 118 248 128 Q250 108 240 98 Z" fill="#4a3322" stroke="#1b1b1b" stroke-width="3"/>
 
-  <!-- mother: nose -->
-  <path d="M197 82 Q194 90 199 93 Q204 90 203 82" fill="none" stroke="#1b1b1b" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="200" cy="75" rx="46" ry="50" fill="#f0c49c" stroke="#1b1b1b" stroke-width="3"/>
 
-  <!-- mother: frown -->
-  <path d="M183 103 Q200 97 217 103" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M172 60 Q181 55 191 62" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M228 60 Q219 55 209 62" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- mother: neck -->
-  <path d="M185 118 L182 132 Q200 138 218 132 L215 118 Z" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
+    <ellipse cx="182" cy="76" rx="8" ry="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+    <circle cx="179" cy="77" r="3" fill="#1b1b1b"/>
+    <ellipse cx="218" cy="76" rx="8" ry="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+    <circle cx="215" cy="77" r="3" fill="#1b1b1b"/>
 
-  <!-- mother: dress, A-line period silhouette -->
-  <path d="M170 132 Q200 126 230 132 L268 345 Q200 356 132 345 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="4"/>
+    <path d="M197 82 Q194 90 199 93 Q204 90 203 82" fill="none" stroke="#1b1b1b" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- mother: apron -->
-  <path d="M181 166 Q200 163 219 166 L241 336 Q200 343 159 336 Z" fill="#ffffff" stroke="#1b1b1b" stroke-width="3"/>
-  <rect x="185" y="262" width="30" height="22" rx="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+    <path d="M183 103 Q200 97 217 103" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- mother: arms akimbo -->
-  <path d="M172 138 Q128 148 120 178 Q116 200 135 213 L152 213 Q142 196 148 178 Q154 158 176 148 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="3"/>
-  <circle cx="143" cy="216" r="11" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
-  <path d="M228 138 Q272 148 280 178 Q284 200 265 213 L248 213 Q258 196 252 178 Q246 158 224 148 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="3"/>
-  <circle cx="257" cy="216" r="11" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
+    <path d="M185 118 L182 132 Q200 138 218 132 L215 118 Z" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
 
-  <!-- mother: shoes -->
-  <path d="M172 345 L172 364 Q172 372 182 372 L196 372 Q199 372 195 365 L188 345 Z" fill="#6b4a2b" stroke="#1b1b1b" stroke-width="2"/>
-  <path d="M228 345 L228 364 Q228 372 218 372 L204 372 Q201 372 205 365 L212 345 Z" fill="#6b4a2b" stroke="#1b1b1b" stroke-width="2"/>
+    <path d="M170 132 Q200 126 230 132 L268 345 Q200 356 132 345 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="4"/>
+
+    <path d="M181 166 Q200 163 219 166 L241 336 Q200 343 159 336 Z" fill="#ffffff" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="185" y="262" width="30" height="22" rx="5" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+
+    <path d="M172 138 Q128 148 120 178 Q116 200 135 213 L152 213 Q142 196 148 178 Q154 158 176 148 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="3"/>
+    <circle cx="143" cy="216" r="11" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
+    <path d="M228 138 Q272 148 280 178 Q284 200 265 213 L248 213 Q258 196 252 178 Q246 158 224 148 Z" fill="#3f8f8f" stroke="#1b1b1b" stroke-width="3"/>
+    <circle cx="257" cy="216" r="11" fill="#f0c49c" stroke="#1b1b1b" stroke-width="2"/>
+
+    <!-- feet -->
+    <path d="M172 345 L172 364 Q172 372 182 372 L196 372 Q199 372 195 365 L188 345 Z" fill="#f48fb1" stroke="#1b1b1b" stroke-width="2"/>
+    <path d="M228 345 L228 364 Q228 372 218 372 L204 372 Q201 372 205 365 L212 345 Z" fill="#f48fb1" stroke="#1b1b1b" stroke-width="2"/>
+  </g>
 
   <!-- scattered toy blocks and ball -->
   <rect x="78" y="382" width="20" height="20" rx="3" fill="#e0483c" stroke="#1b1b1b" stroke-width="2" transform="rotate(-10 88 392)"/>
   <rect x="104" y="394" width="18" height="18" rx="3" fill="#f2c94c" stroke="#1b1b1b" stroke-width="2" transform="rotate(14 113 403)"/>
   <circle cx="58" cy="404" r="11" fill="#6fcf97" stroke="#1b1b1b" stroke-width="2"/>
 
-  <!-- Clod, seated on the floor, same proportions as assets/clod.svg scaled down -->
-  <g transform="translate(140, 325) scale(0.55)">
+  <!-- spilled McDonald's drink, closer to viewer between Clod and mother, spill pours from the lid end facing upper-right -->
+  <path d="M300 398 Q308 393 318 396 Q328 393 337 399 Q329 405 318 404 Q308 406 300 398 Z" fill="#5c3a21" opacity="0.5"/>
+  <g transform="translate(250, 412) rotate(70) scale(2.5)">
+    <path d="M-7 0 L7 0 L10 -26 L-10 -26 Z" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.5"/>
+    <path d="M-4.5 -9.5 Q-4.5 -16.5 -2.75 -16.5 Q-1 -16.5 -1 -9.5" fill="none" stroke="#1b1b1b" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-4.5 -9.5 Q-4.5 -16.5 -2.75 -16.5 Q-1 -16.5 -1 -9.5" fill="none" stroke="#ffc72c" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M1 -9.5 Q1 -16.5 2.75 -16.5 Q4.5 -16.5 4.5 -9.5" fill="none" stroke="#1b1b1b" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M1 -9.5 Q1 -16.5 2.75 -16.5 Q4.5 -16.5 4.5 -9.5" fill="none" stroke="#ffc72c" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="-11" y="-30" width="22" height="5" rx="1" fill="#e8e8e8" stroke="#1b1b1b" stroke-width="1.5"/>
+    <line x1="4" y1="-29" x2="16" y2="-43" stroke="#1b1b1b" stroke-width="4" stroke-linecap="round"/>
+    <line x1="4" y1="-29" x2="16" y2="-43" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clod, seated in the foreground, same proportions as assets/clod.svg scaled down -->
+  <g transform="translate(120, 325) scale(0.55)">
     <rect x="34" y="15" width="140" height="110" rx="20" fill="#e8792e" stroke="#1b1b1b" stroke-width="4"/>
     <rect x="4" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
     <rect x="174" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
