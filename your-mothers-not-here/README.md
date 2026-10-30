@@ -14,7 +14,7 @@ Two keyworded operations: **backroom** (old session transcripts, sandbox-style s
 
 This came out of an actual cleanup pass on a long-running project: 40+ small memory files consolidated into 3 type-organized ones, superseded component drafts cleared from a `GENERATED/` folder after confirming by content (not filename) that they were dead, and old session transcripts deleted down to a user-chosen set. Each step started with a listing and a question before anything irreversible happened — this skill generalizes that rhythm into two named operations.
 
-## backroom vs. amnesia
+## What backroom and amnesia do
 
 - **`backroom`** — files. Always lists available chat logs and asks *which to keep* before touching any transcript — never skipped, though it defaults to the last two if you don't specify otherwise. Standard artifacts (Playwright output, caches, shell snapshots) clear without ceremony; sandbox-style drafts (`tmp/`, `scratch/`, or similar) only get deleted after their content is actually checked, not just their filename. A folder literally named `GENERATED/` is never touched at all — deletion rights there belong to the user alone, same standing as `memory/`.
 - **`amnesia`** — memory. Never runs unprompted; needs the keyword named explicitly, or an explicit yes after backroom offers it. Removes stale content and redundancies automatically once triggered (both verified against the current codebase, not assumed from age), then reports the resulting file count and average length, then asks a plain yes/no on merging the rest into fewer type-organized files — asked after the safe cleanup, with real numbers, not blind upfront.
