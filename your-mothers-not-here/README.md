@@ -25,6 +25,11 @@ Run both in one call — e.g. *"your mothers not here do amnesia too"* — or ei
 
 Invoke by name for `backroom`; name `amnesia` explicitly to include memory cleanup, or say yes when `backroom` offers it. Expect a non-destructive listing first, the relevant question before anything is touched or merged, content checks on anything ambiguous, a two-lens report (prune? what's lost?) at moderate detail, and a clear accounting of what was actually removed once it acts.
 
+## Related skills
+
+- [Commit](../commit) — the same discipline from the other direction: an irreversible action (deletion here, a push there) that only ever runs behind an explicit ask, never on a good moment alone.
+- [Thought Experiment](../thought-experiment) — shares the "verify by content or a live source, never by assumption" discipline that governs both backroom's content-before-filename rule and amnesia's stale-content check.
+
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.

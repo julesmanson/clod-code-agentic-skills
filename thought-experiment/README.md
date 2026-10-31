@@ -8,6 +8,12 @@ concrete failure scenarios and checks claims about dependencies against live
 or authoritative sources instead of relying on memory. See
 [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
+Applying a fix never slides into committing or pushing it. If a fix would
+naturally lead there next, expect a real, serious request for permission
+first — not a casual "want me to commit this?" — even deep into a long
+session, which is exactly when that question is easiest to wave through on
+autopilot.
+
 ## Where this came from
 
 This grew from an audit of this repository's Commit skill. That audit
@@ -34,11 +40,10 @@ turns up nothing new. Reports stay short and use pass/fail findings unless a
 failure or additional detail needs explanation, and each failure is tagged
 blocking or non-blocking so the report can double as a go/no-go input.
 
-Applying a fix never slides into committing or pushing it. If a fix would
-naturally lead there next, expect a real, serious request for permission
-first — not a casual "want me to commit this?" — even deep into a long
-session, which is exactly when that question is easiest to wave through on
-autopilot.
+## Related skills
+
+- [Commit](../commit) — the skill an early audit of led to this one being generalized into its own tool, and the one this skill's commit/push firewall explicitly defers to before anything actually gets pushed.
+- [Your Mother's Not Here](../your-mothers-not-here) — the same core discipline from a different angle: verify by content, not filename or age, before acting on anything irreversible.
 
 ## Disclaimer
 
