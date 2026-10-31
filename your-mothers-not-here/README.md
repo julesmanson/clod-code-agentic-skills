@@ -23,7 +23,7 @@ Run both in one call — e.g. *"your mothers not here do amnesia too"* — or ei
 
 ## Using it
 
-Invoke by name for `backroom`; name `amnesia` explicitly to include memory cleanup, or say yes when `backroom` offers it. Expect a non-destructive listing first, the relevant question before anything is touched or merged, content checks on anything ambiguous, a two-lens report (prune? what's lost?) at moderate detail, and a clear accounting of what was actually removed once it acts.
+Invoke by name — "your mother's not here," or either alternative phrasing "your mother isn't here" / "your mother is not here" — for `backroom`; name `amnesia` explicitly to include memory cleanup, or say yes when `backroom` offers it. Expect a non-destructive listing first, the relevant question before anything is touched or merged, content checks on anything ambiguous, a two-lens report (prune? what's lost?) at moderate detail, and a clear accounting of what was actually removed once it acts.
 
 ## Related skills
 

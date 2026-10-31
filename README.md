@@ -1,7 +1,7 @@
 # Clod Code Agentic Skills
 
 <p align="center">
-  <img src="./assets/clod.svg" width="208" height="160" alt="Clod, the orange blockhead cartoon character">
+  <img src="./clod.svg" width="208" height="160" alt="Clod, the orange blockhead cartoon character">
 </p>
 
 A series of agentic developer skills for Claude Code, adaptable to other AI coding assistants with minimal edits.
@@ -133,6 +133,10 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 <tr>
 <td align="center"><a href="./dont-pollute-comments">Don't Pollute Comments</a></td>
 <td>One person's own comment-writing standard, triggered explicitly by name rather than autonomous. Fixes two common habits: hardwrapped comment blocks that look jagged at heavy zoom, and over-commenting the obvious. A unified rule set for every language, plus specifics for JavaScript, CSS, and HTML — meant as a starting template to invoke, inspect, then edit into your own house style. Details: <a href="./dont-pollute-comments/README.md"><code>dont-pollute-comments/README.md</code></a>.</td>
+</tr>
+<tr>
+<td align="center"><a href="./lern-my-speak">Lern My Speak</a></td>
+<td>A toy skill and a shorthand skill at once — a personal jargon glossary (e.g. "commie" for commit-and-push, "lemme ax" for let me ask) so the assistant decodes your own shorthand on demand instead of guessing from context. Triggered by the phrase "lern my speak," active for the rest of the session once said. Details: <a href="./lern-my-speak/README.md"><code>lern-my-speak/README.md</code></a>.</td>
 </tr>
 </tbody>
 </table>

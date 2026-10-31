@@ -1,0 +1,75 @@
+<svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two tall, slouching cartoon teenagers smirking and mumbling, with tiny orange-headed Clod standing between their feet, looking up.">
+
+  <!-- ground line -->
+  <line x1="20" y1="398" x2="420" y2="398" stroke="#1b1b1b" stroke-width="3"/>
+
+  <!-- left slacker: spiky blonde hair, green "dream theater" shirt -->
+  <g>
+    <rect x="82" y="380" width="34" height="18" rx="4" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+    <rect x="82" y="392" width="34" height="6" rx="2" fill="#1b1b1b"/>
+    <rect x="144" y="380" width="34" height="18" rx="4" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+    <rect x="144" y="392" width="34" height="6" rx="2" fill="#1b1b1b"/>
+    <rect x="88" y="300" width="22" height="85" rx="6" fill="#6b7a8c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="150" y="300" width="22" height="85" rx="6" fill="#6b7a8c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="65" y="220" width="20" height="75" rx="8" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="175" y="220" width="20" height="75" rx="8" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="65" y="220" width="20" height="28" rx="8" fill="#5cb85c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="175" y="220" width="20" height="28" rx="8" fill="#5cb85c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="85" y="215" width="90" height="90" rx="10" fill="#5cb85c" stroke="#1b1b1b" stroke-width="3"/>
+    <text x="130" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#fff">DREAM</text>
+    <text x="130" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#fff">THEATER</text>
+    <circle cx="130" cy="180" r="40" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <!-- jaw hint -->
+    <path d="M108,208 Q130,222 152,208 L152,218 Q130,230 108,218 Z" fill="#f0c89a" stroke="#1b1b1b" stroke-width="2"/>
+    <!-- sideways baseball cap, dodger blue -->
+    <path d="M92,168 Q88,122 130,118 Q172,122 172,162 Q172,148 130,145 Q88,148 92,168 Z" fill="dodgerblue" stroke="#1b1b1b" stroke-width="3"/>
+    <path d="M168,148 Q200,140 212,148 Q200,156 168,154 Z" fill="dodgerblue" stroke="#1b1b1b" stroke-width="2"/>
+    <circle cx="130" cy="120" r="4" fill="dodgerblue" stroke="#1b1b1b" stroke-width="1.5"/>
+    <!-- eyebrows, one raised for a smirk -->
+    <path d="M103,160 L123,156" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M137,158 L157,163" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="113" cy="172" r="4" fill="#1b1b1b"/>
+    <circle cx="147" cy="172" r="4" fill="#1b1b1b"/>
+    <path d="M108,194 Q130,206 150,193" fill="none" stroke="#1b1b1b" stroke-width="3"/>
+  </g>
+
+  <!-- right slacker: dark swept hair, blue "opeth" shirt -->
+  <g>
+    <rect x="262" y="380" width="34" height="18" rx="4" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+    <rect x="262" y="392" width="34" height="6" rx="2" fill="#1b1b1b"/>
+    <rect x="324" y="380" width="34" height="18" rx="4" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+    <rect x="324" y="392" width="34" height="6" rx="2" fill="#1b1b1b"/>
+    <rect x="268" y="300" width="22" height="85" rx="6" fill="#6b7a8c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="330" y="300" width="22" height="85" rx="6" fill="#6b7a8c" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="245" y="220" width="20" height="75" rx="8" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="355" y="220" width="20" height="75" rx="8" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="245" y="220" width="20" height="28" rx="8" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="355" y="220" width="20" height="28" rx="8" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="265" y="215" width="90" height="90" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+    <text x="310" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#fff">OPETH</text>
+    <circle cx="310" cy="180" r="40" fill="#f0c89a" stroke="#1b1b1b" stroke-width="3"/>
+    <!-- prominent jaw/chin for an underbite look -->
+    <path d="M286,206 Q310,228 334,206 L336,218 Q310,236 284,218 Z" fill="#f0c89a" stroke="#1b1b1b" stroke-width="2"/>
+    <!-- beanie, red -->
+    <path d="M272,170 Q266,120 310,110 Q354,120 348,170 Q348,155 310,150 Q272,155 272,170 Z" fill="firebrick" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="272" y="148" width="76" height="14" rx="7" fill="#8b1a1a" stroke="#1b1b1b" stroke-width="2"/>
+    <circle cx="310" cy="108" r="7" fill="#fff" stroke="#1b1b1b" stroke-width="2"/>
+    <!-- low, furrowed eyebrows -->
+    <path d="M288,163 L306,166" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M314,166 L332,163" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round"/>
+    <rect x="295" y="171" width="14" height="4" rx="2" fill="#1b1b1b"/>
+    <rect x="325" y="171" width="14" height="4" rx="2" fill="#1b1b1b"/>
+    <path d="M292,192 Q310,208 330,192 L330,196 Q310,212 292,196 Z" fill="#1b1b1b"/>
+  </g>
+
+  <!-- tiny Clod, same proportions as root clod.svg scaled down, standing in the gap between their feet -->
+  <g transform="translate(197,347) scale(0.22)">
+    <rect x="34" y="15" width="140" height="110" rx="20" fill="#e8792e" stroke="#1b1b1b" stroke-width="4"/>
+    <rect x="4" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="174" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="66" y="53" width="16" height="16" fill="#1b1b1b"/>
+    <rect x="126" y="53" width="16" height="16" fill="#1b1b1b"/>
+    <rect x="34" y="129" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+    <rect x="134" y="129" width="40" height="22" rx="10" fill="#3776ab" stroke="#1b1b1b" stroke-width="3"/>
+  </g>
+</svg>

@@ -75,7 +75,7 @@
     <line x1="4" y1="-29" x2="16" y2="-43" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
   </g>
 
-  <!-- Clod, seated in the foreground, same proportions as assets/clod.svg scaled down -->
+  <!-- Clod, seated in the foreground, same proportions as root clod.svg scaled down -->
   <g transform="translate(120, 325) scale(0.55)">
     <rect x="34" y="15" width="140" height="110" rx="20" fill="#e8792e" stroke="#1b1b1b" stroke-width="4"/>
     <rect x="4" y="79" width="30" height="30" rx="8" fill="#e8792e" stroke="#1b1b1b" stroke-width="3"/>

@@ -16,7 +16,7 @@ allowed-tools:
 
 **⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The specifics below reflect one person's workflow, not a universal standard. Backroom defaults to keeping the last two chat logs. Amnesia's own calls — what counts as "stale" memory content, whether merging those memory files is worth it — are deliberately left as judgment, not given a default. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 
-**Trigger:** explicit only. Invoking the skill by name (or describing backroom-file cleanup) runs **backroom**. Naming **amnesia** explicitly — alone or alongside backroom, e.g. "your mothers not here do amnesia too" — also runs the memory cleanup. Never runs autonomously just because something looks like clutter; every action here is a deletion.
+**Trigger:** explicit only. Invoking the skill by name — "your mother's not here," or either alternative phrasing "your mother isn't here" / "your mother is not here" — (or describing backroom-file cleanup) runs **backroom**. Naming **amnesia** explicitly — alone or alongside backroom, e.g. "your mothers not here do amnesia too" — also runs the memory cleanup. Never runs autonomously just because something looks like clutter; every action here is a deletion.
 
 Two keyworded operations, independently addressable. Each gates its own riskiest action with a question — backroom before touching anything, amnesia before merging files — rather than a single blanket confirmation.
 
@@ -56,3 +56,8 @@ Once triggered, always performs, in this order:
 5. **Confident vs. uncertain.** Confident = matches a rule above exactly (standard backroom artifacts, a content-verified dead draft, a confirmed-shipped feature's memory). Uncertain = anything needing a guess about intent or scope — ask, don't guess. Which chat logs to keep and whether to merge memory files are never "confident" — both are asked every time per each operation's own rule above.
 6. **Report at moderate detail, two lenses:** **Housekeeping** (can it be pruned, why — regenerable vs. irreplaceable) and **Understanding** (what it is, what's lost if pruned). A handful of labeled bullets, not a narrated essay.
 7. **After deleting, report exactly what was removed** (paths, approximate sizes) so there's a clear record to object to if something was misjudged.
+
+## Related skills
+
+- [Commit](../commit) — the same discipline from the other direction: an irreversible action (push there, deletion here) that only ever runs behind an explicit ask, never on a good moment alone.
+- [Thought Experiment](../thought-experiment) — shares the "verify by content or a live source, never by assumption" discipline that governs both backroom's content-before-filename rule and amnesia's stale-content check.
