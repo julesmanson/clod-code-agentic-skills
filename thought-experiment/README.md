@@ -34,6 +34,12 @@ turns up nothing new. Reports stay short and use pass/fail findings unless a
 failure or additional detail needs explanation, and each failure is tagged
 blocking or non-blocking so the report can double as a go/no-go input.
 
+Applying a fix never slides into committing or pushing it. If a fix would
+naturally lead there next, expect a real, serious request for permission
+first — not a casual "want me to commit this?" — even deep into a long
+session, which is exactly when that question is easiest to wave through on
+autopilot.
+
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
