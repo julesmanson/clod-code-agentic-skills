@@ -36,7 +36,7 @@ Before anything language-specific, nine rules apply everywhere:
 - A longer-than-usual comment is reserved for genuine variance — a non-obvious value, a tradeoff, a reason something is tuned the way it is — not handed out uniformly regardless of language.
 - A short list of items can be several short lines, one per item, with a one-line heading if the list runs long.
 - An unused-looking property or variable sitting among similarly-named ones gets left alone, not flagged as dead.
-- A page/file heading is optional, used selectively — not stamped on every file. When used: exactly one per file, three lines (border, title, border), flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); borders match its width. Valid in any language whose comment syntax supports `/* ... */` — which excludes HTML.
+- A page/file heading, for CSS, is unconditional — exactly one per file, every file, no exceptions. Three lines (border, title, border), flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); borders match its width. In other `/* ... */`-capable languages (which excludes HTML) this has only been observed once, on a single exemplar file — a single data point to extend cautiously, not a confirmed rule.
 
 ## JavaScript
 

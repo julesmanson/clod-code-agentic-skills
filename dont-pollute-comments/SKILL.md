@@ -32,7 +32,7 @@ A comment block should read structurally the same as prose on an article page: p
 6. **A longer comment than usual is reserved for genuine variance** — a non-obvious value, a tradeoff, a reason something is tuned the way it is — not applied uniformly to every line regardless of language. Most lines still get the terse default; the longer one earns its length.
 7. **A list-like comment can be several short lines, one per item** — but each line has to stay short enough to never wrap under zoom or in a narrow files panel. A long list gets a one-line heading or explainer first.
 8. **An unused-looking property or variable sitting among a series of similarly-named ones is left alone, not flagged.** Don't assume dead code from appearance alone.
-9. **Page/file heading block** (optional — used selectively, not on every file): exactly one per file, three self-closing lines — border, title, border — flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); border lines are solid stars matching the title line's full width. Valid in any language whose comment syntax supports `/* ... */`.
+9. **Page/file heading block: for CSS, this is unconditional — exactly one per file, every file, no exceptions.** Three self-closing lines — border, title, border — flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); border lines are solid stars matching the title line's full width. In other languages whose comment syntax also supports `/* ... */`, this has only been observed once (on a single exemplar file) — not confirmed as a rule for every file there, so treat that as a single data point to extend cautiously rather than a settled convention.
 
 ## JavaScript specifics
 
