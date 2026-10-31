@@ -22,7 +22,7 @@ allowed-tools:
 
 **What makes this different from a normal review:** two things. First, it produces concrete scenarios — "given this input/this state, here's exactly what breaks and why" — not vague "this could be cleaner" suggestions. Second, it specifically hunts for claims the target makes about how something *outside itself* behaves, since that class of claim is the one most likely to be quietly wrong from memory rather than caught by reading the target's own logic.
 
-**Commit/push firewall:** applying fixes (step 5) never extends into committing or pushing them. If the natural next step after a fix would be a commit/push, stop and sternly ask for explicit permission first — a real, serious question, not a reflexive "want me to commit this?" This holds even deep into a long audit session, specifically because that's when a tired user is most likely to wave something through they'd otherwise stop and think about.
+**Pre-round commit check (safety rail):** sternly ask for, and recommend, a commit/push of any existing uncommitted changes before engaging in a round. A clean checkpoint beforehand means the round itself can always be rolled back to it if it does any damage.
 
 ## Process
 

@@ -4,11 +4,7 @@
 
 **Commit and Push** — [← back to Clod Code Agentic Skills](../README.md)
 
-When you explicitly ask for a commit, this skill commits and pushes the
-appropriate changes to the configured remote. It can be adapted to other Git
-services with minimal edits. If you ask to create a repository that does not
-exist, you are prompted for the missing decisions first. See
-[`SKILL.md`](./SKILL.md) for the complete behavior definition.
+When you explicitly ask for a commit, this skill commits and pushes the appropriate changes to the configured remote. It can be adapted to other Git services with minimal edits. If you ask to create a repository that does not exist, you are prompted for the missing decisions first. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
 ## What to expect
 
@@ -25,12 +21,9 @@ Every way this skill can be invoked, and what happens for each:
 | `new repo [name] [visibility] [license] commit` | The repository is created with the specified options, then committed and pushed. |
 | An ambiguous or unrecognized value | You are asked to clarify it rather than having the choice guessed. |
 
-Nothing is staged, committed, or pushed merely because a good moment is
-noticed. You must explicitly say `commit` before those actions occur.
+Nothing is staged, committed, or pushed merely because a good moment is noticed. You must explicitly say `commit` before those actions occur.
 
-Saying `commit` always pushes too, as one combined action — you don't need
-to ask for the push separately. Say `just commit` or `don't push` instead
-if you want the commit made without pushing it.
+Saying `commit` always pushes too, as one combined action — you don't need to ask for the push separately. Say `just commit` or `don't push` instead if you want the commit made without pushing it.
 
 Examples:
 
@@ -46,8 +39,7 @@ Same, but private and Apache-2.0 licensed.
 
 ### Defaults
 
-The following are the only values supplied automatically when you leave them
-out. Ambiguous or missing values outside this list prompt a question:
+The following are the only values supplied automatically when you leave them out. Ambiguous or missing values outside this list prompt a question:
 
 | Value | Assumed if not given |
 | --- | --- |
@@ -56,16 +48,13 @@ out. Ambiguous or missing values outside this list prompt a question:
 | Remote name | `origin` |
 | Branch to push | whichever branch is currently checked out (never switched on your behalf) |
 
-When creating a repository, visibility defaults to `public` and license to
-`none`. The remote defaults to `origin`, and the currently checked-out branch
-is used without switching branches for you.
+When creating a repository, visibility defaults to `public` and license to `none`. The remote defaults to `origin`, and the currently checked-out branch is used without switching branches for you.
 
 > **Tip:** if you create the GitHub repo yourself via the website first, uncheck "Add a README file" and "Choose a license" unless you actually want GitHub's placeholders — otherwise they'll need reconciling with this skill's own README/LICENSE afterward.
 
 ## Using Commit with other git hosts
 
-The ordinary `commit` workflow works with any Git remote. Only repository
-creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
+The ordinary `commit` workflow works with any Git remote. Only repository creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
 
 | Situation | What to do |
 | --- | --- |
@@ -74,15 +63,11 @@ creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
 | A remote is not named `origin` | Specify which remote to use. |
 | SSH versus HTTPS | Either works once the remote is configured correctly. |
 
-Once the remote is configured, Commit behaves the same across hosts.
-Repository creation is the only GitHub-specific part.
+Once the remote is configured, Commit behaves the same across hosts. Repository creation is the only GitHub-specific part.
 
 ### Adapting to GitLab
 
-If you are adapting this skill for GitLab, replace `gh repo create` with
-`glab repo create [name] --[visibility] --remoteName=origin` and run it from
-inside the already-`git init`'d directory. Three real differences from
-`gh`, not just a naming swap:
+If you are adapting this skill for GitLab, replace `gh repo create` with `glab repo create [name] --[visibility] --remoteName=origin` and run it from inside the already-`git init`'d directory. Three real differences from `gh`, not just a naming swap:
 
 - No `--source` flag — running from the current directory (or omitting `[name]` to use the folder name) is `glab`'s equivalent of `gh`'s `--source=.`.
 - The remote-name flag is `--remoteName`, not `--remote`.
@@ -90,7 +75,7 @@ inside the already-`git init`'d directory. Three real differences from
 
 ## Related skills
 
-- [Thought Experiment](../thought-experiment) — grew out of an early audit of this skill, and its own commit/push firewall explicitly defers to this skill's explicit-trigger gate before anything actually gets pushed.
+- [Thought Experiment](../thought-experiment) — grew out of an early audit of this skill.
 - [Your Mother's Not Here](../your-mothers-not-here) — the same discipline from the other direction: an irreversible action (push here, deletion there) that only ever runs behind an explicit ask, never on a good moment alone.
 
 ## Disclaimer
