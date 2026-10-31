@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# Autonomon — 6 autonomous skills
+# Autonomon ver 0.6.0 beta — 6 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this
 user's workflow. Each numbered section below is its own mini-skill; new

@@ -130,6 +130,10 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 ⚠️ Read carefully before use — every action is a deletion. Two keyworded operations: <code>backroom</code> (deletes old session transcripts and scratch artifacts, asking which chat logs to keep — default: last two) and <code>amnesia</code> (cleans the memory system — removes stale/redundant content automatically, then reports the resulting file count/average length and asks whether to merge into fewer files). Details: <a href="./your-mothers-not-here/README.md"><code>your-mothers-not-here/README.md</code></a>.
 </td>
 </tr>
+<tr>
+<td align="center"><a href="./dont-pollute-comments">Don't Pollute Comments</a></td>
+<td>One person's own comment-writing standard, triggered explicitly by name rather than autonomous. Fixes two common habits: hardwrapped comment blocks that look jagged at heavy zoom, and over-commenting the obvious. A unified rule set for every language, plus specifics for JavaScript, CSS, and HTML — meant as a starting template to invoke, inspect, then edit into your own house style. Details: <a href="./dont-pollute-comments/README.md"><code>dont-pollute-comments/README.md</code></a>.</td>
+</tr>
 </tbody>
 </table>
 

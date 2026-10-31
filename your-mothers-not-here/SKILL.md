@@ -12,7 +12,7 @@ allowed-tools:
   - Edit
 ---
 
-# Your Mother's Not Here — Claude-Generated Backroom File Cleanup
+# Your Mother's Not Here ver 1.0.5 beta — Claude-Generated Backroom File Cleanup
 
 **⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The specifics below reflect one person's workflow, not a universal standard. Backroom defaults to keeping the last two chat logs. Amnesia's own calls — what counts as "stale" memory content, whether merging those memory files is worth it — are deliberately left as judgment, not given a default. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 

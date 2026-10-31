@@ -1,6 +1,6 @@
-# Autonomon
+# Autonomon (ver 0.6.0 beta)
 
-**6 autonomous skills** (`v0.6.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**6 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally
 intended for personal use and now open to anyone who finds them useful. You
@@ -30,9 +30,10 @@ yourself.
 ## 2. `terse`
 
 Expect short answers by default: no unnecessary preamble, repetition, or
-trailing summary. More detail is appropriate when leaving it out could cause
-a real failure, when a decision is irreversible, or when you ask for a full
-explanation.
+trailing summary. More detail is appropriate when leaving it out would be
+a real point of failure: genuine ambiguity about what's meant, an
+irreversible action, a nuance you need to decide something correctly, or
+when you ask for a full explanation.
 
 ## 3. `verdict-first`
 
@@ -69,7 +70,7 @@ explicitly calls for exhaustive coverage regardless of weight (an
 
 ## Related skills
 
-- [Evaluate Me](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across eight points.
+- [Evaluate Me](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across nine points.
 
 ## Disclaimer
 

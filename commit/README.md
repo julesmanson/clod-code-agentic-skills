@@ -1,8 +1,8 @@
-# Commit
+# Commit (ver 0.5.0 beta)
 
 <img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
-**Commit and Push** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**Commit and Push** — [← back to Clod Code Agentic Skills](../README.md)
 
 When you explicitly ask for a commit, this skill commits and pushes the
 appropriate changes to the configured remote. It can be adapted to other Git
@@ -27,6 +27,10 @@ Every way this skill can be invoked, and what happens for each:
 
 Nothing is staged, committed, or pushed merely because a good moment is
 noticed. You must explicitly say `commit` before those actions occur.
+
+Saying `commit` always pushes too, as one combined action — you don't need
+to ask for the push separately. Say `just commit` or `don't push` instead
+if you want the commit made without pushing it.
 
 Examples:
 

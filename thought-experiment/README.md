@@ -1,6 +1,6 @@
-# Thought Experiment
+# Thought Experiment (ver 0.5.0 beta)
 
-**Rigorous Failure-Scenario Audits** (`v0.5.0-beta`) — [← back to Clod Code Agentic Skills](../README.md)
+**Rigorous Failure-Scenario Audits** — [← back to Clod Code Agentic Skills](../README.md)
 
 Use this skill for a rigorous, evidence-based audit of a script, document,
 configuration, project, cloud setup, or other target. It constructs
@@ -21,7 +21,7 @@ names. This skill generalizes that process to any target.
 Two things set it apart:
 
 1. **Concrete scenarios, not vague suggestions.** Every finding takes the shape "given this input or state, here's exactly what breaks and why" — not "this could be cleaner."
-2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone. When the target is headed to deployment, the dependency pass also covers rollback safety, dev/prod config parity, secrets handling, the stated compatibility baseline, and real-condition performance versus dev-only testing.
+2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone. When the target is headed to deployment, the dependency pass also covers rollback safety, dev/prod config parity, secrets handling, the stated compatibility baseline, and first-load/real-condition performance versus dev-only testing.
 
 ## Using it
 

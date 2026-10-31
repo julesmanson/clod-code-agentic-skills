@@ -10,7 +10,7 @@ allowed-tools:
   - Bash
 ---
 
-# Evaluate Me — Objective Self-Assessment
+# Evaluate Me ver 1.0.0 — Objective Self-Assessment
 
 **Trigger:** the phrase "evaluate-me."
 

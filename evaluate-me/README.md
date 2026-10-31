@@ -1,4 +1,4 @@
-# Evaluate Me (v 1.0)
+# Evaluate Me ver 1.0.0
 
 **Objective Self-Assessment** - [back to Clod Code Agentic Skills](../README.md)
 
