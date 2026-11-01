@@ -8,84 +8,14 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 
 ## Contents
 
+- [Skills](#skills)
+- [QA and QC](#qa-and-qc)
 - [What is a skill?](#what-is-a-skill)
 - [Further reading](#further-reading)
 - [Repository structure](#repository-structure)
 - [Installing a skill](#installing-a-skill)
-- [QA and QC](#qa-and-qc)
-- [Skills](#skills)
 - [Contributing](#contributing)
 - [License](#license)
-
-## What is a skill?
-
-A skill is a single `SKILL.md` file: YAML frontmatter followed by a plain-Markdown body of instructions.
-
-```yaml
----
-name: skill-name
-description: What it does and when to use it.
-user-invocable: true
-allowed-tools:
-  - Bash
----
-```
-
-The frontmatter fields (`user-invocable`, `allowed-tools`) are Claude Code-specific — they control how the skill is triggered and what it's permitted to run. The Markdown body underneath is plain prose describing the steps to follow, which is why these skills are portable: any assistant can read and follow the instructions even if it has no concept of the frontmatter.
-
-The **Evaluate Me** skill is model-agnostic. Its Markdown instructions can be used with any AI model or coding assistant, with only minimal edits needed to satisfy that assistant's skill format and tool requirements.
-
-## Further reading
-
-- [Use Skills in Claude Code](https://code.claude.com/docs/en/skills) — official docs: discovery, invocation, `~/.claude/skills/` vs `.claude/skills/`
-- [Introduction to Agent Skills](https://academy.claude.com/courses/introduction-to-agent-skills) — Claude Academy course: building, configuring, and sharing skills, start to finish
-
-## Repository structure
-
-Each skill lives in its own folder, named after the skill, containing a `SKILL.md` (the complete behavior definition) and a `README.md` (a human-readable guide to the same behavior, with a link back here):
-
-```
-skill-name/
-  SKILL.md
-  README.md
-```
-
-## Installing a skill
-
-**Claude Code — personal (all projects on this machine)**
-Copy the skill's folder into your personal skills directory:
-
-```sh
-cp -r commit ~/.claude/skills/commit
-```
-
-That `cp` command needs a Unix-style shell (Git Bash, WSL, macOS/Linux Terminal). In native Windows PowerShell, use:
-
-```powershell
-Copy-Item -Recurse commit "$env:USERPROFILE\.claude\skills\commit"
-```
-
-Either way, the destination is `%USERPROFILE%\.claude\skills\commit\` on Windows. Claude Code picks it up automatically from there — invoke it explicitly (e.g. `/commit`) or just describe the task; Claude will use it when the description matches.
-
-**Claude Code — project-level (shared via a repo, including cloud sessions)**
-Copy the folder into that project's own `.claude/skills/` directory and commit it. Anyone working in that repo — including cloud/Cowork sessions — gets the skill automatically, with no local setup required.
-
-**Other AI coding assistants**
-Copy the Markdown body (below the frontmatter) into your assistant's system prompt or custom-instructions field. Treat `user-invocable` and `allowed-tools` as documentation rather than something your tool will enforce, unless you wire up the equivalent yourself.
-
-## QA and QC
-
-Quality control (QC) is a built-in guardrail — a specific check enforcing a minimum quality floor. Quality assurance (QA) is the broader program: the discipline of following a set of QC guardrails to guarantee an acceptable standard of deliverables.
-
-Five of the six skills here are QC guardrails, each anticipating a specific failure mode:
-
-- **Commit** — guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
-- **Thought Experiment** — guards against an unverified claim passing as fact.
-- **Your Mother's Not Here** — guards against a premature or accidental irreversible deletion.
-- **Don't Pollute Comments** — guards against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
-- **Lern My Speak** — guards against a long, fatigued session's shorthand being misread instead of understood.
-
-**Evaluate Me** is the one skill that isn't itself a guardrail — it doesn't inspect an artifact the way the five above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
 ## Skills
 
@@ -157,6 +87,76 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 </table>
 
 More skills will land here as they're written — this list grows with the repo.
+
+## QA and QC
+
+Quality control (QC) is a built-in guardrail — a specific check enforcing a minimum quality floor. Quality assurance (QA) is the broader program: the discipline of following a set of QC guardrails to guarantee an acceptable standard of deliverables.
+
+Five of the six skills above are QC guardrails, each anticipating a specific failure mode:
+
+- **Commit** — guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
+- **Thought Experiment** — guards against an unverified claim passing as fact.
+- **Your Mother's Not Here** — guards against a premature or accidental irreversible deletion.
+- **Don't Pollute Comments** — guards against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
+- **Lern My Speak** — guards against a long, fatigued session's shorthand being misread instead of understood.
+
+**Evaluate Me** is the one skill that isn't itself a guardrail — it doesn't inspect an artifact the way the five above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
+
+## What is a skill?
+
+A skill is a single `SKILL.md` file: YAML frontmatter followed by a plain-Markdown body of instructions.
+
+```yaml
+---
+name: skill-name
+description: What it does and when to use it.
+user-invocable: true
+allowed-tools:
+  - Bash
+---
+```
+
+The frontmatter fields (`user-invocable`, `allowed-tools`) are Claude Code-specific — they control how the skill is triggered and what it's permitted to run. The Markdown body underneath is plain prose describing the steps to follow, which is why these skills are portable: any assistant can read and follow the instructions even if it has no concept of the frontmatter.
+
+The **Evaluate Me** skill is model-agnostic. Its Markdown instructions can be used with any AI model or coding assistant, with only minimal edits needed to satisfy that assistant's skill format and tool requirements.
+
+## Further reading
+
+- [Use Skills in Claude Code](https://code.claude.com/docs/en/skills) — official docs: discovery, invocation, `~/.claude/skills/` vs `.claude/skills/`
+- [Introduction to Agent Skills](https://academy.claude.com/courses/introduction-to-agent-skills) — Claude Academy course: building, configuring, and sharing skills, start to finish
+
+## Repository structure
+
+Each skill lives in its own folder, named after the skill, containing a `SKILL.md` (the complete behavior definition) and a `README.md` (a human-readable guide to the same behavior, with a link back here):
+
+```
+skill-name/
+  SKILL.md
+  README.md
+```
+
+## Installing a skill
+
+**Claude Code — personal (all projects on this machine)**
+Copy the skill's folder into your personal skills directory:
+
+```sh
+cp -r commit ~/.claude/skills/commit
+```
+
+That `cp` command needs a Unix-style shell (Git Bash, WSL, macOS/Linux Terminal). In native Windows PowerShell, use:
+
+```powershell
+Copy-Item -Recurse commit "$env:USERPROFILE\.claude\skills\commit"
+```
+
+Either way, the destination is `%USERPROFILE%\.claude\skills\commit\` on Windows. Claude Code picks it up automatically from there — invoke it explicitly (e.g. `/commit`) or just describe the task; Claude will use it when the description matches.
+
+**Claude Code — project-level (shared via a repo, including cloud sessions)**
+Copy the folder into that project's own `.claude/skills/` directory and commit it. Anyone working in that repo — including cloud/Cowork sessions — gets the skill automatically, with no local setup required.
+
+**Other AI coding assistants**
+Copy the Markdown body (below the frontmatter) into your assistant's system prompt or custom-instructions field. Treat `user-invocable` and `allowed-tools` as documentation rather than something your tool will enforce, unless you wire up the equivalent yourself.
 
 ## Contributing
 
