@@ -31,6 +31,7 @@ This is one person's own glossary, kept short on purpose so it's easy to hand-ed
 - **prollem** — problem
 - **prolly** — probably
 - **stinking / im stinking** — thinking / I'm thinking
+- **thot** — thought
 - **toll** — told
 - **wid** — with
 - **wud** — what
