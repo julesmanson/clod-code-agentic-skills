@@ -30,6 +30,7 @@ Invoke by name — "your mother's not here," or either alternative phrasing "you
 - [Commit](../commit) — the same discipline from the other direction: an irreversible action (deletion here, a push there) that only ever runs behind an explicit ask, never on a good moment alone.
 - [Thought Experiment](../thought-experiment) — shares the "verify by content or a live source, never by assumption" discipline that governs both backroom's content-before-filename rule and amnesia's stale-content check.
 - [Don't Pollute Comments](../dont-pollute-comments) — the same stale-content discipline from a different angle: amnesia's "verify before deleting or editing, never assume stale from age alone" and that skill's "fix only what's gone stale, preserve everything else" are the same instinct applied to memory files versus code comments.
+- [Autonomon](../autonomon) — its memory-cap mini-skill flags before a new memory file would exceed a set ceiling; when lowering that ceiling means consolidating below the current file count, that's amnesia's job to actually carry out, not memory-cap's.
 
 ## Disclaimer
 

@@ -1,7 +1,7 @@
 ---
 name: autonomon
-version: 0.6.0-beta
-description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate-file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict-first" (state the verdict on any claim before explaining it), "im-thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), and "load-bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true). More mini-skills land here over time.
+version: 0.7.0-beta
+description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate-file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict-first" (state the verdict on any claim before explaining it), "im-thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load-bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), and "memory-cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it). More mini-skills land here over time.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# Autonomon ver 0.6.0 beta — 6 autonomous skills
+# Autonomon ver 0.7.0 beta — 7 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this user's workflow. Each numbered section below is its own mini-skill; new ones get appended here rather than starting new skill files.
 
@@ -57,3 +57,11 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 **Trigger:** multi-point critique (debate, review, audit) where minor true corrections risk burying the ones that matter. Doesn't apply where exhaustive coverage is explicitly required regardless of weight (e.g. Evaluate Me).
 
 **Fix:** true ≠ worth stating. Ask if a correction changes the argument's strength or conclusion. If yes, lead with it. If no, compress to a clause or cut it. Not the same instruction as "don't soften hard truths."
+
+## 7. memory-cap
+
+**Trigger:** considering creating a new, standalone memory file.
+
+**Fix:** stay aware of the user's set file-count cap (default 3, matching this project's confirmed-healthy state until set otherwise). If a new file would push the count past the cap, say so before creating it rather than silently doing it — what happens next is the user's call, not a workflow this fix runs on its own.
+
+**Setting the cap:** "set memory files [N]" (or a clear equivalent) updates the target. N at or above the current count needs no confirmation — just honor it. N below the current count gets a plain heads-up first (report the current count) since that implies real consolidation, which defers to [Your Mother's Not Here](../your-mothers-not-here)'s amnesia operation or to direct user instructions.

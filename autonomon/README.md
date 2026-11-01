@@ -1,6 +1,6 @@
-# Autonomon (ver 0.6.0 beta)
+# Autonomon (ver 0.7.0 beta)
 
-**6 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
+**7 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally intended for personal use and now open to anyone who finds them useful. You do not need to type a keyword to activate any of these behaviors; the rules operate automatically. The keywords are names for the behaviors and reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
@@ -32,10 +32,17 @@ When you offer a bare figure or a constructed model without hedging language, ex
 
 When a response critiques or corrects several points at once — a debate, a review, an audit — expect the corrections that actually change the argument's strength or conclusion to come first, with accurate-but-inconsequential nitpicks compressed to a clause or left out rather than given equal billing. This doesn't apply when a task explicitly calls for exhaustive coverage regardless of weight (an `evaluate-me` report, for instance).
 
+## 7. `memory-cap`
+
+Expect Claude to stay aware of a file-count cap on the memory system (default 3, until you set otherwise) and mention it — rather than silently creating a new file — any time adding one would push the count past that number. What to do about it (fold the new content into an existing file, raise the cap, or consolidate) is entirely your call.
+
+Set the cap with `set memory files [N]` or a clear equivalent. Raising it or leaving it the same is honored immediately, no confirmation needed. Lowering it below the current file count gets a heads-up first — the current count is reported before anything happens, since going lower implies real consolidation, which is Your Mother's Not Here's amnesia operation to carry out, not this one.
+
 ## Related skills
 
 - [Evaluate Me](../evaluate-me) — runs a strict, evidence-gated self-assessment of the user across nine points.
 - [Lern My Speak](../lern-my-speak) — the opposite direction of autonomon's always-on fixes: a session-triggered glossary that shapes how your input gets read, not how the assistant's own output gets shaped.
+- [Your Mother's Not Here](../your-mothers-not-here) — memory-cap's lowering case hands off to amnesia for the actual consolidation rather than duplicating that logic here.
 
 ## Disclaimer
 
