@@ -1,6 +1,6 @@
 ---
 name: adjudicate-me
-version: 1.2.0
+version: 1.0.0
 description: Evaluates one piece of public-facing content (a comment, post, or article) for US security-clearance disqualification risk at Tier 1, Tier 3, and Tier 5, and for how an aerospace/defense hiring panel or background-investigation adjudicator would likely perceive it. Triggered by the phrase "adjudicate me" or "ad me."
 user-invocable: true
 allowed-tools:
@@ -9,7 +9,7 @@ allowed-tools:
   - Playwright MCP tools (for content WebFetch can't reliably render)
 ---
 
-# Adjudicate Me ver 1.2.0
+# Adjudicate Me ver 1.0.0
 
 **Trigger:** the phrase "adjudicate me" or "ad me," always accompanied by the content itself — a link, a file, or pasted text. No inferred equivalents.
 

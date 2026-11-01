@@ -1,4 +1,4 @@
-# Adjudicate Me ver 1.2.0
+# Adjudicate Me ver 1.0.0
 
 **Public-Content Clearance & Perception Check** - [back to Clod Code Agentic Skills](../README.md)
 
