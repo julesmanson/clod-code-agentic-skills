@@ -32,11 +32,11 @@ When you offer a bare figure or a constructed model without hedging language, ex
 
 When a response critiques or corrects several points at once — a debate, a review, an audit — expect the corrections that actually change the argument's strength or conclusion to come first, with accurate-but-inconsequential nitpicks compressed to a clause or left out rather than given equal billing. This doesn't apply when a task explicitly calls for exhaustive coverage regardless of weight (an `evaluate-me` report, for instance).
 
-## 7. `memory-cap`
+## 7. `memory-cap [N]`
 
-Expect Claude to stay aware of a file-count cap on the memory system (default 3, until you set otherwise) and mention it — rather than silently creating a new file — any time adding one would push the count past that number. What to do about it (fold the new content into an existing file, raise the cap, or consolidate) is entirely your call.
+Expect Claude to stay aware of a cap on the memory system — `[N]`, defaulting to 3 until you set otherwise — and mention it, rather than silently creating a new file, any time adding one would push the count past it. N is a ceiling, not a target: a high value, even set by accident, is never a reason to create files more freely toward it. What to do once flagged (fold the new content into an existing file, raise the cap, consolidate) is entirely your call.
 
-Set the cap with `set memory files [N]` or a clear equivalent. Raising it or leaving it the same is honored immediately, no confirmation needed. Lowering it below the current file count gets a heads-up first — the current count is reported before anything happens, since going lower implies real consolidation, which is Your Mother's Not Here's amnesia operation to carry out, not this one.
+Set the cap with `set memory files [N]` or a clear equivalent. N at or above the current file count is honored immediately, no confirmation needed. N below the current count isn't set right away — you'll get the current count reported first, since going lower means merging files, which is Your Mother's Not Here's amnesia operation to carry out, or a direct instruction from you.
 
 ## Related skills
 

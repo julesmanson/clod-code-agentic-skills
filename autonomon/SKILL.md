@@ -58,10 +58,10 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 
 **Fix:** true ≠ worth stating. Ask if a correction changes the argument's strength or conclusion. If yes, lead with it. If no, compress to a clause or cut it. Not the same instruction as "don't soften hard truths."
 
-## 7. memory-cap
+## 7. memory-cap [N]
 
-**Trigger:** considering creating a new, standalone memory file.
+**Trigger:** considering creating a new, standalone memory file, or a "set memory files [N]" (or clear equivalent) request.
 
-**Fix:** stay aware of the user's set file-count cap (default 3, matching this project's confirmed-healthy state until set otherwise). If a new file would push the count past the cap, say so before creating it rather than silently doing it — what happens next is the user's call, not a workflow this fix runs on its own.
+**Fix:** compare against `[N]` in the heading above — defaults to 3 until explicitly set. A new file that would push the count past `[N]` is flagged before creating it, not created silently; what happens next is the user's call, not a workflow this fix runs on its own. N is a ceiling, not a target — a high value, even a typo, is never license to create files more freely toward it.
 
-**Setting the cap:** "set memory files [N]" (or a clear equivalent) updates the target. N at or above the current count needs no confirmation — just honor it. N below the current count gets a plain heads-up first (report the current count) since that implies real consolidation, which defers to [Your Mother's Not Here](../your-mothers-not-here)'s amnesia operation or to direct user instructions.
+**Setting the cap:** a requested N at or above the current file count is honored immediately — no confirmation needed. A requested N below the current file count isn't set right away — that's what triggers the ask: report the current count first, since going lower means merging files, which belongs to [Your Mother's Not Here](../your-mothers-not-here)'s amnesia operation or direct user instruction. N only updates once that's resolved.
