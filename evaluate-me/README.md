@@ -90,6 +90,7 @@ The behavioral instructions are written in ordinary Markdown and are not tied to
 ## Related skills
 
 - [Autonomon](../autonomon) — contains several personal workflow fixes, including how generated files are handled and how concise responses stay.
+- [Adjudicate Me](../adjudicate-me) — the content-scoped counterpart: judges one specific public post or comment against a security-clearance/perception standard, rather than the user's overall collaboration across a session.
 
 ## Disclaimer
 

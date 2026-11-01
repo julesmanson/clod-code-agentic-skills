@@ -84,6 +84,10 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 <td align="center"><a href="./lern-my-speak">Lern My Speak</a></td>
 <td>A toy skill and a shorthand skill at once — a personal jargon glossary (e.g. "commie" for commit-and-push, "lemme ax" for let me ask) so the assistant decodes your own shorthand on demand instead of guessing from context. Triggered by the phrase "lern my speak," active for the rest of the session once said. Details: <a href="./lern-my-speak/README.md"><code>lern-my-speak/README.md</code></a>.</td>
 </tr>
+<tr>
+<td align="center"><a href="./adjudicate-me">Adjudicate Me</a></td>
+<td>Checks one piece of public-facing content — a comment, post, or article — against two separate bars: real US security-clearance disqualification risk at Tier 1/3/5, and how a hiring panel or background-investigation adjudicator would likely perceive it. Built for aerospace/defense-track job-seekers posting under a traceable identity, adaptable to any field with a formal vetting process. Triggered by the phrase "adjudicate me" or "ad me," always paired with the content itself. Details: <a href="./adjudicate-me/README.md"><code>adjudicate-me/README.md</code></a>.</td>
+</tr>
 </tbody>
 </table>
 
@@ -100,6 +104,7 @@ All but one of the skills above have well embedded QC safety guardrails, each an
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
 - **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially when it is given to an AI assistant after complacency sets in during long, tiring sessions.
+- **Adjudicate Me** — guards against a public post or comment creating unflagged security-clearance disqualification risk or landing badly with a hiring panel.
 
 **Evaluate Me** is the one skill that isn't itself QC — it doesn't inspect an artifact the way the skills above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
