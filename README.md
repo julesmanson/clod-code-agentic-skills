@@ -12,6 +12,7 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 - [Further reading](#further-reading)
 - [Repository structure](#repository-structure)
 - [Installing a skill](#installing-a-skill)
+- [QA and QC](#qa-and-qc)
 - [Skills](#skills)
 - [Contributing](#contributing)
 - [License](#license)
@@ -71,6 +72,20 @@ Copy the folder into that project's own `.claude/skills/` directory and commit i
 
 **Other AI coding assistants**
 Copy the Markdown body (below the frontmatter) into your assistant's system prompt or custom-instructions field. Treat `user-invocable` and `allowed-tools` as documentation rather than something your tool will enforce, unless you wire up the equivalent yourself.
+
+## QA and QC
+
+Quality control (QC) is a built-in guardrail — a specific check enforcing a minimum quality floor. Quality assurance (QA) is the broader program: the discipline of following a set of QC guardrails to guarantee an acceptable standard of deliverables.
+
+Five of the six skills here are QC guardrails, each anticipating a specific failure mode:
+
+- **Commit** — guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
+- **Thought Experiment** — guards against an unverified claim passing as fact.
+- **Your Mother's Not Here** — guards against a premature or accidental irreversible deletion.
+- **Don't Pollute Comments** — guards against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
+- **Lern My Speak** — guards against a long, fatigued session's shorthand being misread instead of understood.
+
+**Evaluate Me** is the one skill that isn't itself a guardrail — it doesn't inspect an artifact the way the five above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
 ## Skills
 
