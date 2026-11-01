@@ -22,11 +22,12 @@ Once active, every term in the glossary gets read as its listed meaning, not gue
 
 The glossary in [`SKILL.md`](./SKILL.md) is one person's real shorthand, kept short specifically so it's easy to hand-edit. Add, remove, or redefine entries to match your own. There's no live "define X as Y" mechanism mid-session — growing the list means opening the file and adding a line, the same way every other skill in this repo gets maintained.
 
-**One warning, not a guardrail:** don't map a term to another installed skill's trigger phrase, or to a destructive action. This skill has no technical check against that collision — avoiding it is on whoever edits the list.
+**One warning, not a guardrail:** map a term to another installed skill's trigger phrase, or to a destructive action, at your own risk. This skill has no technical check against that collision — whoever edits the list owns the consequences.
 
 ## Related skills
 
 - [Autonomon](../autonomon) — the other skill here that shapes ongoing behavior rather than a one-shot action, in the opposite direction: autonomon is always-on with no keyword at all and shapes the assistant's own output, this one needs one explicit trigger per session and shapes how your input gets read.
+- [Don't Pollute Comments](../dont-pollute-comments) — the other skill built explicitly as a starting template to hand-edit into your own house style, triggered by name as a deliberate courtesy rather than running autonomously.
 
 ## Disclaimer
 

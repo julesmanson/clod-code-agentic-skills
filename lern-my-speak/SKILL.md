@@ -11,7 +11,7 @@ user-invocable: true
 
 Once active, read every term below as its listed meaning whenever it appears in a request, rather than guessing from context or asking what it means.
 
-**Warning, not a guardrail:** don't map a term here to another installed skill's trigger phrase, or to a destructive action. Nothing below checks for that collision — avoiding it is on whoever edits this list.
+**Warning, not a guardrail:** map a term here to another installed skill's trigger phrase, or to a destructive action, at your own risk. Nothing below checks for that collision — whoever edits this list owns the consequences.
 
 This is one person's own glossary, kept short on purpose so it's easy to hand-edit. Add, remove, or redefine entries freely to match your own shorthand — the list below is a starting example, not a fixed vocabulary.
 

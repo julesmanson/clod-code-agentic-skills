@@ -92,7 +92,7 @@ More skills will land here as they're written — this list grows with the repo.
 
 Quality control (QC) is a set of built-in rules (protocols) — specific checks on a target enforcing a minimum quality floor or safety standard (guardrails from destruction). Quality assurance (QA) is the broader program: the discipline of following a set of QCs to guarantee an acceptable standard of deliverables.
 
-Five of the six skills above have well embedded QC safety guardrails, each anticipating a specific failure mode as shown below. All also help with overall project quality like regular QC protocols do:
+All but one of the skills above have well embedded QC safety guardrails, each anticipating a specific failure mode as shown below. All also help with overall project quality like regular QC protocols do:
 
 - **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
 - **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs.
@@ -100,7 +100,7 @@ Five of the six skills above have well embedded QC safety guardrails, each antic
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
 - **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially when it is given to an AI assistant after complacency sets in during long, tiring sessions.
 
-**Evaluate Me** is the one skill that isn't itself QC — it doesn't inspect an artifact the way the five above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
+**Evaluate Me** is the one skill that isn't itself QC — it doesn't inspect an artifact the way the skills above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
 ## What is a skill?
 

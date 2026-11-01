@@ -89,7 +89,7 @@ The behavioral instructions are written in ordinary Markdown and are not tied to
 
 ## Related skills
 
-- [Autonomon](../autonomon) contains several personal workflow fixes, including how generated files are handled and how concise responses stay.
+- [Autonomon](../autonomon) — contains several personal workflow fixes, including how generated files are handled and how concise responses stay.
 
 ## Disclaimer
 

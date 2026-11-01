@@ -50,6 +50,11 @@ Trailing `/* ... */` naming where or who uses a rule is the default — most sel
 
 Almost no comments at all — markup rarely has a non-obvious fact worth recording. The one legitimate use is temporarily disabling a tag mid-edit, the same way you'd comment out a line of code while working. It's not a place to park permanent documentation; once the edit's done, the tag comes back or gets deleted.
 
+## Related skills
+
+- [Lern My Speak](../lern-my-speak) — the other skill built explicitly as a starting template to hand-edit into your own house style, triggered by name as a deliberate courtesy rather than running autonomously.
+- [Your Mother's Not Here](../your-mothers-not-here) — the same stale-content discipline from a different angle: amnesia's "verify before deleting or editing, never assume stale from age alone" and this skill's "fix only what's gone stale, preserve everything else" are the same instinct applied to memory files versus code comments.
+
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.

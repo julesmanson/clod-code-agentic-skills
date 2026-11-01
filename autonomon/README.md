@@ -34,7 +34,7 @@ When a response critiques or corrects several points at once — a debate, a rev
 
 ## Related skills
 
-- [Evaluate Me](../evaluate-me) runs a strict, evidence-gated self-assessment of the user across nine points.
+- [Evaluate Me](../evaluate-me) — runs a strict, evidence-gated self-assessment of the user across nine points.
 - [Lern My Speak](../lern-my-speak) — the opposite direction of autonomon's always-on fixes: a session-triggered glossary that shapes how your input gets read, not how the assistant's own output gets shaped.
 
 ## Disclaimer
