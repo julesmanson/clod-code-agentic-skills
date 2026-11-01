@@ -88,17 +88,17 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 
 More skills will land here as they're written — this list grows with the repo.
 
-## QA and QC
+## QA/QC
 
 Quality control (QC) is a built-in guardrail — a specific check enforcing a minimum quality floor. Quality assurance (QA) is the broader program: the discipline of following a set of QC guardrails to guarantee an acceptable standard of deliverables.
 
-Five of the six skills above are QC guardrails, each anticipating a specific failure mode:
+Five of the six skills above have well embedded QC guardrails, each anticipating a specific failure mode as shown below:
 
-- **Commit** — guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
-- **Thought Experiment** — guards against an unverified claim passing as fact.
-- **Your Mother's Not Here** — guards against a premature or accidental irreversible deletion.
-- **Don't Pollute Comments** — guards against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
-- **Lern My Speak** — guards against a long, fatigued session's shorthand being misread instead of understood.
+- **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
+- **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs.
+- **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
+- **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
+- **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially if complacency sets in during long, tiring sessions.
 
 **Evaluate Me** is the one skill that isn't itself a guardrail — it doesn't inspect an artifact the way the five above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
