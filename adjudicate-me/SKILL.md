@@ -25,7 +25,7 @@ allowed-tools:
 
 **Process:**
 
-1. Display the content (ground rule 1).
+1. Display the content (ground rule 1). **Exchanges, optional:** when asked to also include comment exchanges with others, not just the main piece, select based on user instructions.
 2. Classify it as one of three types — **casual/satirical**, **commentary/opinion** (serious but non-technical — politics, career, industry topics), or **technical/professional** — then light-rate Tier 1, Tier 3, and Tier 5 separately as **Green**, **Yellow**, or **Red**:
    - **Green** — clean. Reported with a terse 1-line reason.
    - **Yellow** — not disqualifying, but notable enough to draw a question; survivable if handled honestly. Reported with what specifically draws it.

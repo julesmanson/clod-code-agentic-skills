@@ -16,10 +16,14 @@ Ask with the phrase `adjudicate me` or `ad me`, always paired with the content i
 
 Content is classified first as one of three types — casual/satirical, serious commentary/opinion (politics, career, industry — non-technical), or technical/professional — so a serious non-technical post doesn't get forced into the wrong lens. Then two different questions, answered separately rather than blended into one score:
 
-- **Floor — does this disqualify?** A Green/Yellow/Red light for Tier 1, Tier 3, and Tier 5 — not a bare Pass/Fail, since collapsing "might draw a question" into "disqualifying" would itself violate the real-adjudication standard below. Green is clean; Yellow is notable but survivable, not disqualifying; Red is the only real Fail and names the guideline. Tier 3 and Tier 5 share the same rulebook (SEAD 4's thirteen guidelines) and one light by default — Tier 5's zero-margin categories (foreign entanglement, coercion vulnerability, protected/export-controlled info) are the only place a Tier 3 yellow can become a Tier 5 red. Tier 1 runs on a lower bar (5 CFR 731 Suitability). Technical content gets an explicit watch for the most common real trap: casual ITAR/EAR/CUI disclosure while arguing online.
+- **Floor — does this disqualify?** A Green/Yellow/Red light for Tier 1, Tier 3, and Tier 5 — not a bare Pass/Fail, since collapsing "might draw a question" into "disqualifying" would itself violate the real-adjudication standard below. Green is clean; Yellow is notable but survivable, not disqualifying; Red is the only real Fail and names the guideline. Tier 3 and Tier 5 share the same rulebook (SEAD 4's thirteen guidelines) and one light by default — Tier 5's zero-margin categories (foreign entanglement, coercion vulnerability, continuous-evaluation triggers, protected/export-controlled info) are the only place a Tier 3 yellow can become a Tier 5 red. Tier 1 runs on a lower bar (5 CFR 731 Suitability). Technical content gets an explicit watch for the most common real trap: casual ITAR/EAR/CUI disclosure while arguing online.
 - **Ceiling — how does this read?** Two separate impressions, since an adjudicator and a hiring panel are checking for different things and can disagree: the **adjudicator's** likely read (trustworthiness, judgment, stability) and the **hiring panel's** likely read (technical credibility, communication, professionalism).
 
 A closing **Distinction or Masterclass** flag calls out a genuinely rare or well-executed point, when the content actually earns one. Masterclass means clear command of the material; Distinction means that plus a point most people would have missed — the rarer, higher bar of the two.
+
+## Including exchanges (optional)
+
+Ask it to also cover exchanges with other people, not just the main piece — which ones to include is completely up to what you ask for.
 
 ## What it assumes
 
