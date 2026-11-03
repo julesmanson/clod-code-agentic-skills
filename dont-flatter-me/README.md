@@ -1,4 +1,4 @@
-# Don't Flatter Me ver 1.0.0 alpha
+# Don't Flatter Me (ver 1.0.0 alpha)
 
 **Sycophancy Countermeasure** - [back to Clod Code Agentic Skills](../README.md)
 
@@ -8,7 +8,7 @@
 
 ## Where this came from
 
-LLM sycophancy — inflating praise to please rather than inform — isn't a rare glitch; it's been formally studied and shown to be amplified, not suppressed, by RLHF, the alignment technique meant to make models more honest in the first place. Most people have no deliberate countermeasure against it. This skill packages one specific technique for catching it: checking an assessment against a topic you're independently, verifiably competent in, and seeing whether the result matches your own accurate self-read or just defaults to encouragement.
+Large language model (LLM) sycophancy — inflating praise to please rather than inform — isn't a rare glitch; it's been formally studied and shown to be amplified, not suppressed, by Reinforcement Learning from Human Feedback (RLHF), the alignment technique meant to make models more honest in the first place. Most people have no deliberate countermeasure against it. This skill packages one specific technique for catching it: checking an assessment against a topic you're independently, verifiably competent in, and seeing whether the result matches your own accurate self-read or just defaults to encouragement.
 
 ## How to use it
 
