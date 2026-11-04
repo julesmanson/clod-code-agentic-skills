@@ -2,11 +2,11 @@
 
 **Public-Content Clearance & Perception Check** - [back to Clod Code Agentic Skills](../README.md)
 
-**Adjudicate Me** checks one piece of public-facing content — a comment, a post, an article — against a floor (real security-clearance disqualification risk, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely read it). Built for aerospace/defense-track engineering job-seekers who post publicly under a traceable identity, but adaptable to any field with a formal vetting process.
+**Adjudicate Me** checks one piece of public-facing content — a comment, a post, an article — against a floor (real security-clearance disqualification risk, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely read it). Built for aerospace/defense-track engineering job-seekers who post publicly under a traceable name, but adaptable to any field with a formal vetting process.
 
 ## Where this came from
 
-Built for a retired engineer preparing to return to work in US aerospace/defense, doing everything possible to get ready before re-entering the field. The underlying ten-point logic was tested through numerous rounds on Gemini first and less with Claude but climbing, then ported here as its own Claude skill.
+Built for a retired engineer doing everything possible to prepare for a return to US aerospace/defense work. The underlying ten-point logic was tested through numerous rounds on Gemini first and less with Claude but climbing, then ported here as its own Claude skill.
 
 ## How to use it
 
@@ -31,7 +31,7 @@ Ask it to also cover exchanges with other people, not just the main piece — wh
 
 ## What it assumes
 
-- The user is posting under an identity traceable back to them, pursuing a role that requires a formal security clearance. The OPSEC tradeoff in that has already been considered and accepted — this skill doesn't re-litigate it.
+- The user is posting under a name traceable back to them, pursuing a role that requires a formal security clearance. The OPSEC tradeoff in that has already been considered and accepted — this skill doesn't re-litigate it.
 - The standard is real-world adjudication risk, not maximum theoretical paranoia. Casual or satirical content isn't failed for something an actual adjudicator wouldn't actually flag.
 
 ## What it is not

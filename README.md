@@ -86,7 +86,7 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 </tr>
 <tr>
 <td align="center"><a href="./adjudicate-me">Adjudicate Me</a></td>
-<td>Checks one piece of public-facing content — a comment, post, or article — against a floor (real US security-clearance disqualification risk at Tier 1/3/5, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely perceive it). Closes with the AI assistant's own take on the content. Built for aerospace/defense-track job-seekers posting under a traceable identity, adaptable to any field with a formal vetting process. Triggered by the phrase "adjudicate me" or "ad me," always paired with the content itself — a link, a file, pasted text, or a screenshot. Details: <a href="./adjudicate-me/README.md"><code>adjudicate-me/README.md</code></a>.</td>
+<td>Checks one piece of public-facing content — a comment, post, or article — against a floor (real US security-clearance disqualification risk at Tier 1/3/5, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely perceive it). Closes with the AI assistant's own take on the content. Built for aerospace/defense-track job-seekers posting under a traceable name, adaptable to any field with a formal vetting process. Triggered by the phrase "adjudicate me" or "ad me," always paired with the content itself — a link, a file, pasted text, or a screenshot. Details: <a href="./adjudicate-me/README.md"><code>adjudicate-me/README.md</code></a>.</td>
 </tr>
 <tr>
 <td align="center"><a href="./dont-flatter-me">Don't Flatter Me</a></td>
