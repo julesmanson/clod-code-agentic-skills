@@ -1,6 +1,8 @@
-# Thought Experiment (ver 0.5.0 beta)
+# Thought Experiment (ver 0.6.0 alpha)
 
 **Rigorous Failure-Scenario Audits** — [← back to Clod Code Agentic Skills](../README.md)
+
+**Caution:** alpha, not beta. The established core — dependency verification, failure-scenario construction — has real mileage: partially tested across real use, mostly successful, with occasional minor misses on a step or a missed bug, but no catastrophic failure ever observed. The newest additions specifically (sibling-file/formatting checks, the fix-authorization question, the consolidated closing report) haven't been through any real rounds yet, which is what's actually driving the alpha designation. This skill touches files directly via Edit/Write, so extra scrutiny is warranted on the new parts until they've logged substantial use.
 
 Use this skill for a rigorous, evidence-based audit of a script, document, configuration, project, cloud setup, or other target. It constructs concrete failure scenarios and checks claims about dependencies against live or authoritative sources instead of relying on memory. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
@@ -13,7 +15,7 @@ This grew from an audit of this repository's Commit skill. That audit checked co
 Two things set it apart:
 
 1. **Concrete scenarios, not vague suggestions.** Every finding takes the shape "given this input or state, here's exactly what breaks and why" — not "this could be cleaner."
-2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone. When the target is headed to deployment, the dependency pass also covers rollback safety, dev/prod config parity, secrets handling, the stated compatibility baseline, and first-load/real-condition performance versus dev-only testing.
+2. **A deliberate pass over dependencies.** Most bugs live in a target's own logic and get caught by ordinary review. With this skill, you also get an inventory of what the target *depends on* — libraries, CLI flags, APIs, service defaults, permissions, and other outside assumptions — with those claims checked against a live source. This is where high-value findings often appear, because outside behavior is easy to remember incorrectly and difficult to catch by reading the target alone. For paired documentation (a README and its SKILL.md, or docs and the code they describe), each file's claims about the other count as a dependency too, and established formatting conventions get checked for consistency across both, where one actually exists. When the target is headed to deployment, the dependency pass also covers rollback safety, dev/prod config parity, secrets handling, the stated compatibility baseline, and first-load/real-condition performance versus dev-only testing.
 
 ## Using it
 
@@ -21,7 +23,7 @@ Say "thought experiment" — that exact phrase, with no inferred equivalents —
 
 Before a round starts, expect a serious request to commit or push any existing uncommitted changes first. It's a safety rail — a clean checkpoint beforehand means the round itself can always be rolled back to it if something goes wrong.
 
-There is no fixed number of scenarios or passes. Expect a fresh reading of the target, a dependency inventory, concrete failure scenarios, live checks of outside claims, fixes for confirmed issues, and a repeat audit until a pass turns up nothing new. Reports stay short and use pass/fail findings unless a failure or additional detail needs explanation, and each failure is tagged blocking or non-blocking so the report can double as a go/no-go input. New line, every report closes with `thought-experiment`.
+There is no fixed number of scenarios or passes. Expect a fresh reading of the target, a dependency inventory, concrete failure scenarios, live checks of outside claims, a one-time question on how to authorize fixes (blanket, per-file, or step-by-step — blanket still pauses on anything genuinely surprising), fixes applied at that granularity, and a repeat audit until a pass turns up nothing new. Findings use pass/fail tags, blocking or non-blocking, detailed only where it's a confirmed failure or asked for. Every run closes with one consolidated summary — a section per target on a multi-target run, one plain verdict line on a single clean target — then a new line with `thought-experiment`.
 
 ## Related skills
 
