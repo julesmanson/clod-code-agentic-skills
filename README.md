@@ -29,7 +29,7 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 <tbody>
 <tr>
 <td align="center"><a href="./commit">Commit</a></td>
-<td>Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports <code>new repo [name] [visibility] [license] commit</code> to create a repo and make the first commit in one step. Full usage, examples, defaults, and other-git-host notes: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
+<td>Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports <code>new repo [name] [visibility] [license] commit</code> to create a repo and make the first commit in one step. Drafts its own commit message and closes with a verdict — Failed, Commit, or Commit and push to [repo]. Full usage, examples, defaults, and other-git-host notes: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
 </tr>
 <tr>
 <td align="center"><a href="./autonomon">Autonomon</a></td>
@@ -106,7 +106,7 @@ Quality control (QC) is a set of built-in rules (protocols) — specific checks 
 The skills below that touch files all have well-embedded QC safety guardrails, each anticipating a specific failure mode. All also help with overall project QA the way regular QC protocols do:
 
 - **Autonomon** subskill **generate file** — guards against generated output getting lost in a sandboxed preview that never reaches disk, ensuring anything created actually persists in the project.
-- **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
+- **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history. A rare missed push, mitigated by a mandatory closing verdict.
 - **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs. Four CRUD options (blanket, process, file, every CRUD step) set how much autonomy fix application gets — Read is always free, only Create/Update/Delete are gated.
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.

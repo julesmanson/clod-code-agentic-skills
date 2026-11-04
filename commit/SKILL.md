@@ -1,14 +1,14 @@
 ---
 name: commit
-version: 0.5.0-beta
-description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [name] [visibility] [license] commit. This creates a new repo with the given name, visibility (public/private, default public), and license (default none, same as `gh repo create` itself), then commits. Any invalid value is confirmed with the user before creating the repo or committing.
+version: 0.6.0-beta
+description: Commit and push to appropriate GitHub repo (can be used with other git services with minimal edits). If repo does not exist AI will prompt user for validation before creating one. User can also command a new repo with: new repo [name] [visibility] [license] commit. This creates a new repo with the given name, visibility (public/private, default public), and license (default none, same as `gh repo create` itself), then commits. Any invalid value is confirmed with the user before creating the repo or committing. Drafts its own commit message automatically and closes every run with one of three verdicts: Failed, Commit, or Commit and push to [repo].
 user-invocable: true
 allowed-tools:
   - Bash
   - Read
 ---
 
-# Commit ver 0.5.0 beta — Commit and Push
+# Commit ver 0.6.0 beta — Commit and Push
 
 **Never unprompted:** this skill only runs on an explicit call — the user says "commit," or a recognized trigger like `new repo ... commit`. Noticing a good moment to commit and asking "want me to commit this?" is fine, even welcome — but never run any step of this skill, or stage/commit/push anything, without that explicit call actually landing first.
 
@@ -53,6 +53,7 @@ If the current directory already has a `LICENSE` file and `[license]` would prod
 5. Create the commit. Never `--amend` (unless explicitly asked), never `--no-verify` / `--no-gpg-sign`.
 6. Push: `git push origin [current-branch]` (or the branch's existing upstream if already tracked). If git reports no upstream is set for this branch (e.g. a brand-new local branch), use `git push -u origin [current-branch]` instead so it gets tracked.
 7. If the push is rejected (diverged history) or would need `--force`, stop and tell the user — never force-push without explicit approval.
+8. Report a closing verdict — exactly one of: Failed (state the reason), Commit (committed, not pushed), or Commit and push to [repo name] (both succeeded, naming the actual remote).
 
 ## Defaults
 

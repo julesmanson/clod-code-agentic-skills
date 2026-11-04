@@ -1,8 +1,10 @@
-# Commit (ver 0.5.0 beta)
+# Commit (ver 0.6.0 beta)
 
 <img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
 **Commit and Push** — [← back to Clod Code Agentic Skills](../README.md)
+
+**Caution:** a rare missed push has occurred across real use. Mitigated by the closing verdict below — Failed, Commit, or Commit and push to [repo] — making a miss exceedingly unlikely to occur unnoticed.
 
 When you explicitly ask for a commit, this skill commits and pushes the appropriate changes to the configured remote. It can be adapted to other Git services with minimal edits. If you ask to create a repository that does not exist, you are prompted for the missing decisions first. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
@@ -24,6 +26,8 @@ Every way this skill can be invoked, and what happens for each:
 Nothing is staged, committed, or pushed merely because a good moment is noticed. You must explicitly say `commit` before those actions occur.
 
 Saying `commit` always pushes too, as one combined action — you don't need to ask for the push separately. Say `just commit` or `don't push` instead if you want the commit made without pushing it.
+
+The commit message drafts itself. Every run closes with one verdict: **Failed** (reason given), **Commit** (not pushed), or **Commit and push to [repo]**.
 
 Examples:
 
