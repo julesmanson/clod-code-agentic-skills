@@ -33,3 +33,5 @@ allowed-tools:
 5. **Apply fixes** for confirmed findings.
 6. **Re-run this same process against the fixed state.** A fix can introduce its own new problem — an accuracy fix that makes something else inconsistent, a corrected claim that breaks a different assumption elsewhere. The loop isn't done until a pass turns up nothing new.
 7. **Report.** State each scenario's pass/fail plainly. Give full detail only for confirmed failures, or when detail is explicitly asked for — a clean pass doesn't need an essay written about it. Tag each failure as blocking (must fix before deploy/ship) or non-blocking (safe to ship, fix after) so the report doubles as a go/no-go input, not just a findings list.
+
+New line, close every report with `thought-experiment`.

@@ -21,7 +21,7 @@ Say "thought experiment" — that exact phrase, with no inferred equivalents —
 
 Before a round starts, expect a serious request to commit or push any existing uncommitted changes first. It's a safety rail — a clean checkpoint beforehand means the round itself can always be rolled back to it if something goes wrong.
 
-There is no fixed number of scenarios or passes. Expect a fresh reading of the target, a dependency inventory, concrete failure scenarios, live checks of outside claims, fixes for confirmed issues, and a repeat audit until a pass turns up nothing new. Reports stay short and use pass/fail findings unless a failure or additional detail needs explanation, and each failure is tagged blocking or non-blocking so the report can double as a go/no-go input.
+There is no fixed number of scenarios or passes. Expect a fresh reading of the target, a dependency inventory, concrete failure scenarios, live checks of outside claims, fixes for confirmed issues, and a repeat audit until a pass turns up nothing new. Reports stay short and use pass/fail findings unless a failure or additional detail needs explanation, and each failure is tagged blocking or non-blocking so the report can double as a go/no-go input. New line, every report closes with `thought-experiment`.
 
 ## Related skills
 

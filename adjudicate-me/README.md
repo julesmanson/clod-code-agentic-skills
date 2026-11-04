@@ -10,20 +10,20 @@ Built for a retired engineer preparing to return to work in US aerospace/defense
 
 ## How to use it
 
-Ask with the phrase `adjudicate me` or `ad me`, always paired with the content itself — a link, a file, pasted text, or a screenshot. The trigger doesn't run on its own; without one of those three attached, it asks for the content before doing anything else. Judgment always works from the full content, but the report only reflects it back in full for a **comment** — a **post or article** gets identified by title only, to keep the report from reproducing a long piece at length. For a link, WebFetch is always tried first regardless of platform. A login wall, bot-block, or a suspiciously short result is treated as a failed fetch — it falls back to Playwright, or asks for a direct paste. Full operating definition: [`SKILL.md`](./SKILL.md).
+Ask with the phrase `adjudicate me` or `ad me`, always paired with the content itself — a link, a file, pasted text, or a screenshot. The trigger doesn't run on its own; without one of those four attached, it asks for the content before doing anything else. Judgment always works from the full content, but the report only reflects it back in full for a **comment** — a **post or article** gets identified by title only, to keep the report from reproducing a long piece at length. For a link, WebFetch is always tried first regardless of platform. A login wall, bot-block, or a suspiciously short result is treated as a failed fetch — it falls back to Playwright, or asks for a direct paste. Full operating definition: [`SKILL.md`](./SKILL.md).
 
 ## What it checks
 
-Content is classified first as one of three types — casual/satirical, serious commentary/opinion (politics, career, industry — non-technical), or technical/professional — so a serious non-technical post doesn't get forced into the wrong lens. Then two different questions, answered separately rather than blended into one score:
+Content is classified first as one of three types — Casual/Satirical, serious Commentary/Opinion (politics, career, industry — non-technical), or Technical/Professional — so a serious non-technical post doesn't get forced into the wrong lens. Then two different questions, answered separately rather than blended into one score:
 
 - **Floor — does this disqualify?** A Green/Yellow/Red light for Tier 1, Tier 3, and Tier 5 — not a bare Pass/Fail, since collapsing "might draw a question" into "disqualifying" would itself violate the real-adjudication standard below. Green is clean; Yellow is notable but survivable, not disqualifying; Red is the only real Fail and names the guideline. Tier 3 and Tier 5 share the same rulebook (SEAD 4's thirteen guidelines) and one light by default — Tier 5's zero-margin categories (foreign entanglement, coercion vulnerability, continuous-evaluation triggers, protected/export-controlled info) are the only place a Tier 3 yellow can become a Tier 5 red. Tier 1 runs on a lower bar (5 CFR 731 Suitability). Technical content gets an explicit watch for the most common real trap: casual ITAR/EAR/CUI disclosure while arguing online.
 - **Ceiling — how does this read?** Two separate impressions, since an adjudicator and a hiring panel are checking for different things and can disagree: the **adjudicator's** likely read (trustworthiness, judgment, stability) and the **hiring panel's** likely read (technical credibility, communication, professionalism).
 
-A closing **Distinction or Masterclass** flag calls out a genuinely rare or well-executed point, when the content actually earns one. Masterclass means clear command of the material; Distinction means that plus a point most people would have missed — the rarer, higher bar of the two.
+A closing **Distinction** or **Masterclass** flag calls out a genuinely rare or well-executed point, when the content actually earns one. Masterclass means clear command of the material; Distinction means that plus a point most people would have missed — the rarer, higher bar of the two.
 
-Every report then closes with **the AI assistant's own take** — a genuine, substantive read on the content itself, labeled as such and distinct from the structured analysis above: whether the reasoning actually holds up, what's genuinely strong or weak, anything worth surfacing that the structured steps don't capture.
+Every report then closes with the **AI assistant's own take** — a genuine, substantive read on the content itself, labeled as such and distinct from the structured analysis above: whether the reasoning actually holds up, what's genuinely strong or weak, anything worth surfacing that the structured steps don't capture.
 
-Last, a plain `adjudicate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
+New line, close every report with `adjudicate-me`.
 
 ## Including exchanges (optional)
 

@@ -72,4 +72,4 @@ Every evaluation is structured and shareable the same way, not left to vary invo
 1. **A heading at the top** naming what this is (e.g. `# Evaluation`), so it's identifiable at a glance.
 2. **Deliver the whole evaluation as one complete response** inside a single blockquote (`>`), so it reads as one visually distinct block while all Markdown formatting still renders normally. Keep each numbered point and its supporting text together as one section, including blank lines within the quote.
 3. **Order inside the blockquote:** heading, then points of review 1–9, then the communication register closing note, then the attribution line — in that order, always.
-4. **The skill's own name as the very last line inside the blockquote** — a plain `evaluate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
+4. New line, close every report with `evaluate-me`, inside the blockquote.
