@@ -2,7 +2,7 @@
 
 **Public-Content Clearance & Perception Check** - [back to Clod Code Agentic Skills](../README.md)
 
-**Adjudicate Me** checks one piece of public-facing content — a comment, a post, an article — against two separate bars: whether it creates real security-clearance disqualification risk as an adjudicator would judge it, and how a hiring panel would likely read it. Built for aerospace/defense-track engineering job-seekers who post publicly under a traceable identity, but adaptable to any field with a formal vetting process.
+**Adjudicate Me** checks one piece of public-facing content — a comment, a post, an article — against a floor (real security-clearance disqualification risk, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely read it). Built for aerospace/defense-track engineering job-seekers who post publicly under a traceable identity, but adaptable to any field with a formal vetting process.
 
 ## Where this came from
 
