@@ -105,7 +105,7 @@ The skills below that touch files all have well-embedded QC safety guardrails, e
 
 - **Autonomon** subskill **generate file** — guards against generated output getting lost in a sandboxed preview that never reaches disk, ensuring anything created actually persists in the project.
 - **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
-- **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs.
+- **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs. Four CRUD options (blanket, process, file, every CRUD step) set how much autonomy fix application gets — Read is always free, only Create/Update/Delete are gated.
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
 - **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially when it is given to an AI assistant after complacency sets in during long, tiring sessions.
