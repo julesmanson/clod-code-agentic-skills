@@ -38,11 +38,11 @@ Personal, always-on workflow fixes for this repo's author, originally intended f
 <ul>
 <li><code>generate file</code> — save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed</li>
 <li><code>terse</code> — keep responses short by default</li>
-<li><code>verdict-first</code> — state the verdict before the explanation</li>
-<li><code>im-thinking</code> — treat a stated impression as an impression, not a claim to cross-examine</li>
+<li><code>verdict first</code> — state the verdict before the explanation</li>
+<li><code>im thinking</code> — treat a stated impression as an impression, not a claim to cross-examine</li>
 <li><code>ballpark</code> — treat a bare figure as illustrative magnitude, not a precision claim</li>
-<li><code>load-bearing</code> — in multi-point critique, lead with corrections that actually change the conclusion</li>
-<li><code>memory-cap</code> — stay aware of a user-set ceiling on memory files, flagging before a new one would exceed it</li>
+<li><code>load bearing</code> — in multi-point critique, lead with corrections that actually change the conclusion</li>
+<li><code>memory cap</code> — stay aware of a user-set ceiling on memory files, flagging before a new one would exceed it</li>
 </ul>
 Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
 </td>

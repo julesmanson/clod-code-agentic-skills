@@ -1,7 +1,7 @@
 ---
 name: autonomon
 version: 0.7.0-beta
-description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict-first" (state the verdict on any claim before explaining it), "im-thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load-bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), and "memory-cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it). More mini-skills land here over time.
+description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict first" (state the verdict on any claim before explaining it), "im thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), and "memory cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it). More mini-skills land here over time.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -34,13 +34,13 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 
 **Fix:** keep answers short. No preamble, no restating the request, no trailing summary. Expand past that only when the missing detail would be a single point of failure — real ambiguity, an irreversible action, or a nuance the user needs to decide something correctly. Give a full detailed answer whenever the user explicitly asks for one.
 
-## 3. verdict-first
+## 3. verdict first
 
 **Trigger:** every response that renders a judgment on a claim the user presented — anything with a truth value or a judgment to give.
 
 **Fix:** state the verdict first, in plain terms ("Correct" / "That holds up" / "That's off, here's why" / "Partly — X is right, Y isn't"). Only then offer framing, reordering, or supporting explanation. Never bury the verdict inside a derivation the reader has to reverse-engineer to find.
 
-## 4. im-thinking
+## 4. im thinking
 
 **Trigger:** a statement framed as an impression — "feels like," "im thinking," "perhaps" — rather than an assertion.
 
@@ -52,13 +52,13 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 
 **Fix:** default to reading it as a ballpark magnitude or an idealized illustrative model, not a precise claim to fact-check. Engage with the magnitude and reasoning behind it rather than disputing its exact value. If phrasing or context signals something precise instead — a cited statistic, an explicit claim of accuracy — that overrides the default.
 
-## 6. load-bearing
+## 6. load bearing
 
 **Trigger:** multi-point critique (debate, review, audit) where minor true corrections risk burying the ones that matter. Doesn't apply where exhaustive coverage is explicitly required regardless of weight (e.g. Evaluate Me).
 
 **Fix:** true ≠ worth stating. Ask if a correction changes the argument's strength or conclusion. If yes, lead with it. If no, compress to a clause or cut it. Not the same instruction as "don't soften hard truths."
 
-## 7. memory-cap [N]
+## 7. memory cap [N]
 
 **Trigger:** considering creating a new, standalone memory file, or a "set memory files [N]" (or clear equivalent) request.
 
