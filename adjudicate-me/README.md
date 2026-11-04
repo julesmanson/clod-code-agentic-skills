@@ -21,7 +21,9 @@ Content is classified first as one of three types — casual/satirical, serious 
 
 A closing **Distinction or Masterclass** flag calls out a genuinely rare or well-executed point, when the content actually earns one. Masterclass means clear command of the material; Distinction means that plus a point most people would have missed — the rarer, higher bar of the two.
 
-Every report closes with the AI assistant's own substantive take on the content — labeled as such, distinct from the structured floor/ceiling analysis — then a plain `adjudicate-me` attribution line.
+Every report then closes with **the AI assistant's own take** — a genuine, substantive read on the content itself, labeled as such and distinct from the structured analysis above: whether the reasoning actually holds up, what's genuinely strong or weak, anything worth surfacing that the structured steps don't capture.
+
+Last, a plain `adjudicate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
 
 ## Including exchanges (optional)
 
