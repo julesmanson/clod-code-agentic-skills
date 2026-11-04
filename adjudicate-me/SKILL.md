@@ -1,6 +1,6 @@
 ---
 name: adjudicate-me
-version: 1.1.0
+version: 1.2.0
 description: Evaluates one piece of public-facing content (a comment, post, or article) for US security-clearance disqualification risk at Tier 1, Tier 3, and Tier 5, and for how an aerospace/defense hiring panel or background-investigation adjudicator would likely perceive it. Triggered by the phrase "adjudicate me" or "ad me."
 user-invocable: true
 allowed-tools:
@@ -9,7 +9,7 @@ allowed-tools:
   - Playwright MCP tools (for content WebFetch can't reliably render)
 ---
 
-# Adjudicate Me ver 1.1.0
+# Adjudicate Me ver 1.2.0
 
 **Trigger:** the phrase "adjudicate me" or "ad me," always accompanied by the content itself — a link, a file, or pasted text. No inferred equivalents.
 
@@ -37,3 +37,6 @@ allowed-tools:
    - **Hiring panel's likely impression** — the workplace lens: technical credibility, communication, professionalism, team fit.
    These can diverge — content can read as clean to an adjudicator while still landing poorly with a panel, or vice versa — so give both even when they agree.
 4. Close with a **Distinction or Masterclass** flag only when the content actually earns one — never a default or participation flag. Masterclass means clear mastery of the material. Distinction means that same mastery plus a point most people would miss — the rarer, higher bar of the two. Omit this section entirely when nothing in the content earns it.
+5. Close with **the AI assistant's own take**, labeled as such in the output — a genuine, substantive personal read on the content itself, distinct from the structured floor/ceiling analysis above: does the reasoning actually hold up, what's genuinely strong or weak about it, anything worth surfacing that steps 2-4 don't capture. Real engagement, not a restatement of what's already been said.
+
+Close every report with the skill's own name as the final line — a plain `adjudicate-me` attribution line, so the origin travels with the output wherever it gets copied or shared.
