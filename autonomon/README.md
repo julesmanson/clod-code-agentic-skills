@@ -4,7 +4,7 @@
 
 Personal, always-on workflow fixes for this repo's author, originally intended for personal use and now open to anyone who finds them useful. You do not need to type a keyword to activate any of these behaviors; the rules operate automatically. The keywords are names for the behaviors and reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
-## 1. `generate-file`
+## 1. `generate file`
 
 When you ask for a file that might otherwise appear only in a sandboxed preview, expect it to be written to a `GENERATED` folder at the project root. If the folder does not exist, it is created. The file keeps its real name and extension, and you are given the path where it was written.
 

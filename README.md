@@ -36,7 +36,7 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 <td>
 Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience.
 <ul>
-<li><code>generate-file</code> — save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed</li>
+<li><code>generate file</code> — save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed</li>
 <li><code>terse</code> — keep responses short by default</li>
 <li><code>verdict-first</code> — state the verdict before the explanation</li>
 <li><code>im-thinking</code> — treat a stated impression as an impression, not a claim to cross-examine</li>
@@ -86,7 +86,7 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 </tr>
 <tr>
 <td align="center"><a href="./adjudicate-me">Adjudicate Me</a></td>
-<td>Checks one piece of public-facing content — a comment, post, or article — against two separate bars: real US security-clearance disqualification risk at Tier 1/3/5, and how a hiring panel or background-investigation adjudicator would likely perceive it. Built for aerospace/defense-track job-seekers posting under a traceable identity, adaptable to any field with a formal vetting process. Triggered by the phrase "adjudicate me" or "ad me," always paired with the content itself. Details: <a href="./adjudicate-me/README.md"><code>adjudicate-me/README.md</code></a>.</td>
+<td>Checks one piece of public-facing content — a comment, post, or article — against two separate bars: real US security-clearance disqualification risk at Tier 1/3/5 as an adjudicator would judge it, and how a hiring panel would likely perceive it. Closes with the AI assistant's own take on the content. Built for aerospace/defense-track job-seekers posting under a traceable identity, adaptable to any field with a formal vetting process. Triggered by the phrase "adjudicate me" or "ad me," always paired with the content itself — a link, a file, pasted text, or a screenshot. Details: <a href="./adjudicate-me/README.md"><code>adjudicate-me/README.md</code></a>.</td>
 </tr>
 <tr>
 <td align="center"><a href="./dont-flatter-me">Don't Flatter Me</a></td>
@@ -101,17 +101,16 @@ More skills will land here as they're written — this list grows with the repo.
 
 Quality control (QC) is a set of built-in rules (protocols) — specific checks on a target enforcing a minimum quality floor or safety standard (guardrails from destruction). Quality assurance (QA) is the broader program: the discipline of following a set of QCs to guarantee an acceptable standard of deliverables.
 
-All but one of the skills above have well embedded QC safety guardrails, each anticipating a specific failure mode as shown below. All also help with overall project quality like regular QC protocols do:
+The following QC controls for skills that touch files are summarized below. They all have well embedded QC safety guardrails, each anticipating a specific failure mode as shown below. All also help with overall QA of the project like regular QC protocols do:
 
+- **Autonomon** subskill **generate file** — guards against generated output getting lost in a sandboxed preview that never reaches disk, ensuring anything created actually persists in the project.
 - **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history.
 - **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs.
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
 - **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially when it is given to an AI assistant after complacency sets in during long, tiring sessions.
-- **Adjudicate Me** — guards against a public post or comment creating unflagged security-clearance disqualification risk or landing badly with a hiring panel.
-- **Don't Flatter Me** — guards against inflated or unearned praise when assessing the user's own competence or work, a direct countermeasure to documented LLM sycophancy rather than general dishonesty.
 
-**Evaluate Me** is the one skill that isn't itself QC — it doesn't inspect an artifact the way the skills above do. It's the QA program's audit element: a periodic self-assessment against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code — which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
+**Evaluate Me**, **Don't Flatter Me**, and **Adjudicate Me** are skills that do not touch any files, which means they do not fall under QC for the project. However, **Evaluate Me** emulates QA on users by assessing their performance when they perform periodic self-assessments against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code, which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 
 ## What is a skill?
 

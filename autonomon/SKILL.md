@@ -16,7 +16,7 @@ A running set of short, personal fixes for recurring friction in this user's wor
 
 None of these need a keyword to fire — every rule below is autonomous. Each mini's own section name doubles as its keyword, for identification and as a reminder if the behavior is ever missed — no separate keyword line repeated per entry.
 
-## 1. generate-file
+## 1. generate file
 
 **Trigger:** generating a file that would otherwise only exist in a sandboxed preview (e.g. an artifact) and never land on disk.
 
