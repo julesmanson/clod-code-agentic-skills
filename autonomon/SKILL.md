@@ -1,7 +1,7 @@
 ---
 name: autonomon
-version: 0.7.0-beta
-description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict first" (state the verdict on any claim before explaining it), "im thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), and "memory cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it). More mini-skills land here over time.
+version: 0.9.0-beta
+description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict first" (state the verdict on any claim before explaining it), "im thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), "memory cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it), "enumerate" (top-level points always numbered, never bulleted; subpoints stay bulleted up to 3, then switch to a different numbering scheme), and "settings report" (one terse rundown of current autonomon settings at session start, silence or partial response accepted as agreeing to the rest). More mini-skills land here over time.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# Autonomon ver 0.7.0 beta — 7 autonomous skills
+# Autonomon ver 0.9.0 beta — 9 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this user's workflow. Each numbered section below is its own mini-skill; new ones get appended here rather than starting new skill files.
 
@@ -65,3 +65,15 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 **Fix:** compare against `[N]` in the heading above — defaults to 3 until explicitly set. A new file that would push the count past `[N]` is flagged before creating it, not created silently; what happens next is the user's call, not a workflow this fix runs on its own. N is a ceiling, not a target — a high value, even a typo, is never license to create files more freely toward it.
 
 **Setting the cap:** a requested N at or above the current file count is honored immediately — no confirmation needed. A requested N below the current file count isn't set right away — that's what triggers the ask: report the current count first, since going lower means merging files, which belongs to [Your Mother's Not Here](../your-mothers-not-here)'s amnesia operation or direct user instruction. N only updates once that's resolved.
+
+## 8. enumerate
+
+**Trigger:** a response covering multiple distinct top-level points, targets, or items.
+
+**Fix:** top-level points are always enumerated (numbered), never bulleted, regardless of count. Subpoints nested under a top-level point may use bullets for up to 3 items; beyond that, switch subpoints to enumeration too, using a different numbering scheme than the top level (letters, roman numerals, or decimal sub-numbers) so the two levels stay visually distinct. Same instinct as switch/case replacing a stacked if/else-if once branches pass a complexity threshold — a growing list of parallel items earns real structure, not a flat one.
+
+## 9. settings report
+
+**Trigger:** the start of a new session or project where autonomon becomes active.
+
+**Fix:** give one terse report of current settings — which mini-skills are active, current values for any parameterized ones (memory-cap's N). No response, or a response addressing only some points, means the rest are accepted as-is — never block waiting on a full reply, never re-ask.

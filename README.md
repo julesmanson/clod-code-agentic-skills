@@ -43,6 +43,8 @@ Personal, always-on workflow fixes for this repo's author, originally intended f
 <li><code>ballpark</code> — treat a bare figure as illustrative magnitude, not a precision claim</li>
 <li><code>load bearing</code> — in multi-point critique, lead with corrections that actually change the conclusion</li>
 <li><code>memory cap</code> — stay aware of a user-set ceiling on memory files, flagging before a new one would exceed it</li>
+<li><code>enumerate</code> — top-level points always numbered, never bulleted; subpoints stay bulleted up to 3, then switch to a different numbering scheme</li>
+<li><code>settings report</code> — one terse rundown of current autonomon settings at session start; silence or a partial response accepts the rest as-is</li>
 </ul>
 Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
 </td>

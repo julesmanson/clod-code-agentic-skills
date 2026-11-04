@@ -1,6 +1,6 @@
-# Autonomon (ver 0.7.0 beta)
+# Autonomon (ver 0.9.0 beta)
 
-**7 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
+**9 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally intended for personal use and now open to anyone who finds them useful. You do not need to type a keyword to activate any of these behaviors; the rules operate automatically. The keywords are names for the behaviors and reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
@@ -37,6 +37,14 @@ When a response critiques or corrects several points at once — a debate, a rev
 Expect Claude to stay aware of a cap on the memory system — `[N]`, defaulting to 3 until you set otherwise — and mention it, rather than silently creating a new file, any time adding one would push the count past it. N is a ceiling, not a target: a high value, even set by accident, is never a reason to create files more freely toward it. What to do once flagged (fold the new content into an existing file, raise the cap, consolidate) is entirely your call.
 
 Set the cap with `set memory files [N]` or a clear equivalent. N at or above the current file count is honored immediately, no confirmation needed. N below the current count isn't set right away — you'll get the current count reported first, since going lower means merging files, which is Your Mother's Not Here's amnesia operation to carry out, or a direct instruction from you.
+
+## 8. `enumerate`
+
+Multi-point responses always number their top-level points — never bullets, regardless of count. Subpoints nested under one of those points can stay as bullets for up to 3 items; past that, they switch to enumeration too, using a different scheme than the top level (letters, roman numerals, decimal sub-numbers) so the two levels don't visually blur together. Same reasoning as switch/case replacing a stacked if/else-if once branches pass a few — a growing set of parallel items earns real structure, not a flat list.
+
+## 9. `settings report`
+
+At the start of a new session or project, expect one terse rundown of autonomon's current settings — which mini-skills are active, current values for anything parameterized (memory-cap's N). If you don't respond, or only respond to some of it, everything else is treated as accepted as-is — this never blocks waiting on a full reply, and never re-asks.
 
 ## Related skills
 
