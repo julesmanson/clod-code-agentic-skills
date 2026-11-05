@@ -39,4 +39,6 @@ allowed-tools:
 4. Give a **Distinction** or **Masterclass** flag only when the content actually earns one — never a default or participation flag. Masterclass means clear mastery of the material. Distinction means that same mastery plus a point most people would miss — the rarer, higher bar of the two. Omit this section entirely when nothing in the content earns it.
 5. Close with the **AI assistant's own take**, labeled as such in the output — a genuine, substantive personal read on the content itself, distinct from the structured floor/ceiling analysis above: does the reasoning actually hold up, what's genuinely strong or weak about it, anything worth surfacing that steps 2-4 don't capture. Real engagement, not a restatement of what's already been said.
 
+   To inform this take only — never the floor or ceiling rating, and never displayed as its own section, only quoted inline where relevant — the assistant may look at surrounding comments. First priority: any replies directed at the subject's own comment, free to check from the same view already used to grab the content. If none exist, curate up to 12 interesting comments instead, capping the search at no more than 3 page lengths regardless of thread size — these are illustrative examples, not the thread's consensus.
+
 New line, close every report with `adjudicate me`.
