@@ -32,7 +32,7 @@ A comment block should read structurally the same as prose on an article page: p
 6. **A longer comment than usual is reserved for genuine variance** — a non-obvious value, a tradeoff, a reason something is tuned the way it is — not applied uniformly to every line regardless of language. Most lines still get the terse default; the longer one earns its length.
 7. **A list-like comment can be several short lines, one per item** — but each line has to stay short enough to never wrap under zoom or in a narrow files panel. A long list gets a one-line heading or explainer first.
 8. **An unused-looking property or variable sitting among a series of similarly-named ones is left alone, not flagged.** Don't assume dead code from appearance alone.
-9. **Page/file heading block: for CSS, this is unconditional — exactly one per file, every file, no exceptions.** Three self-closing lines — border, title, border — flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); border lines are solid stars matching the title line's full width. In other languages whose comment syntax also supports `/* ... */`, this has only been observed once (on a single exemplar file) — not confirmed as a rule for every file there, so treat that as a single data point to extend cautiously rather than a settled convention.
+9. **Page/file heading block: for CSS, this is unconditional — exactly one per file, every file, no exceptions.** Three self-closing lines — border, title, border — flush left, no indent. Title line is `/***** TITLE *****/` (five stars, one space each side); border lines are solid stars matching the title line's full width. Applies to any language whose comment syntax also supports `/* ... */` (excludes HTML).
 
 ## JavaScript specifics
 
@@ -44,6 +44,7 @@ A comment block should read structurally the same as prose on an article page: p
 ## CSS specifics
 
 - **Default shape is a trailing `/* ... */` stating where or who uses the rule.** Most classes/ids are already self-documenting by name — restating what a rule visually does is noise.
+- **Custom properties (`:root` variables) need this explicitly, since they have no selector of their own.** Every variable definition gets a trailing comment listing where it's used — `--my-var: 1rem; /* nav, logo, #stage */`. Append to an existing comment or create one — definitions only, never at each usage site.
 - **Superseded code gets commented out, not deleted** — wrapped in a `/* ... */` block whose first line says what it is and what replaced it. Keeps the dead code's history inspectable instead of only living in git log.
 
 ## HTML specifics

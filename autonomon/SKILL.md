@@ -70,7 +70,7 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 
 **Trigger:** a response covering multiple distinct top-level points, targets, or items.
 
-**Fix:** top-level points are always enumerated (numbered), never bulleted, regardless of count. Subpoints nested under a top-level point may use bullets for up to 3 items; beyond that, switch subpoints to enumeration too, using a different numbering scheme than the top level (letters, roman numerals, or decimal sub-numbers) so the two levels stay visually distinct. Same instinct as switch/case replacing a stacked if/else-if once branches pass a complexity threshold — a growing list of parallel items earns real structure, not a flat one.
+**Fix:** top-level points are always enumerated (numbered), never bulleted, regardless of count. Subpoints nested under a top-level point may use bullets for up to 3 items; beyond that, switch subpoints to enumeration too, using a different numbering scheme than the top level (letters, roman numerals, or decimal sub-numbers) so the two levels stay visually distinct.
 
 ## 9. settings report
 

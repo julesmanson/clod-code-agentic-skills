@@ -40,7 +40,7 @@ Set the cap with `set memory files [N]` or a clear equivalent. N at or above the
 
 ## 8. `enumerate`
 
-Multi-point responses always number their top-level points — never bullets, regardless of count. Subpoints nested under one of those points can stay as bullets for up to 3 items; past that, they switch to enumeration too, using a different scheme than the top level (letters, roman numerals, decimal sub-numbers) so the two levels don't visually blur together. Same reasoning as switch/case replacing a stacked if/else-if once branches pass a few — a growing set of parallel items earns real structure, not a flat list.
+Multi-point responses always number their top-level points — never bullets, regardless of count. Subpoints nested under one of those points can stay as bullets for up to 3 items; past that, they switch to enumeration too, using a different scheme than the top level (letters, roman numerals, decimal sub-numbers) so the two levels don't visually blur together.
 
 ## 9. `settings report`
 
@@ -48,7 +48,6 @@ At the start of a new session or project, expect one terse rundown of autonomon'
 
 ## Related skills
 
-- [Evaluate Me](../evaluate-me) — runs a strict, evidence-gated self-assessment of the user across nine points.
 - [Lern My Speak](../lern-my-speak) — the opposite direction of autonomon's always-on fixes: a session-triggered glossary that shapes how your input gets read, not how the assistant's own output gets shaped.
 - [Your Mother's Not Here](../your-mothers-not-here) — memory-cap's lowering case hands off to amnesia for the actual consolidation rather than duplicating that logic here.
 
