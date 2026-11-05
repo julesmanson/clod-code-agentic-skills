@@ -29,7 +29,7 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 <tbody>
 <tr>
 <td align="center"><a href="./commit">Commit</a></td>
-<td>Commit and push to the appropriate GitHub repo (adaptable to other git services with minimal edits). Prompts before creating a new repo if one doesn't exist. Supports <code>new repo [name] [visibility] [license] commit</code> to create a repo and make the first commit in one step. Drafts its own commit message and closes with a verdict — Failed, Commit, or Commit and push to [repo]. Full usage, examples, defaults, and other-git-host notes: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
+<td>Commits and pushes to the remote for an already-existing repo, using only plain git commands — no GitHub-specific tooling. Drafts its own commit message and closes with a verdict — Failed, Commit, or Commit and push to [repo]. Full usage and defaults: <a href="./commit/README.md"><code>commit/README.md</code></a>.</td>
 </tr>
 <tr>
 <td align="center"><a href="./autonomon">Autonomon</a></td>

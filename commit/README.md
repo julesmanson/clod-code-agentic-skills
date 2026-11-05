@@ -1,4 +1,4 @@
-# Commit (ver 0.6.0 beta)
+# Commit (ver 0.7.0 beta)
 
 <img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
@@ -6,7 +6,7 @@
 
 **Caution:** a rare missed push has occurred across real use. Mitigated by the closing verdict below — Failed, Commit, or Commit and push to [repo] — making a miss exceedingly unlikely to occur unnoticed.
 
-When you explicitly ask for a commit, this skill commits and pushes the appropriate changes to the configured remote. It can be adapted to other Git services with minimal edits. If you ask to create a repository that does not exist, you are prompted for the missing decisions first. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
+When you explicitly ask for a commit, this skill commits and pushes to the already-configured remote of an existing repo, using only plain git commands — `status`, `diff`, `log`, `add`, `commit`, `push`, nothing GitHub-specific. Only tested here against GitHub, but a reasonable template to adapt for other git hosts. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 
 ## What to expect
 
@@ -14,68 +14,25 @@ Every way this skill can be invoked, and what happens for each:
 
 | You type | What happens |
 | --- | --- |
-| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it. If there is no upstream, the branch is set up with `-u`. An empty repository state or rejected push is reported instead of being forced through. |
-| `commit` — repo exists, no remote | You are asked whether to create a new GitHub repository or attach an existing remote. |
-| `commit` — no repo here | You are asked whether to initialize this folder, and for the repository name and visibility. |
-| `new repo` or `new repo commit` | You are asked for the required repository name rather than having one guessed. |
-| `new repo [name]` | The repository is created, but no commit is made because you did not include `commit`. |
-| `new repo [name] commit` | The repository is created and the normal commit-and-push process follows. |
-| `new repo [name] [visibility] [license] commit` | The repository is created with the specified options, then committed and pushed. |
-| An ambiguous or unrecognized value | You are asked to clarify it rather than having the choice guessed. |
+| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it. If there is no upstream, the branch is set up with `-u`. Nothing to commit, or a rejected push, is reported instead of being forced through. |
+| `commit` — repo exists, no remote | You are asked for an existing remote URL to attach. |
+| `commit` — no repo here | Cannot be executed — no git repository exists here, and this skill doesn't create one. |
+| Anything missing or ambiguous | You are asked to clarify rather than having it guessed. |
 
 Nothing is staged, committed, or pushed merely because a good moment is noticed. You must explicitly say `commit` before those actions occur.
 
-Saying `commit` always pushes too, as one combined action — you don't need to ask for the push separately. Say `just commit` or `don't push` instead if you want the commit made without pushing it.
+Saying `commit` pushes too, as one combined action — you don't need to ask for the push separately. Say `just commit` or `don't push` instead if you want the commit made without pushing it.
 
 The commit message drafts itself. Every run closes with one verdict: **Failed** (reason given), **Commit** (not pushed), or **Commit and push to [repo]**.
 
-Examples:
-
-```
-new repo my-project commit
-```
-Public repo named `my-project`, no license file, created from the current directory, then committed and pushed.
-
-```
-new repo my-project private apache-2.0 commit
-```
-Same, but private and Apache-2.0 licensed.
-
 ### Defaults
 
-The following are the only values supplied automatically when you leave them out. Ambiguous or missing values outside this list prompt a question:
+The only values supplied automatically when you leave them out. Ambiguous or missing values outside this list prompt a question:
 
 | Value | Assumed if not given |
 | --- | --- |
-| `[visibility]` | `public` |
-| `[license]` | `none` |
 | Remote name | `origin` |
 | Branch to push | whichever branch is currently checked out (never switched on your behalf) |
-
-When creating a repository, visibility defaults to `public` and license to `none`. The remote defaults to `origin`, and the currently checked-out branch is used without switching branches for you.
-
-> **Tip:** if you create the GitHub repo yourself via the website first, uncheck "Add a README file" and "Choose a license" unless you actually want GitHub's placeholders — otherwise they'll need reconciling with this skill's own README/LICENSE afterward.
-
-## Using Commit with other git hosts
-
-The ordinary `commit` workflow works with any Git remote. Only repository creation is GitHub-specific, because the `new repo` command uses GitHub CLI.
-
-| Situation | What to do |
-| --- | --- |
-| GitLab | Use the GitLab adaptation below; its CLI flags are not identical to GitHub's. |
-| No CLI available | Create the empty repository through the host's web interface or other supported method, then add its remote URL. The ordinary commit workflow still works. |
-| A remote is not named `origin` | Specify which remote to use. |
-| SSH versus HTTPS | Either works once the remote is configured correctly. |
-
-Once the remote is configured, Commit behaves the same across hosts. Repository creation is the only GitHub-specific part.
-
-### Adapting to GitLab
-
-If you are adapting this skill for GitLab, replace `gh repo create` with `glab repo create [name] --[visibility] --remoteName=origin` and run it from inside the already-`git init`'d directory. Three real differences from `gh`, not just a naming swap:
-
-- No `--source` flag — running from the current directory (or omitting `[name]` to use the folder name) is `glab`'s equivalent of `gh`'s `--source=.`.
-- The remote-name flag is `--remoteName`, not `--remote`.
-- Visibility flags (`--public`/`--private`) match `gh`'s naming, but `glab repo create` has no `--license` flag at all — the license step has no GitLab equivalent. Add a `LICENSE` file yourself if you need one.
 
 ## Related skills
 
