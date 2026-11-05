@@ -14,7 +14,7 @@ Every way this skill can be invoked, and what happens for each:
 
 | You type | What happens |
 | --- | --- |
-| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it. If there is no upstream, the branch is set up with `-u`. Nothing to commit, or a rejected push, is reported instead of being forced through. |
+| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it — setting up tracking with `-u` if there's no upstream yet. Nothing to commit, or a rejected push, is reported instead of being forced through. |
 | `commit` — repo exists, no remote | You are asked for an existing remote URL to attach. |
 | `commit` — no repo here | Cannot be executed — no git repository exists here, and this skill doesn't create one. |
 | Anything missing or ambiguous | You are asked to clarify rather than having it guessed. |
@@ -37,7 +37,6 @@ The only values supplied automatically when you leave them out. Ambiguous or mis
 ## Related skills
 
 - [Thought Experiment](../thought-experiment) — grew out of an early audit of this skill.
-- [Your Mother's Not Here](../your-mothers-not-here) — the same discipline from the other direction: an irreversible action (push here, deletion there) that only ever runs behind an explicit ask, never on a good moment alone.
 
 ## Disclaimer
 
