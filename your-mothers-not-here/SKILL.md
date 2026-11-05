@@ -16,7 +16,7 @@ allowed-tools:
 
 **⚠️ Warning and disclaimer — read this entire file before invoking.** Every action this skill takes is a deletion, or an edit to memory content that can't be recovered once overwritten. The specifics below reflect one person's workflow, not a universal standard. Backroom defaults to keeping the last two chat logs. Amnesia's own calls — what counts as "stale" memory content, whether merging those memory files is worth it — are deliberately left as judgment, not given a default. Read the whole file carefully and make any edits your own situation needs — file paths, defaults, what counts as "safe to delete" — before trusting it with anything you can't afford to lose.
 
-**Trigger:** explicit only. Invoking the skill by name — "your mother's not here," or either alternative phrasing "your mother isn't here" / "your mother is not here" — (or describing backroom-file cleanup) runs **backroom**. Naming **amnesia** explicitly — alone or alongside backroom, e.g. "your mothers not here do amnesia too" — also runs the memory cleanup. Never runs autonomously just because something looks like clutter; every action here is a deletion.
+**Trigger:** explicit only. Invoking the skill by name — "your mother's not here," or either alternative phrasing "your mother isn't here" / "your mother is not here" — (or describing backroom-file cleanup) opens a dialog for specifics on both operations: which chat logs **backroom** should keep, and whether to also run **amnesia**. Answer either or both parts of that dialog directly in the call itself — name **amnesia** explicitly (e.g. "your mothers not here do amnesia too"), specify which logs to keep, or both — to skip asking whatever's already been given; anything left open falls back to backroom's default (last two logs) or gets asked plainly for amnesia, which has none. Never runs autonomously just because something looks like clutter; every action here is a deletion.
 
 Two keyworded operations, independently addressable. Each gates its own riskiest action with a question — backroom before touching anything, amnesia before merging files — rather than a single blanket confirmation.
 
@@ -33,7 +33,7 @@ Cleans old session transcripts and project-level AI scratch output.
 - **A folder literally named `GENERATED/` is never touched, under any circumstance** — real project work product lives there, and deletion rights belong to the user alone, not delegated even with a yes.
 - **The `memory/` folder itself is never touched by backroom** — only `amnesia` touches memory content.
 
-**Offering amnesia:** if the user invokes backroom without naming amnesia, it's fine to ask once ("amnesia too?") — but never run it without an explicit yes. If they decline or don't answer, proceed with backroom alone.
+**Offering amnesia:** if the invocation dialog didn't already settle it, ask once ("amnesia too?") — but never run it without an explicit yes. If they decline or don't answer, proceed with backroom alone.
 
 ## amnesia
 
@@ -56,6 +56,9 @@ Once triggered, always performs, in this order:
 5. **Confident vs. uncertain.** Confident = matches a rule above exactly (standard backroom artifacts, a content-verified dead draft, a confirmed-shipped feature's memory). Uncertain = anything needing a guess about intent or scope — ask, don't guess. Which chat logs to keep and whether to merge memory files are never "confident" — both are asked every time per each operation's own rule above.
 6. **Report at moderate detail, two lenses:** **Housekeeping** (can it be pruned, why — regenerable vs. irreplaceable) and **Understanding** (what it is, what's lost if pruned). A handful of labeled bullets, not a narrated essay.
 7. **After deleting, report exactly what was removed** (paths, approximate sizes) so there's a clear record to object to if something was misjudged.
+8. **Close every run with one consolidated summary report** — recap what backroom kept/removed and what amnesia removed/merged, scaled to what actually ran: one line if only one operation ran, a short section each if both did.
+
+New line, close every report with `your mothers not here`.
 
 ## Related skills
 

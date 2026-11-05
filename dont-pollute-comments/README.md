@@ -12,11 +12,15 @@ Two fixes. A comment block gets treated the same as a paragraph of prose on an a
 
 LLM-generated comments tend toward a specific, recurring set of habits: hardwrapping long lines into fixed-width physical breaks, verbose explanations, redundant restating of what the code already says, commenting the obvious on every line regardless of whether it adds anything. This project's own author needs significant zoom to read code without glasses — a hardwrapped comment, broken at a fixed width for one screen size, reflows at the wrong points the moment the panel narrows, the font changes, or the zoom level changes, turning into jagged, broken-looking prose instead of a clean paragraph. That's not cosmetic for this author specifically — it's the actual accessibility accommodation the hardwrap habit breaks.
 
-**Call it by name, every time** — `dont-pollute-comments`, or a clear equivalent ask. This is deliberately not autonomous, and that's a feature, not an omission. An always-on rule baked into your own `CLAUDE.md` is one thing, because you wrote it and you know it's there. A skill picked up from someone else's repo is different — silently reshaping your comments without you ever having to ask for it would be a bad trade for a convenience you didn't request. Being called out by name is the one courtesy you're owed in exchange.
+This also requires explicit invocation by deliberate design, not oversight. An always-on rule baked into your own `CLAUDE.md` is one thing, because you wrote it and you know it's there. A skill picked up from someone else's repo is different — silently reshaping your comments without you ever having to ask for it would be a bad trade for a convenience you didn't request. Being called out by name is the one courtesy you're owed in exchange.
+
+## Usage
+
+Call it by name, every time — `dont pollute comments`, or a clear equivalent ask.
 
 ## Great starter template for one's own style
 
-That courtesy is also what makes this a genuinely good starting template, not just a fixed ruleset to take or leave. Invoke it, see exactly what it does to a real comment in your own codebase, then open [`SKILL.md`](./SKILL.md) and edit it until it's *your* house style instead of someone else's. Nothing here assumes every line survives that trip unchanged — it's meant to be a template for editing in your own rules of comment style.
+That courtesy is also what makes this a genuinely good starting template, not just a fixed ruleset to take or leave. Invoke it on a test file, see exactly what it does to a real comment in your own codebase, then open [`SKILL.md`](./SKILL.md) and edit it until it's *your* house style instead of someone else's. Nothing here assumes every line survives that trip unchanged — it's meant to be a template for editing in your own rules of comment style.
 
 ## Correcting a stale comment
 
@@ -44,7 +48,7 @@ Trailing `//` is the default terse shape. A component or module also gets its ow
 
 ## CSS
 
-Trailing `/* ... */` naming where or who uses a rule is the default — most selectors are already self-documenting by name, so restating what a rule visually does is noise. Custom properties (`:root` variables) are the one exception that needs this explicitly, since they have no selector of their own: every variable *definition* gets a trailing comment listing where it's used — `--my-var: 1rem; /* nav, logo, #stage */` — appended to an existing comment or created fresh, definitions only, never at each usage site. Superseded code gets commented out rather than deleted, with the block's first line naming what it was and what replaced it — keeps the history inspectable right in the file, not just buried in git log.
+Trailing `/* ... */` naming where or who uses a rule is the default — most selectors are already self-documenting by name, so restating what a rule visually does is noise. Custom properties (`:root` custom properties or variables) are the one exception that needs this explicitly, since they have no selector of their own: every variable *definition* gets a trailing comment listing where it's used — `--reg-padding: 1rem; /* nav, logo, #stage */` — appended to an existing comment or created fresh, definitions only, never at each usage site. Superseded code gets commented out rather than deleted, with the block's first line naming what it was and what replaced it — keeps the history inspectable right in the file, not just buried in git log.
 
 ## HTML
 
@@ -52,7 +56,7 @@ Almost no comments at all — markup rarely has a non-obvious fact worth recordi
 
 ## Related skills
 
-- [Autonomon](../autonomon) — its `terse` mini-skill applies the same no-padding instinct to chat responses that this skill applies to comments.
+- [Autonomon](../autonomon) — its `terse` subskill applies the same no-padding instinct to chat responses that this skill applies to comments.
 - [Your Mother's Not Here](../your-mothers-not-here) — the same stale-content discipline from a different angle: amnesia's "verify before deleting or editing, never assume stale from age alone" and this skill's "fix only what's gone stale, preserve everything else" are the same instinct applied to memory files versus code comments.
 
 ## Disclaimer

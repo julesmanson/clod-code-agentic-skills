@@ -75,7 +75,7 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 <tr>
 <td align="center"><a href="./your-mothers-not-here">Your Mother's Not Here</a></td>
 <td>
-⚠️ Read carefully before use — every action is a deletion. Two keyworded operations: <code>backroom</code> (deletes old session transcripts and scratch artifacts, asking which chat logs to keep — default: last two) and <code>amnesia</code> (cleans the memory system — removes stale/redundant content automatically, then reports the resulting file count/average length and asks whether to merge into fewer files). Details: <a href="./your-mothers-not-here/README.md"><code>your-mothers-not-here/README.md</code></a>.
+⚠️ Read carefully before use — every action is a deletion. Invoking it by name opens a dialog for specifics on two keyworded operations: <code>backroom</code> (deletes old session transcripts and scratch artifacts, asking which chat logs to keep — default: last two) and <code>amnesia</code> (cleans the memory system — removes stale/redundant content automatically, then reports the resulting file count/average length and asks whether to merge into fewer files). Closes with a consolidated summary report. Details: <a href="./your-mothers-not-here/README.md"><code>your-mothers-not-here/README.md</code></a>.
 </td>
 </tr>
 <tr>

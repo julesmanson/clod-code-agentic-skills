@@ -1,7 +1,7 @@
 ---
 name: dont-pollute-comments
 version: 1.0.0-beta
-description: One person's own comment-writing standard, built from a real project's governing doc and checked against that project's own real files rather than written fresh for a general audience. Covers correcting stale comments, a unified rule set for every language, then specifics for JavaScript, CSS, and HTML. Triggered explicitly by name — not autonomous, so you always know when it's shaping your comments and can adopt it on your own terms.
+description: One person's own comment-writing standard, built from a real project's governing doc and checked against that project's own real files rather than written fresh for a general audience. Covers correcting stale comments, a unified rule set for every language, then specifics for JavaScript, CSS, and HTML. Triggered explicitly by name, so you always know when it's shaping your comments and can adopt it on your own terms.
 user-invocable: true
 allowed-tools:
   - Read
@@ -12,7 +12,7 @@ allowed-tools:
 
 # Don't Pollute Comments ver 1.0.0 beta
 
-**Trigger:** explicit only — the phrase "dont-pollute-comments," or a clear equivalent ask. Deliberately not autonomous: unlike a rule baked silently into your own CLAUDE.md, a skill picked up from someone else's repo owes you the courtesy of being called out by name, so you always know when it's active rather than discovering it secondhand in your own diffs.
+**Trigger:** explicit only — the phrase "dont pollute comments," or a clear equivalent ask. Requires explicit invocation by deliberate design: unlike a rule baked silently into your own CLAUDE.md, a skill picked up from someone else's repo owes you the courtesy of being called out by name, so you always know when it's active rather than discovering it secondhand in your own diffs.
 
 These are one person's own standing rules, drawn from a real project's own governing doc and verified against that project's actual files rather than written fresh as generic advice for a general audience. Adopt them as given, or edit this file to match your own project's conventions — nothing here assumes you'll keep every line.
 

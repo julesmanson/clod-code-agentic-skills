@@ -20,13 +20,38 @@ Once active, every term in the glossary gets read as its listed meaning, not gue
 
 ## Make it your own
 
-The glossary in [`SKILL.md`](./SKILL.md) is one person's real shorthand, kept short specifically so it's easy to hand-edit. Add, remove, or redefine entries to match your own. There's no live "define X as Y" mechanism mid-session — growing the list means opening the file and adding a line, the same way every other skill in this repo gets maintained.
+The glossary — kept short specifically so it's easy to hand-edit, in [`SKILL.md`](./SKILL.md) — is one person's real shorthand:
 
-**One warning, not a guardrail:** map a term to another installed skill's trigger phrase, or to a destructive action, at your own risk. This skill has no technical check against that collision — whoever edits the list owns the consequences.
+- **birth / rebirth** — new session
+- **bish** — target, the thing being worked on or referred to (not the word it resembles) — "commie dis bish" = "commit this target"
+- **booldung** — bull excrement (not literally, something taken as not likely)
+- **Clod / Gem / Cop / Korg / Chad** — Claude / Gemini / Copilot / Grok / ChatGPT
+- **commie** — commit (and push — always push too)
+- **da** — do
+- **dis / dat** — this / that
+- **fer** — for
+- **flock** — infers you know what
+- **flying flock** — infers frustration over subject or context
+- **gots** — got, have
+- **ino** — i know
+- **lemme ax** — let me ask
+- **lez do [dis]** — let's do [this]
+- **prollem** — problem
+- **prolly** — probably
+- **splain** — explain
+- **stinking / im stinking** — thinking / I'm thinking
+- **thot** — thought
+- **toll** — told
+- **wid** — with
+- **wud** — what
+
+Add, remove, or redefine entries to match your own. There's no live "define X as Y" mechanism mid-session — growing the list means opening the file and adding a line, the same way every other skill in this repo gets maintained.
+
+**One warning, not a guardrail:** map a term to another installed skill's trigger phrase, or to a destructive action, at your own risk. This skill has no technical check against that collision — whoever edits or uaes the list as is, owns the consequences.
 
 ## Related skills
 
-- [Autonomon](../autonomon) — the other skill here that shapes ongoing behavior rather than a one-shot action, in the opposite direction: autonomon is always-on with no keyword at all and shapes the assistant's own output, this one needs one explicit trigger per session and shapes how your input gets read.
+- [Autonomon](../autonomon) — the other skill here that shapes ongoing AI behavior rather than a one-shot action, in the opposite direction: autonomon is always-on with no keyword at all and shapes the assistant's own output, this one needs one explicit trigger per session and shapes how your input gets read.
 - [Don't Pollute Comments](../dont-pollute-comments) — the other skill built explicitly as a starting template to hand-edit into your own house style, triggered by name as a deliberate courtesy rather than running autonomously.
 
 ## Disclaimer

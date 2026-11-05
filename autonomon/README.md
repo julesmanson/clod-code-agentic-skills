@@ -30,7 +30,7 @@ When you offer a bare figure or a constructed model without hedging language, ex
 
 ## 6. `load bearing`
 
-When a response critiques or corrects several points at once — a debate, a review, an audit — expect the corrections that actually change the argument's strength or conclusion to come first, with accurate-but-inconsequential nitpicks compressed to a clause or left out rather than given equal billing. This doesn't apply when a task explicitly calls for exhaustive coverage regardless of weight (an `evaluate-me` report, for instance).
+When a response critiques or corrects several points at once — a debate, a review, an audit — expect the corrections that actually change the argument's strength or conclusion to come first, with accurate-but-inconsequential nitpicks compressed to a clause or left out rather than given equal billing. This doesn't apply when a task explicitly calls for exhaustive coverage regardless of weight (an `evaluate me` report, for instance).
 
 ## 7. `memory cap [N]`
 

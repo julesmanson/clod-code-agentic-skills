@@ -8,7 +8,7 @@ The skill is model-agnostic and can be adapted to other AI models or coding assi
 
 ## How to use it
 
-Ask explicitly with the phrase `evaluate-me`. That exact phrase is the trigger — no inferred equivalents.
+Ask explicitly with the phrase `evaluate me`. That exact phrase is the trigger — no inferred equivalents.
 
 The more real work available to inspect, the more useful the result will be. You can ask for an evaluation based on a conversation, a workspace, a project, a completed task, or a combination of those sources.
 
@@ -68,7 +68,7 @@ The complete evaluation arrives as one visually distinct block — a Markdown bl
 1. `# Evaluation`
 2. The nine review areas in order
 3. The communication-register note
-4. The final `evaluate-me` attribution
+4. The final `evaluate me` attribution
 
 ## Known limitations
 
@@ -79,13 +79,13 @@ Worth spot-checking any attribution or rigor judgment against the actual transcr
 
 ## What it is not
 
-`evaluate-me` does not provide an IQ score, a clinical diagnosis, or a complete personality profile. It does not pretend that a thin session is a complete history. It does not require a personal toy project to follow production-level process, and it does not treat one universal risk model as appropriate for every person or project.
+`evaluate me` does not provide an IQ score, a clinical diagnosis, or a complete personality profile. It does not pretend that a thin session is a complete history. It does not require a personal toy project to follow production-level process, and it does not treat one universal risk model as appropriate for every person or project.
 
 It is also not a replacement for feedback from people who have actually worked with you over time. It is a structured reading of the evidence made available to the AI assistant at the time of the request.
 
 ## Portability
 
-The behavioral instructions are written in ordinary Markdown and are not tied to one AI brand. If you adapt the skill elsewhere, keep its evidence standard, nine-part review order, communication-register note, blockquote output format, and final `evaluate-me` attribution. Platform-specific metadata such as `user-invocable` and `allowed-tools` may need to be changed.
+The behavioral instructions are written in ordinary Markdown and are not tied to one AI brand. If you adapt the skill elsewhere, keep its evidence standard, nine-part review order, communication-register note, blockquote output format, and final `evaluate me` attribution. Platform-specific metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 
 ## Related skills
 

@@ -23,7 +23,7 @@ A closing **Distinction** or **Masterclass** flag calls out a genuinely rare or 
 
 Every report then closes with the **AI assistant's own take** — a genuine, substantive read on the content itself, labeled as such and distinct from the structured analysis above: whether the reasoning actually holds up, what's genuinely strong or weak, anything worth surfacing that the structured steps don't capture.
 
-New line, close every report with `adjudicate-me`.
+New line, close every report with `adjudicate me`.
 
 ## Including exchanges (optional)
 
