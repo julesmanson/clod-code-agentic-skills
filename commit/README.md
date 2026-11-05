@@ -14,7 +14,7 @@ Every way this skill can be invoked, and what happens for each:
 
 | You type | What happens |
 | --- | --- |
-| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, creates a concise commit, and pushes it — setting up tracking with `-u` if there's no upstream yet. Nothing to commit, or a rejected push, is reported instead of being forced through. |
+| `commit` — repo exists | Reviews the repository, stages only relevant files, checks for secrets and stray files, drafts the message (subject and body both), creates the commit, and pushes it — setting up tracking with `-u` if there's no upstream yet. Nothing to commit, or a rejected push, is reported instead of being forced through. |
 | `commit` — repo exists, no remote | You are asked for an existing remote URL to attach. |
 | `commit` — no repo here | Cannot be executed — no git repository exists here, and this skill doesn't create one. |
 | Anything missing or ambiguous | You are asked to clarify rather than having it guessed. |
@@ -23,7 +23,7 @@ Nothing is staged, committed, or pushed merely because a good moment is noticed.
 
 Saying `commit` pushes too, as one combined action — you don't need to ask for the push separately. Say `just commit` or `don't push` instead if you want the commit made without pushing it.
 
-The commit message drafts itself. Every run closes with one verdict: **Failed** (reason given), **Commit** (not pushed), or **Commit and push to [repo]**.
+Every run closes with one verdict: **Failed** (reason given), **Commit** (not pushed), or **Commit and push to [repo]**.
 
 ### Defaults
 
