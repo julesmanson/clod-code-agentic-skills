@@ -1,7 +1,7 @@
 # Adjudicate Me ver 1.2.0
 
 <p align="center">
-  <img src="./assets/clod-interrogation.svg" width="400" height="300" alt="Clod stands alone on a table, lit by a wide cone of light from above, surrounded by total dark blue — the rest of the room implied, never shown.">
+  <img src="./assets/clod-interrogation.svg" width="600" height="450" alt="Clod stands alone on a table, lit by a wide cone of light from above, surrounded by total dark blue — the rest of the room implied, never shown.">
 </p>
 
 **Public-Content Clearance & Perception Check** - [back to Clod Code Agentic Skills](../README.md)
