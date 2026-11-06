@@ -1,8 +1,8 @@
 # Thought Experiment (ver 0.6.0 alpha)
 
-**Rigorous Failure-Scenario Audits and Fixes** — [← back to Clod Code Agentic Skills](../README.md)
-
 **Caution:** alpha, not beta. The established core — dependency verification, failure-scenario construction — has real mileage: partially tested across real use, mostly successful, with occasional minor misses on a step or a missed bug, but no catastrophic failure ever observed. The newest additions specifically (sibling-file/formatting checks, the fix-authorization question, the consolidated closing report) haven't been through any real rounds yet, which is what's actually driving the alpha designation. This skill touches files directly via Edit/Write, so extra scrutiny is warranted on the new parts until they've logged substantial use.
+
+**Rigorous Failure-Scenario Audits and Fixes** — [← back to Clod Code Agentic Skills](../README.md)
 
 Use this skill for a rigorous, evidence-based audit of a script, document, configuration, project, cloud setup, or other target — and for fixing what it finds: a confirmed bug gets repaired directly in the target's own files, not just named in a list. It constructs concrete failure scenarios and checks claims about dependencies against live or authoritative sources instead of relying on memory. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 

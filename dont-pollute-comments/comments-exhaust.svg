@@ -1,0 +1,39 @@
+<svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The rear end of a baby-blue 1950s Bel Air, tailfin and chrome bumper visible at left with the back tire at right, and a plume of exhaust smoke trailing from the tailpipe on the left. The word COMMENTS is written in the smoke, tilted so the C end rises with the rising smoke.">
+
+  <!-- rear wheel, right end -->
+  <circle cx="450" cy="255" r="36" fill="#1b1b1b"/>
+  <circle cx="450" cy="255" r="17" fill="#9a9a9a" stroke="#1b1b1b" stroke-width="2"/>
+
+  <!-- lower rear body, cropped at the right edge so the rest of the car implies off-canvas -->
+  <path d="M570 180 L290 180 Q258 180 246 208 L246 240 Q246 256 262 256 L570 256 Z" fill="#89CFF0" stroke="#1b1b1b" stroke-width="4"/>
+
+  <!-- chrome side trim -->
+  <rect x="270" y="208" width="300" height="7" fill="#d8d8d8" stroke="#1b1b1b" stroke-width="1.5"/>
+
+  <!-- tailfin -->
+  <path d="M348 180 Q342 128 317 98 Q306 84 298 95 Q289 116 284 150 Q281 167 278 180 Z" fill="#89CFF0" stroke="#1b1b1b" stroke-width="4"/>
+
+  <!-- taillight -->
+  <ellipse cx="302" cy="163" rx="13" ry="19" fill="#c0392b" stroke="#1b1b1b" stroke-width="3"/>
+
+  <!-- chrome rear bumper -->
+  <rect x="234" y="248" width="76" height="18" rx="8" fill="#d8d8d8" stroke="#1b1b1b" stroke-width="3"/>
+  <rect x="291" y="238" width="14" height="14" rx="4" fill="#d8d8d8" stroke="#1b1b1b" stroke-width="2.5"/>
+  <rect x="249" y="238" width="14" height="14" rx="4" fill="#d8d8d8" stroke="#1b1b1b" stroke-width="2.5"/>
+
+  <!-- tailpipe, left end -->
+  <rect x="236" y="258" width="24" height="11" rx="4" fill="#333333" stroke="#1b1b1b" stroke-width="2"/>
+
+  <!-- exhaust smoke plume, rising up and to the left -->
+  <circle cx="222" cy="253" r="13" fill="#cccccc" opacity="0.8"/>
+  <circle cx="192" cy="222" r="19" fill="#cccccc" opacity="0.65"/>
+  <circle cx="156" cy="182" r="27" fill="#cccccc" opacity="0.5"/>
+  <circle cx="114" cy="137" r="35" fill="#cccccc" opacity="0.4"/>
+  <circle cx="74" cy="92" r="40" fill="#cccccc" opacity="0.3"/>
+
+  <!-- COMMENTS, tilted so the C end (left) rises with the smoke -->
+  <g transform="translate(90, 205) rotate(20)">
+    <text x="0" y="0" font-family="Arial Black, sans-serif" font-weight="900" font-size="32" fill="#4a4a4a">COMMENTS</text>
+  </g>
+
+</svg>

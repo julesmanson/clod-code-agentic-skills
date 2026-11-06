@@ -1,10 +1,10 @@
 # Commit (ver 0.7.0 beta)
 
-<img src="./assets/clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
-
-**Commit and Push** — [← back to Clod Code Agentic Skills](../README.md)
+<img src="./clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
 **Caution:** a rare missed push has occurred across real use. Mitigated by the closing verdict below — Failed, Commit, or Commit and push to [repo] — making a miss exceedingly unlikely to occur unnoticed.
+
+**Commit and Push** — [← back to Clod Code Agentic Skills](../README.md)
 
 When you explicitly ask for a commit, this skill commits and pushes to the already-configured remote of an existing repo, using only plain git commands — `status`, `diff`, `log`, `add`, `commit`, `push`, nothing GitHub-specific. Only tested here against GitHub, but a reasonable template to adapt for other git hosts. See [`SKILL.md`](./SKILL.md) for the complete behavior definition.
 

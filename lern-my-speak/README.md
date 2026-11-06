@@ -1,8 +1,6 @@
 # Lern My Speak (ver 1.0.0 beta)
 
-<p align="center">
-  <img src="./assets/clod-slackers.svg" width="380" height="345" alt="Two tall, slouching cartoon teenagers smirking and mumbling, with tiny orange-headed Clod standing between their feet, looking up.">
-</p>
+<img src="./clod-slackers.svg" width="380" height="345" alt="Two tall, slouching cartoon teenagers smirking and mumbling, with tiny orange-headed Clod standing between their feet, looking up.">
 
 **A toy skill and a shorthand skill, at once** — [← back to Clod Code Agentic Skills](../README.md)
 

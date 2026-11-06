@@ -1,8 +1,8 @@
 # Don't Flatter Me (ver 1.0.0 alpha)
 
-**Sycophancy Countermeasure** - [back to Clod Code Agentic Skills](../README.md)
-
 **Caution:** untested — hasn't been run through any real validation yet. Low stakes either way, since nothing here touches a file or takes an irreversible action, but worth knowing before treating it as a settled standard.
+
+**Sycophancy Countermeasure** - [back to Clod Code Agentic Skills](../README.md)
 
 **Don't Flatter Me** calibrates how an AI assistant assesses your own competence, work, or performance — against independently verifiable evidence instead of defaulting to validation. A direct, narrow countermeasure to a documented, structural AI behavior, not a general "be more honest" request.
 
