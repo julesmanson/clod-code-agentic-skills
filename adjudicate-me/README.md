@@ -1,5 +1,9 @@
 # Adjudicate Me ver 1.2.0
 
+<p align="center">
+  <img src="./assets/clod-interrogation.svg" width="400" height="300" alt="Clod stands alone on a table, lit by a wide cone of light from above, surrounded by total dark blue — the rest of the room implied, never shown.">
+</p>
+
 **Public-Content Clearance & Perception Check** - [back to Clod Code Agentic Skills](../README.md)
 
 **Adjudicate Me** checks one piece of public-facing content — a comment, a post, an article — against a floor (real security-clearance disqualification risk, as an adjudicator would judge it) and a ceiling (how a background-investigation adjudicator and a hiring panel would each likely read it). Built for aerospace/defense-track engineering job-seekers who post publicly under a traceable name, but adaptable to any field with a formal vetting process.
