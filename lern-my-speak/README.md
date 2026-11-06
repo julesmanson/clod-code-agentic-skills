@@ -12,6 +12,10 @@ One person's own personal jargon, defined once so an assistant stops guessing at
 
 This is comical to read — a glossary of someone's own casual typing shorthand looks funny laid out as a formal table. It's also a genuinely small, real utility: a long session develops its own vocabulary, and re-explaining or re-inferring the same handful of words every time is friction worth removing. There's a second kind of friction this happens to help with too: QWERTY layouts make certain words — "probably" is a common one — more typo-prone for an unskilled typist, and a short, clearly-defined stand-in like "prolly" sidesteps that risk entirely. Both labels are accurate at once; neither cancels the other out.
 
+## Where this came from
+
+This grew out of a real, specific constraint, not an invented quirk. This project's own author has had reduced finger mobility since the teens, making full, precisely-spelled typing more effortful and more error-prone than it is for most people. Leaning on short, phonetic shorthand instead of typing every word out in full is a genuine adaptation to that, not casual laziness — the same root cause behind the typo-proneness mentioned above, generalized past just one example.
+
 ## How it works
 
 Say the phrase "lern my speak" — wrapped in whatever sentence feels natural, or on its own — and it's active for the rest of the session. No need to repeat it on every message afterward.
@@ -47,7 +51,7 @@ The glossary — kept short specifically so it's easy to hand-edit, in [`SKILL.m
 
 Add, remove, or redefine entries to match your own. There's no live "define X as Y" mechanism mid-session — growing the list means opening the file and adding a line, the same way every other skill in this repo gets maintained.
 
-**One warning, not a guardrail:** map a term to another installed skill's trigger phrase, or to a destructive action, at your own risk. This skill has no technical check against that collision — whoever edits or uaes the list as is, owns the consequences.
+**One warning, not a guardrail:** map a term to another installed skill's trigger phrase, or to a destructive action, at your own risk. This skill has no technical check against that collision — whoever edits or uses the list as is, owns the consequences.
 
 ## Related skills
 
