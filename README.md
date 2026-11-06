@@ -1,8 +1,6 @@
 # Clod Code Agentic Skills
 
-<p align="center">
-  <img src="./clod.svg" width="208" height="160" alt="Clod, the orange blockhead cartoon character">
-</p>
+<img src="./clod.svg" width="208" height="160" alt="Clod, the orange blockhead cartoon character">
 
 A series of agentic developer skills for Claude Code, adaptable to other AI coding assistants with minimal edits.
 

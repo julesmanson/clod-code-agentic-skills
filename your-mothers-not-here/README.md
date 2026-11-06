@@ -1,6 +1,6 @@
 # Your Mother's Not Here (ver 1.0.5 beta)
 
-<img src="./clod-scolded.svg" width="400" height="440" alt="A 1950s-catalog-style mother stands with hands on hips, looking sternly down at Clod, the blocky orange-headed cartoon character, who sits on the floor playing amid scattered toy blocks and a ball.">
+<img src="./clod-scolded.svg" width="600" height="660" alt="A 1950s-catalog-style mother stands with hands on hips, looking sternly down at Clod, the blocky orange-headed cartoon character, who sits on the floor playing amid scattered toy blocks and a ball.">
 
 # ⚠️ Read carefully before use — every action is a deletion
 
