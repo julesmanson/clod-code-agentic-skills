@@ -6,6 +6,12 @@
 
 The skill is model-agnostic and can be adapted to other AI models or coding assistants with minimal changes. The complete operating definition is in [`SKILL.md`](./SKILL.md).
 
+## What repeated use gets you
+
+Repeated use compounds in two specific ways. Point 7 (Markers of higher intelligence) works as more than a compliment — when it cites a concrete instance of a reasoning move that actually worked, that's externally-validated proof a specific technique is available to you, which you can then deliberately reach for again in a different situation instead of waiting for it to happen by accident. And the effect of repeated evaluations isn't behavior redirection — if your overall direction is already sound, nothing here should point you somewhere new. It's convergence: each pass narrows the gap between where you are and a goal that was never moving, so the corrections should get smaller and less frequent the more this gets used, not pile up into an ever-growing list.
+
+A few other effects worth naming. The Observed/Reported/Unknown evidence labeling is itself a transferable habit — running your own work through that same three-way split, even outside a formal evaluation, is a useful self-audit reflex on its own. The fixed nine-point structure, repeated the same way every time, also makes change visible across sessions rather than each evaluation existing in isolation — a point that was Unknown becomes Observed, or a pattern flagged once stops recurring. And because point 8 is explicitly gated to require an ongoing or repeated pattern rather than a single already-corrected slip, it protects against overreacting to one rough day as if it were a standing weakness.
+
 ## How to use it
 
 Ask explicitly with the phrase `evaluate me`. That exact phrase is the trigger — no inferred equivalents.

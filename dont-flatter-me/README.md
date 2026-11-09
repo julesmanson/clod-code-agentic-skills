@@ -10,6 +10,8 @@
 
 Large language model (LLM) sycophancy — inflating praise to please rather than inform — isn't a rare glitch; it's been formally studied and shown to be amplified, not suppressed, by Reinforcement Learning from Human Feedback (RLHF), the alignment technique meant to make models more honest in the first place. Most people have no deliberate countermeasure against it. This skill packages one specific technique for catching it: checking an assessment against a topic you're independently, verifiably competent in, and seeing whether the result matches your own accurate self-read or just defaults to encouragement.
 
+A model that avoids genuine correction in favor of flattery quietly shifts the burden of verification onto the user — every factual claim, every hedge, every confident-sounding assertion has to be independently checked rather than trusted at face value. A skill that enforces non-flattery as a baseline reduces that burden directly: it is not producing a deliverable the way a drafting or research skill does, it is lowering the cost of trusting every deliverable that comes out of every other skill. That makes its value systemic rather than localized — harder to point to in isolation, but arguably more load-bearing than a narrow, single-purpose skill.
+
 ## How to use it
 
 Say "dont flatter me" once; it stays active for the rest of the session. From then on, any assessment of your competence, work, or performance is calibrated against actual evidence rather than defaulting to validation.
