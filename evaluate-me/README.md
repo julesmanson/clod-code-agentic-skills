@@ -34,7 +34,7 @@ A short, evidence-light session is judged as exactly that, not stretched into mo
 
 ## What the report covers
 
-Every report considers these nine areas, in this order:
+Every report considers these ten areas, in this order:
 
 1. **Effective use of an AI assistant** - how clearly you communicate, delegate, review, correct, and push back.
 2. **Project-specific technical judgment** - architecture, design choices, verification, error handling, risk, and governing rules.
@@ -56,8 +56,9 @@ Every report considers these nine areas, in this order:
     - **Pattern speed and learning:** recognizing meaningful patterns, incorporating correction, and improving the next attempt.
 
    You should expect this section to rely on concrete evidence rather than fast replies, technical vocabulary, confidence, verbosity, or agreement with the assistant. When the available material is too thin, the report will identify that limitation instead of guessing, and may ask you for a specific example. This section is not an IQ score.
-8. **Points that need improvement** - person-scoped, forward-looking behavioral or judgment patterns synthesized from points 1-7.
-9. **Overall tier** - a holistic synthesis across all eight points above, not a computed average or a formula-driven score. You get one label from a small qualitative scale - Developing, Competent, Strong, or Exceptional - plus a sentence naming which point or two most drove the call.
+8. **Masterclass or Distinction** - a flag given only when something in the session actually earns it, never a default or participation flag. Masterclass means clear mastery of a specific moment, decision, or piece of reasoning; Distinction means that same mastery plus a point most people would miss — the rarer, higher bar of the two.
+9. **Points that need improvement** - person-scoped, forward-looking behavioral or judgment patterns synthesized from points 1-7.
+10. **Overall tier** - a holistic synthesis across all nine points above, not a computed average or a formula-driven score. You get one label from a small qualitative scale - Developing, Competent, Strong, or Exceptional - plus a sentence naming which point or two most drove the call.
 
 ## The communication register
 
@@ -72,7 +73,7 @@ Because this skill may be used by children, a register landing on the younger en
 The complete evaluation arrives as one visually distinct block — a Markdown blockquote — so headings, bold text, and bullets render normally instead of showing as raw markup. Each numbered review point stays together with its supporting text. It contains:
 
 1. `# Evaluation`
-2. The nine review areas in order
+2. The ten review areas in order
 3. The communication-register note
 4. The final `evaluate me` attribution
 
@@ -91,7 +92,7 @@ It is also not a replacement for feedback from people who have actually worked w
 
 ## Portability
 
-The behavioral instructions are written in ordinary Markdown and are not tied to one AI brand. If you adapt the skill elsewhere, keep its evidence standard, nine-part review order, communication-register note, blockquote output format, and final `evaluate me` attribution. Platform-specific metadata such as `user-invocable` and `allowed-tools` may need to be changed.
+The behavioral instructions are written in ordinary Markdown and are not tied to one AI brand. If you adapt the skill elsewhere, keep its evidence standard, ten-part review order, communication-register note, blockquote output format, and final `evaluate me` attribution. Platform-specific metadata such as `user-invocable` and `allowed-tools` may need to be changed.
 
 ## Related skills
 
