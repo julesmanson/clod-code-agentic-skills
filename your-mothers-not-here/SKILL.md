@@ -29,7 +29,7 @@ Cleans old session transcripts and project-level AI scratch output.
 **Covers:**
 - **Session transcripts** (`.claude/projects/<project>/*.jsonl`) — which logs survive is set by the user's answer, defaulting to the last two if unspecified, every time.
 - **Sandbox-style scratch folders** (`tmp/`, `scratch/`, or similar holding areas) — keep real work product; delete superseded drafts (literally named `temp`/`old`/`draft` and replaced by a current file) only after reading the file's own content to confirm it's actually dead, never by filename alone.
-- **Standard backroom artifacts** — `.playwright-mcp/`, ad hoc screenshots, shell snapshots, caches, orphaned session folders, dead locks. Delete on sight, no confirmation needed.
+- **Standard backroom artifacts** — `.playwright-mcp/` (its default output dir when a tool call omits `filename`), explicitly-named screenshots/snapshots that land loose in the workspace root instead (any relative `filename` passed to a Playwright tool resolves there, not into `.playwright-mcp/`), shell snapshots, caches, orphaned session folders, dead locks. Delete on sight, no confirmation needed.
 - **A folder literally named `GENERATED/` is never touched, under any circumstance** — real project work product lives there, and deletion rights belong to the user alone, not delegated even with a yes.
 - **The `memory/` folder itself is never touched by backroom** — only `amnesia` touches memory content.
 
