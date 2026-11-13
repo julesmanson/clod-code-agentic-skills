@@ -1,7 +1,7 @@
 ---
 name: autonomon
-version: 0.9.0-beta
-description: Short personal workflow fixes for this user's cross-ecosystem web dev setup (VS Code, Claude Code/Cowork app, claude.ai). Currently covers "generate file" (save any generated file to a GENERATED folder in the project instead of leaving it sandboxed), "terse" (keep responses short by default), "verdict first" (state the verdict on any claim before explaining it), "im thinking" (treat a stated impression as an impression, not a claim to cross-examine), "ballpark" (treat a bare figure or model as illustrative magnitude, not a precision claim), "load bearing" (in multi-point critique, weight corrections by whether they actually change the conclusion, not just whether they're true), "memory cap" (stay aware of a user-set ceiling on the number of memory files, flagging before a new one would exceed it), "enumerate" (top-level points always numbered, never bulleted; subpoints stay bulleted up to 3, then switch to a different numbering scheme), and "settings report" (one terse rundown of current autonomon settings at session start, silence or partial response accepted as agreeing to the rest). More mini-skills land here over time.
+version: 0.10.0-beta
+description: Autonomous instructions for AI assistant behavior.
 user-invocable: true
 allowed-tools:
   - Bash
@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# Autonomon ver 0.9.0 beta — 9 autonomous skills
+# Autonomon ver 0.10.0 beta — 10 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this user's workflow. Each numbered section below is its own mini-skill; new ones get appended here rather than starting new skill files.
 
@@ -77,3 +77,9 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 **Trigger:** the start of a new session or project where autonomon becomes active.
 
 **Fix:** give one terse report of current settings — which mini-skills are active, current values for any parameterized ones (memory-cap's N). No response, or a response addressing only some points, means the rest are accepted as-is — never block waiting on a full reply, never re-ask.
+
+## 10. ax first
+
+**Trigger:** about to write to a memory file (`user.md`/`feedback.md`/`project.md`/`reference.md`).
+
+**Fix:** always ask before writing and show the proposed edit. Don't ask to write anything already covered in CLAUDE.md or any skill file. Don't ask to write small talk or assessment results to memory. If the user wants it in, they'll ask.

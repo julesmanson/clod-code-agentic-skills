@@ -1,7 +1,7 @@
 ---
 name: dont-pollute-comments
 version: 1.0.0-beta
-description: One person's own comment-writing standard, built from a real project's governing doc and checked against that project's own real files rather than written fresh for a general audience. Covers correcting stale comments, a unified rule set for every language, then specifics for JavaScript, CSS, and HTML. Triggered explicitly by name, so you always know when it's shaping your comments and can adopt it on your own terms.
+description: A personal comment-writing standard — stale-comment fixes plus JS/CSS/HTML specifics. Triggered by name.
 user-invocable: true
 allowed-tools:
   - Read

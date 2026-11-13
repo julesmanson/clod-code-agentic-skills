@@ -1,7 +1,7 @@
 ---
 name: your-mothers-not-here
 version: 1.0.5-beta
-description: 'Cleans up Claude-Code-generated backroom files. Two keyworded operations: "backroom" (old session transcripts, sandbox-style scratch, Playwright/screenshot artifacts) and "amnesia" (stale/redundant memory file cleanup and consolidation). Each operation gates its own riskiest action with a question before touching anything — see the backroom and amnesia sections below for specifics.'
+description: Cleans up Claude-generated backroom files and stale memory, via "backroom" and "amnesia" operations.
 user-invocable: true
 allowed-tools:
   - Bash

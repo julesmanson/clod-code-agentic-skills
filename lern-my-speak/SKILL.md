@@ -1,7 +1,7 @@
 ---
 name: lern-my-speak
 version: 1.0.0-beta
-description: A personal shorthand/jargon glossary for one person's own casual typing register, so an assistant decodes it on demand instead of guessing from context. Triggered by the phrase "lern my speak" appearing anywhere in a request; once triggered, applies for the remainder of the session.
+description: A personal jargon glossary the assistant decodes on request. Triggered by "lern my speak."
 user-invocable: true
 ---
 

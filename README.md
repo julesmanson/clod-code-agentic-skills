@@ -31,21 +31,7 @@ A series of agentic developer skills for Claude Code, adaptable to other AI codi
 </tr>
 <tr>
 <td align="center"><a href="./autonomon">Autonomon</a></td>
-<td>
-Personal, always-on workflow fixes for this repo's author, originally intended for his own personal use, now open to the public for anyone's convenience.
-<ul>
-<li><code>generate file</code> — save generated output to a <code>GENERATED</code> folder instead of leaving it sandboxed</li>
-<li><code>terse</code> — keep responses short by default</li>
-<li><code>verdict first</code> — state the verdict before the explanation</li>
-<li><code>im thinking</code> — treat a stated impression as an impression, not a claim to cross-examine</li>
-<li><code>ballpark</code> — treat a bare figure as illustrative magnitude, not a precision claim</li>
-<li><code>load bearing</code> — in multi-point critique, lead with corrections that actually change the conclusion</li>
-<li><code>memory cap</code> — stay aware of a user-set ceiling on memory files, flagging before a new one would exceed it</li>
-<li><code>enumerate</code> — top-level points always numbered, never bulleted; subpoints stay bulleted up to 3, then switch to a different numbering scheme</li>
-<li><code>settings report</code> — one terse rundown of current autonomon settings at session start; silence or a partial response accepts the rest as-is</li>
-</ul>
-Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.
-</td>
+<td>A standing set of corrections for recurring AI-assistant annoyances, plus a few small utilities, all running automatically with no keyword required. Details: <a href="./autonomon/README.md"><code>autonomon/README.md</code></a>.</td>
 </tr>
 <tr>
 <td align="center"><a href="./thought-experiment">Thought Experiment</a></td>
@@ -103,7 +89,7 @@ Quality control (QC) is a set of built-in rules (protocols) — specific checks 
 
 The skills below that touch files all have well-embedded QC safety guardrails, each anticipating a specific failure mode. All also help with overall project QA the way regular QC protocols do:
 
-- **Autonomon** subskill **generate file** — guards against generated output getting lost in a sandboxed preview that never reaches disk, ensuring anything created actually persists in the project.
+- **Autonomon** — a standing set of corrections for recurring AI-assistant annoyances, plus a few small utilities, all running automatically with no keyword required.
 - **Commit** — has guards against an accidental or premature push, a leaked secret, or a silently rewritten history. A rare missed push, mitigated by a mandatory closing verdict.
 - **Thought Experiment** — helps to guard against an unverified claim passing as fact and helps to uncover deeply embedded not yet discovered bugs. Four CRUD options (blanket, process, file, every CRUD step) set how much autonomy fix application gets — Read is always free, only Create/Update/Delete are gated.
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.

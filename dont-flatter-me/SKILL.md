@@ -1,7 +1,7 @@
 ---
 name: dont-flatter-me
 version: 1.0.0-alpha
-description: Calibrates any assessment of the user's own competence, work, or performance against independently verifiable evidence instead of defaulting to validation — a direct, explicit countermeasure to documented LLM sycophancy. Triggered by the phrase "dont flatter me."
+description: Calibrates self-assessments against verifiable evidence instead of default validation. Triggered by "dont flatter me."
 user-invocable: true
 ---
 

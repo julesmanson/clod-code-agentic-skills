@@ -1,7 +1,7 @@
 ---
 name: commit
 version: 0.7.0-beta
-description: Commits and pushes to the remote for an already-existing repo, using only plain git commands — no GitHub-specific tooling, only tested against GitHub itself. Drafts its own commit message automatically and closes every run with one of three verdicts: Failed, Commit, or Commit and push to [repo].
+description: Commits and pushes to the remote using plain git commands, closing with a Failed/Commit/Commit-and-push verdict.
 user-invocable: true
 allowed-tools:
   - Bash

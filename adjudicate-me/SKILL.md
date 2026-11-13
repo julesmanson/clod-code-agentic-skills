@@ -1,7 +1,7 @@
 ---
 name: adjudicate-me
 version: 1.2.0
-description: Evaluates one piece of public-facing content (a comment, post, or article) against a floor (US security-clearance disqualification risk at Tier 1, Tier 3, and Tier 5, as an adjudicator would judge it) and a ceiling (how an aerospace/defense background-investigation adjudicator and a hiring panel would each likely perceive it). Triggered by the phrase "adjudicate me" or "ad me."
+description: Rates one piece of public content against security-clearance disqualification risk and hiring-panel perception. Triggered by "adjudicate me" or "ad me."
 user-invocable: true
 allowed-tools:
   - Read

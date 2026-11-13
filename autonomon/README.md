@@ -1,6 +1,6 @@
-# Autonomon (ver 0.9.0 beta)
+# Autonomon (ver 0.10.0 beta)
 
-**9 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
+**10 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally intended for personal use and now open to anyone who finds them useful. You do not need to type a keyword to activate any of these behaviors; the rules operate automatically. The keywords are names for the behaviors and reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
@@ -45,6 +45,10 @@ Multi-point responses always number their top-level points — never bullets, re
 ## 9. `settings report`
 
 At the start of a new session or project, expect one terse rundown of autonomon's current settings — which mini-skills are active, current values for anything parameterized (memory-cap's N). If you don't respond, or only respond to some of it, everything else is treated as accepted as-is — this never blocks waiting on a full reply, and never re-asks.
+
+## 10. `ax first`
+
+Before writing anything into a memory file (`user.md`, `feedback.md`, `project.md`, `reference.md`), expect the proposed wording shown to you first, written only after you confirm it. Anything already covered by CLAUDE.md or another skill file isn't raised at all, nor is small talk or one-off assessment results — if you want something like that saved, you ask for it.
 
 ## Related skills
 

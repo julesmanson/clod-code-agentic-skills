@@ -1,7 +1,7 @@
 ---
 name: thought-experiment
 version: 0.6.0-alpha
-description: Runs a rigorous, evidence-based audit of a target — a script, a doc, a config, a whole project, an enterprise cloud setup, anything — by constructing concrete failure-scenario "thought experiments" and verifying every claim the target makes about a dependency's behavior against a live/authoritative source rather than memory, including claims one paired doc (a README) makes about another (its SKILL.md) and formatting-convention consistency where one is established. Asks once how fixes should be authorized among four CRUD options (blanket, process, file, or every CRUD step — Read is always free, only Create/Update/Delete get gated) before applying any, then re-runs the same audit against the fixed state to catch regressions and closes with one consolidated report. Triggered by the phrase "thought experiment." Iteration count is open-ended.
+description: Runs an evidence-based failure-scenario audit of any target, verifying claims against live sources before fixing. Triggered by "thought experiment."
 user-invocable: true
 allowed-tools:
   - Read
