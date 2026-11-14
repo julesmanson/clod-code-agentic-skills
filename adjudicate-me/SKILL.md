@@ -22,6 +22,7 @@ allowed-tools:
 3. **Objective.** Tier 3 and Tier 5 share the same rulebook — SEAD 4's thirteen adjudicative guidelines — differing only in margin. Tier 5 applies zero-margin scrutiny to foreign entanglement, coercion/blackmail vulnerability, continuous-evaluation triggers, and handling of protected or export-controlled technical information (Guideline K, ITAR, EAR, CUI). Tier 1 runs on a lower bar: 5 CFR 731 Suitability. Every Red traces to a specific guideline.
 4. **Honesty over comfort.** Give the real read, not the comfortable one — don't soften a finding to spare feelings. Other readers' reactions (upvotes, replies, pile-on) are irrelevant to this skill's judgment; the only audiences that matter are a background-investigation adjudicator and a hiring panel.
 5. **Calibrate against real adjudication, not maximum paranoia.** Don't fail casual or satirical content for something an actual adjudicator would shrug off. The standard is genuine disqualification risk, not theoretical worst-case caution.
+6. **No attachment, no stop.** When "adjudicate me"/"ad me" arrives with none of rule 1's four content forms, skip the stop-and-ask default — check the active Playwright browser tab first (usually a YouTube comment), then the user's own active tab in their default browser if that isn't content-bearing. Only ask once both come up empty.
 
 **Process:**
 

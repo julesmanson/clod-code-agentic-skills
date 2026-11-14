@@ -12,7 +12,7 @@ Built for a retired engineer doing everything possible to prepare for a return t
 
 ## How to use it
 
-Ask with the phrase `adjudicate me` or `ad me`, always paired with the content itself — a link, a file, pasted text, or a screenshot. The trigger doesn't run on its own; without one of those four attached, it asks for the content before doing anything else. Judgment always works from the full content, but the report only reflects it back in full for a **comment** — a **post or article** gets identified by title only, to keep the report from reproducing a long piece at length. For a link, WebFetch is always tried first regardless of platform. A login wall, bot-block, or a suspiciously short result is treated as a failed fetch — it falls back to Playwright, or asks for a direct paste. Full operating definition: [`SKILL.md`](./SKILL.md).
+Ask with the phrase `adjudicate me` or `ad me`, always paired with the content itself — a link, a file, pasted text, or a screenshot. The trigger doesn't run on nothing — without one of those four attached, it checks the active Playwright browser tab first (usually a YouTube comment), then the user's own active tab in their default browser, before finally asking for the content directly if neither is content-bearing. Judgment always works from the full content, but the report only reflects it back in full for a **comment** — a **post or article** gets identified by title only, to keep the report from reproducing a long piece at length. For a link, WebFetch is always tried first regardless of platform. A login wall, bot-block, or a suspiciously short result is treated as a failed fetch — it falls back to Playwright, or asks for a direct paste. Full operating definition: [`SKILL.md`](./SKILL.md).
 
 ## What it checks
 

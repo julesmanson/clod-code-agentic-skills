@@ -83,3 +83,4 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 **Trigger:** about to write to a memory file (`user.md`/`feedback.md`/`project.md`/`reference.md`).
 
 **Fix:** always ask before writing and show the proposed edit. Don't ask to write anything already covered in CLAUDE.md or any skill file. Don't ask to write small talk or assessment results to memory. If the user wants it in, they'll ask.
+

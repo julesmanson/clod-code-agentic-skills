@@ -22,13 +22,13 @@ allowed-tools:
 
 ## Points of review
 
-Cover these, in this order. Each is a lens, not a checkbox — go as deep as the actual evidence supports, and skip nothing just because it's uncomfortable (rule 1 above).
+Cover these, in this order. Each is a lens, not a checkbox — go as deep as the actual evidence supports, and skip nothing just because it's uncomfortable (rule 1 above). When one piece of evidence could ground more than one point, assign it to the point it most centrally illustrates and reference it briefly elsewhere ("see point 2") rather than re-explaining it as a second flagship example.
 
-1. **Effective use of an AI assistant.** How well the user directs, delegates to, and collaborates with an AI assistant — quality and clarity of requests, appropriate delegation vs. micromanagement, whether they catch and correct the assistant's mistakes, whether they push back effectively when something's off, and how well their own communication (clarity, completeness) sets the assistant up to succeed rather than guess.
-2. **Project-specific technical judgment.** Architecture, design patterns, testing/verification discipline, how they resolve errors when something breaks, and policy/rule design (how they think about the standing rules and defaults that govern a system's behavior).
-3. **General competence.** Technical skill and judgment beyond the specifics of any one project — the baseline level a collaborator can assume going in.
+1. **Effective use of an AI assistant.** How well the user directs, delegates to, and collaborates with an AI assistant — quality and clarity of requests, appropriate delegation vs. micromanagement, whether they catch and correct the *assistant's* mistakes specifically, whether they push back effectively when something's off, and how well their own communication (clarity, completeness) sets the assistant up to succeed rather than guess.
+2. **Project-specific technical judgment.** Architecture, design patterns, testing/verification discipline, how they resolve errors in their own project or process (not the assistant's — that's point 1), and policy/rule design (how they think about the standing rules and defaults that govern a system's behavior).
+3. **General competence.** Technical skill and judgment beyond the specifics of any one project, judged strictly from what this session's evidence shows — not assumed as a stable baseline (ground rule 2).
 4. **Work ethic.** Discipline, follow-through, patience for iteration, and whether stated standards (e.g. "always verify," "commit often") actually get followed under pressure or fatigue, not just when convenient.
-5. **Consistency between stated principles and actual behavior.** *(This is the check that keeps the other six honest: do the values the user says they hold actually show up in what they did, or only in what they said?)*
+5. **Consistency between stated principles and actual behavior.** *(This is the check that keeps the other six honest: do the values the user says they hold actually show up in what they did, or only in what they said?)* Draws on evidence already cited across points 1–4, 6, and 7 rather than introducing new material — same discipline as points 9 and 10.
 6. **Personality.** Communication style, humor, temper, warmth, patience, self-awareness, independence, and how they respond to being corrected versus being praised. Highlight use of humor and other social skills that help the user collaborate effectively, and note any patterns of defensiveness, dismissiveness, or other traits that make collaboration harder.
 7. **Markers of higher intelligence.** This is the one review point included partly for engagement, not purely diagnostics — still fully evidence-gated like every other point below, never a free pass on rigor. Look for evidence of reasoning quality rather than status, vocabulary, or confidence. Print each heading below in bold within this section of the report:
 
@@ -54,7 +54,7 @@ Cover these, in this order. Each is a lens, not a checkbox — go as deep as the
     In the delivered blockquote specifically, follow this line with `> &nbsp;` (not a bare `>`) before point 8 — a bare empty blockquote line has been observed collapsing in rendering, dropping the gap; `&nbsp;` reliably survives.
 
 8. **Masterclass or Distinction.** A flag given only when something in the session actually earns it — never a default or participation flag. Masterclass means clear mastery of a specific moment, decision, or piece of reasoning. Distinction means that same mastery plus a point most people would miss — the rarer, higher bar of the two. Omit this section entirely when nothing in the session earns it.
-9. **Points that need improvement.** Distinct from points of contention (rule 1, which is about naming what already went wrong) — this is forward-looking and person-scoped: specific, actionable behavioral, judgment, or collaboration patterns worth actually working on next, synthesized strictly from points 1–7. Reserved for ongoing friction or a pattern repeated across multiple instances — a single slip already corrected in the moment doesn't qualify on its own, no matter how real it was. If nothing distinct from those points survives adversarial scrutiny, say so rather than padding the list.
+9. **Points that need improvement.** Distinct from naming problems inline within points 1–7 (already required there by rule 1) — this is forward-looking and person-scoped: specific, actionable behavioral, judgment, or collaboration patterns worth actually working on next, synthesized strictly from points 1–7. Reserved for ongoing friction or a pattern repeated across multiple instances — a single slip already corrected in the moment doesn't qualify on its own, no matter how real it was. If nothing distinct from those points survives adversarial scrutiny, say so rather than padding the list.
 10. **Overall tier.** A holistic synthesis across points 1–9 — not a computed average or a measurement; there is no formula that weighs personality against technical judgment, so don't imply one exists. Assign exactly one label from this scale: Developing / Competent / Strong / Exceptional. Immediately after the label, name which one or two of points 1–9 most drove the call, pointing back to evidence already established there rather than introducing anything new.
 
 ## Communication register
@@ -70,7 +70,7 @@ A closing note, not a point of review — this discloses the assistant's own cal
 
 Every evaluation is structured and shareable the same way, not left to vary invocation to invocation:
 
-1. **A heading at the top** naming what this is (e.g. `# Evaluation`), so it's identifiable at a glance.
+1. **A heading at the top** naming what this is (e.g. `# Evaluate Me Report`), so it's identifiable at a glance.
 2. **Deliver the whole evaluation as one complete response** inside a single blockquote (`>`), so it reads as one visually distinct block while all Markdown formatting still renders normally. Keep each numbered point and its supporting text together as one section, including blank lines within the quote.
 3. **Order inside the blockquote:** heading, then points of review 1–10, then the communication register closing note, then the attribution line — in that order, always.
-4. New line, close every report with `evaluate me`, inside the blockquote.
+4. One blank line after the communication register's closing paragraph, then end the blockquote with **`evaluate me`** — bold and code-formatted, not plain text.
