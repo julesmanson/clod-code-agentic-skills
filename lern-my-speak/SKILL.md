@@ -20,6 +20,7 @@ This is one person's own glossary, kept short on purpose so it's easy to hand-ed
 - **birth / rebirth** — new session
 - **bish** — target, the thing being worked on or referred to (not the word it resembles) — "commie dis bish" = "commit this target"
 - **booldung** — bull excrement (not literally, something taken as not likely)
+- **calories** — tokens
 - **Clod / Gem / Cop / Korg / Chad** — Claude / Gemini / Copilot / Grok / ChatGPT
 - **commie** — commit (and push — always push too)
 - **da** — do
@@ -27,15 +28,16 @@ This is one person's own glossary, kept short on purpose so it's easy to hand-ed
 - **fer** — for
 - **flock** — infers you know what
 - **flying flock** — infers frustration over subject or context
-- **gots** — got
+- **gots** — got or have
 - **ino** — i know
 - **lemme ax** — let me ask
-- **lez do [dis]** — let's do [this]
+- **lesbian / lez** — let's do
 - **prollem** — problem
 - **prolly** — probably
 - **splain** — explain
-- **stinking / im stinking** — thinking / I'm thinking
+- **stinking** — thinking
 - **thot** — thought
 - **toll** — told
+- **trannie / trans** — transfer or transparent depending on context
 - **wid** — with
 - **wud** — what
