@@ -26,5 +26,18 @@ The actual rule text lives in `flow1.md` in this same folder; this file and `SKI
 
 This exists right now specifically to check interpretation, not to ship. `flow1.md` is still being edited directly, exceptions and edge cases are being worked out as they come up rather than hardcoded in advance, and nothing has been applied back to a real diagram yet. Treat everything here as a snapshot of one point in an ongoing draft, not a finished skill.
 
+## Related skills
+
+- [Don't Pollute Comments](../dont-pollute-comments) — same instinct, different medium: a personal standard meant to be invoked, inspected, and edited into your own house style, not accepted as-is.
+- [Thought Experiment](../thought-experiment) — the methodology that found and fixed this skill's own Figure 1 drift; rerun it against any diagram checked against these rules.
+
+## Disclaimer
+
+Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
+
 ---
 [← back to Clod Code Agentic Skills](../README.md)

@@ -1,4 +1,4 @@
-Onboarding guardrails for a new UML diagram, not an automatic-generation spec. A rule that doesn't fit: see item 7.
+# Instructions for constructing UML diagrams and flowcharts from user directives — applies to edits as well as blank canvases.
 
 ## 0. Hoist theme and base size
 
@@ -100,3 +100,11 @@ b. Caption: "Figure N — Title"; longer explanation goes in body prose.
 c. Legend: only while a real distinction needs a key; drop it once moot.
 d. Prose precedes the diagram, establishes vocabulary; tabular data goes in prose as a table, never in the diagram.
 e. Caption/prose width is never its own cap — a caption reads at the figure's own width, full stop, never a narrower fixed measure. Correct a width rule where the figure's width is set, not with a second independent number that can drift out of sync.
+
+## 9. Project Specific - Blueprint
+
+Let Figures 1 and 2 serve as models for diagrams
+Payload events ride at left of or on top of bus line
+Payload data like content or components ride at right of on bottom of bus line
+Direct communication uses solid bus Line
+Mediated communication uses dashed bus Line

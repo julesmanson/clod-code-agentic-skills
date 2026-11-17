@@ -11,6 +11,8 @@ user-invocable: true
 
 Not a spec for automatic generation — a shared placement language so hand-drawn SVG diagrams stay internally consistent without re-deriving the same layout decisions from scratch each time.
 
+**Safety rail:** first time touching a given file, recommend a commit first so the round is rollback-safe. If declined, ask whether to make a working copy instead — user's call either way.
+
 ## What it covers
 
 The full rule set lives in `flow1.md`, in this skill's own directory. Read it in full before building. Shape, at a glance:
