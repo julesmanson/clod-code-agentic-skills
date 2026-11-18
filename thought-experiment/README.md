@@ -1,4 +1,4 @@
-# Thought Experiment (ver 0.6.0 alpha)
+# Thought Experiment ver 0.6.0 alpha
 
 **Caution:** alpha, not beta. The established core — dependency verification, failure-scenario construction — has real mileage: partially tested across real use, mostly successful, with occasional minor misses on a step or a missed bug, but no catastrophic failure ever observed. The newest additions specifically (sibling-file/formatting checks, the fix-authorization question, the consolidated closing report) haven't been through any real rounds yet, which is what's actually driving the alpha designation. This skill touches files directly via Edit/Write, so extra scrutiny is warranted on the new parts until they've logged substantial use.
 
@@ -29,10 +29,15 @@ There is no fixed number of scenarios or passes. Expect a fresh reading of the t
 
 - [Commit](../commit) — the skill an early audit of led to this one being generalized into its own tool.
 - [Your Mother's Not Here](../your-mothers-not-here) — the same core discipline from a different angle: verify by content, not filename or age, before acting on anything irreversible.
+- [Flexflow](../flexflow) — a rule file this skill gets run against directly, checking for redundancies, collisions, dangling cross-references, and stale claims any time the rules change.
 
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

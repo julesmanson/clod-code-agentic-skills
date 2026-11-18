@@ -1,4 +1,4 @@
-# Autonomon (ver 0.10.0 beta)
+# Autonomon ver 0.10.0 beta
 
 **10 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
@@ -54,10 +54,16 @@ Before writing anything into a memory file (`user.md`, `feedback.md`, `project.m
 
 - [Lern My Speak](../lern-my-speak) — the opposite direction of autonomon's always-on fixes: a session-triggered glossary that shapes how your input gets read, not how the assistant's own output gets shaped.
 - [Your Mother's Not Here](../your-mothers-not-here) — memory-cap's lowering case hands off to amnesia for the actual consolidation rather than duplicating that logic here.
+- [Evaluate Me](../evaluate-me) — cites this skill's own workflow fixes (generated-file handling, response terseness) as context for how the user and assistant interact.
+- [Don't Pollute Comments](../dont-pollute-comments) — applies this skill's own `terse` no-padding instinct to comments instead of chat responses.
 
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

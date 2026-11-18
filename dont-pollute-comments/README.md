@@ -1,4 +1,4 @@
-# Don't Pollute Comments (ver 1.0.0 beta)
+# Don't Pollute Comments ver 1.0.0 beta
 
 **One person's comment-writing standard** — [← back to Clod Code Agentic Skills](../README.md)
 
@@ -58,10 +58,16 @@ Almost no comments at all — markup rarely has a non-obvious fact worth recordi
 
 - [Autonomon](../autonomon) — its `terse` subskill applies the same no-padding instinct to chat responses that this skill applies to comments.
 - [Your Mother's Not Here](../your-mothers-not-here) — the same stale-content discipline from a different angle: amnesia's "verify before deleting or editing, never assume stale from age alone" and this skill's "fix only what's gone stale, preserve everything else" are the same instinct applied to memory files versus code comments.
+- [Flexflow](../flexflow) — same instinct, different medium: a personal standard meant to be invoked, inspected, and edited into your own house style, not accepted as-is, applied to diagram layout instead of comments.
+- [Lern My Speak](../lern-my-speak) — the other skill built explicitly as a starting template to hand-edit into your own house style, triggered by name as a deliberate courtesy rather than running autonomously.
 
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

@@ -1,4 +1,4 @@
-# Lern My Speak (ver 1.0.0 beta)
+# Lern My Speak ver 1.0.0 beta
 
 <img src="./clod-slackers.svg" width="570" height="518" alt="Two tall, slouching cartoon teenagers smirking and mumbling, with tiny orange-headed Clod standing between their feet, looking up.">
 
@@ -61,6 +61,10 @@ Add, remove, or redefine entries to match your own. There's no live "define X as
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

@@ -80,7 +80,7 @@ Details: <a href="./evaluate-me/README.md"><code>evaluate-me/README.md</code></a
 </tr>
 <tr>
 <td align="center"><a href="./flexflow">Flexflow</a></td>
-<td>Interactive user directives instruction set for generating or editing UML diagrams and flowcharts where UML tools aren't available. Details: <a href="./flexflow/README.md"><code>flexflow/README.md</code></a>.</td>
+<td>Relations-based instructions for building SVG UML/flowchart diagrams — every placement decision reduces to a named relation (SolidWorks-style sketch relations: Horizontal, Vertical, Coincident, Midpoint, Equal, Fix, plus this skill's own Grouped) instead of a typed coordinate or a voiced approximation. Triggers automatically before hand-authoring a new diagram, or by name to re-apply against existing work. Details: <a href="./flexflow/README.md"><code>flexflow/README.md</code></a>.</td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ The skills below that touch files all have well-embedded QC safety guardrails, e
 - **Your Mother's Not Here** — has guards against a premature or accidental irreversible deletion.
 - **Don't Pollute Comments** — helps to guard against comment quality drifting into hardwrapped blocks or over-commenting the obvious.
 - **Lern My Speak** — helps to guard against a shorthand being misread or misunderstood especially when it is given to an AI assistant after complacency sets in during long, tiring sessions.
-- **Flexflow** — helps guard against a hand-drawn diagram drifting inconsistent, coordinate by coordinate, with no shared placement language to check against.
+- **Flexflow** — helps guard against a hand-authored diagram drifting inconsistent, placement by placement, with no named relation to check each one against.
 
 **Evaluate Me**, **Don't Flatter Me**, and **Adjudicate Me** are skills that do not touch any files, which means they do not fall under QC for the project. However, **Evaluate Me** emulates QA on users by assessing their performance when they perform periodic self-assessments. The checks run against a standard, catching drift in judgment and discipline before it compounds into the kind of failure the guardrails above exist to catch. A project without that review function tends to run over budget and grow defect-prone, in any engineered system, not just code, which is why this skill still belongs here even though it governs the process holder, not a specific artifact.
 

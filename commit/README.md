@@ -1,4 +1,4 @@
-# Commit (ver 0.7.0 beta)
+# Commit ver 0.7.0 beta
 
 <img src="./clod-straitjacket.svg" width="420" height="340" alt="Clod, the blockhead orange-headed cartoon character wrapped in a white straitjacket, with the tagline: git it now before they commit you">
 
@@ -37,10 +37,15 @@ The only values supplied automatically when you leave them out. Ambiguous or mis
 ## Related skills
 
 - [Thought Experiment](../thought-experiment) — grew out of an early audit of this skill.
+- [Your Mother's Not Here](../your-mothers-not-here) — the same discipline from the other direction: an irreversible action (a push here, deletion there) that only ever runs behind an explicit ask, never on a good moment alone.
 
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them “as is,” without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 [← back to Clod Code Agentic Skills](../README.md)

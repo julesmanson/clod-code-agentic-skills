@@ -98,10 +98,15 @@ The behavioral instructions are written in ordinary Markdown and are not tied to
 
 - [Autonomon](../autonomon) — contains several personal workflow fixes, including how generated files are handled and how concise responses stay.
 - [Adjudicate Me](../adjudicate-me) — the content-scoped counterpart: judges one specific public post or comment against a security-clearance/perception standard, rather than the user's overall collaboration across a session.
+- [Don't Flatter Me](../dont-flatter-me) — a standing calibration rule this skill's own assessment is also subject to, guarding against unearned praise specifically.
 
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 

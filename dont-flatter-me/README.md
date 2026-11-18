@@ -1,4 +1,4 @@
-# Don't Flatter Me (ver 1.0.0 alpha)
+# Don't Flatter Me ver 1.0.0 alpha
 
 **Caution:** untested — hasn't been run through any real validation yet. Low stakes either way, since nothing here touches a file or takes an irreversible action, but worth knowing before treating it as a settled standard.
 
@@ -39,6 +39,10 @@ Not a general-purpose fact-checker, and not a replacement for [Evaluate Me](../e
 ## Disclaimer
 
 Use these skills at your own risk. The repository owner provides them "as is," without warranties, and is not liable for any loss, damage, claim, or consequence arising from their use, to the fullest extent permitted by law. You are responsible for reviewing outputs, commands, files, and results before relying on them.
+
+## License
+
+[MIT](../LICENSE)
 
 ---
 
