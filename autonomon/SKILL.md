@@ -1,6 +1,6 @@
 ---
 name: autonomon
-version: 0.10.0-beta
+version: 0.11.0-beta
 description: Autonomous instructions for AI assistant behavior.
 user-invocable: true
 allowed-tools:
@@ -10,7 +10,7 @@ allowed-tools:
   - Edit
 ---
 
-# Autonomon ver 0.10.0 beta — 10 autonomous skills
+# Autonomon ver 0.11.0 beta — 11 autonomous skills
 
 A running set of short, personal fixes for recurring friction in this user's workflow. Each numbered section below is its own mini-skill; new ones get appended here rather than starting new skill files.
 
@@ -83,4 +83,8 @@ None of these need a keyword to fire — every rule below is autonomous. Each mi
 **Trigger:** about to write to a memory file (`user.md`/`feedback.md`/`project.md`/`reference.md`).
 
 **Fix:** always ask before writing and show the proposed edit. Don't ask to write anything already covered in CLAUDE.md or any skill file. Don't ask to write small talk or assessment results to memory. If the user wants it in, they'll ask.
+
+## 11. birthname
+
+**Trigger → Fix:** an acronym's first appearance in any document gets its expansion in parens, `ACRONYM (Expansion)`, right then — no exception for common terms (URL, API, DOM).
 

@@ -114,3 +114,8 @@ b. Caption: "Figure N — Title"; longer explanation goes in body prose.
 c. Legend: only while a real distinction needs a key; drop it once moot.
 d. Prose precedes the diagram, establishes vocabulary; tabular data goes in prose as a table, never in the diagram.
 e. Caption/prose width is never its own cap — a caption reads at the figure's own width, never a narrower fixed measure. Fix a width rule where the figure's width is set, not a second number that can drift.
+
+## 9. Final Check
+
+a. Use visualizing tools or whatever tools are available to get a good view of what was produced. Playwright is recommended. If not available or if permissions are needed please ask.
+b. Do a thorough review to ensure all instructions were carefully followed. If available use skill Thought Experiment for this check and subsequent repairs.

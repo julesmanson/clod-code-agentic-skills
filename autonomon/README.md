@@ -1,6 +1,6 @@
-# Autonomon ver 0.10.0 beta
+# Autonomon ver 0.11.0 beta
 
-**10 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
+**11 autonomous skills** — [← back to Clod Code Agentic Skills](../README.md)
 
 Personal, always-on workflow fixes for this repo's author, originally intended for personal use and now open to anyone who finds them useful. You do not need to type a keyword to activate any of these behaviors; the rules operate automatically. The keywords are names for the behaviors and reminders in case one is missed. See [`SKILL.md`](./SKILL.md) for the complete definition.
 
@@ -49,6 +49,10 @@ At the start of a new session or project, expect one terse rundown of autonomon'
 ## 10. `ax first`
 
 Before writing anything into a memory file (`user.md`, `feedback.md`, `project.md`, `reference.md`), expect the proposed wording shown to you first, written only after you confirm it. Anything already covered by CLAUDE.md or another skill file isn't raised at all, nor is small talk or one-off assessment results — if you want something like that saved, you ask for it.
+
+## 11. `birthname`
+
+Expect every acronym to get its full name spelled out in parentheses the first time it appears in any document you write — `ACRONYM (Expansion)`, e.g. `IoC (Inversion of Control)` — even for common web terms like URL, API, or DOM, not just niche ones.
 
 ## Related skills
 
